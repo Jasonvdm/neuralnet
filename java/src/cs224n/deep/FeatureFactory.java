@@ -5,6 +5,7 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.util.*;
 import org.ejml.simple.*;
+import org.ejml.simple.SimpleMatrix;
 
 
 public class FeatureFactory {
@@ -51,20 +52,51 @@ public class FeatureFactory {
  
  
 	// Look up table matrix with all word vectors as defined in lecture with dimensionality n x |V|
-	static SimpleMatrix allVecs; //access it directly in WindowModel
+	//access it directly in WindowModel
 	public static SimpleMatrix readWordVectors(String vecFilename) throws IOException {
+		SimpleMatrix allVecs = new SimpleMatrix(100232, 50); 
+		int wordIndex = 0;
+		try{
+			BufferedReader br = new BufferedReader(new FileReader(vecFilename));
+			String line;
+			while ((line = br.readLine()) != null) {
+				String[] stringVec = line.split(" ");
+				int index = 0;
+				for (String s : stringVec) {
+					double value = Double.parseDouble(s);
+					allVecs.set(wordIndex, index, value);
+					index++;
+				}
+			    wordIndex++;
+			}
+			br.close();
+		}
+		catch(Exception e){
+			e.printStackTrace();
+		}
 		if (allVecs!=null) return allVecs;
 		return null;
-		//TODO implement this
-		//set allVecs from filename		
-
 	}
+
 	// might be useful for word to number lookups, just access them directly in WindowModel
 	public static HashMap<String, Integer> wordToNum = new HashMap<String, Integer>(); 
 	public static HashMap<Integer, String> numToWord = new HashMap<Integer, String>();
 
 	public static HashMap<String, Integer> initializeVocab(String vocabFilename) throws IOException {
-		//TODO: create this
+		int wordIndex = 0;
+		try{
+			BufferedReader br = new BufferedReader(new FileReader(vocabFilename));
+			String line;
+			while ((line = br.readLine()) != null) {
+				wordToNum.put(line, wordIndex);
+				numToWord.put(wordIndex, line);
+				wordIndex++;
+			}
+			br.close();
+		}
+		catch(Exception e){
+			e.printStackTrace();
+		}
 		return wordToNum;
 	}
  
