@@ -11,7 +11,7 @@ import java.text.*;
 
 public class WindowModel {
 
-	protected SimpleMatrix L, W, Wout;
+	protected SimpleMatrix L, W, Wout, U;
 
 	private HashMap<String,String> exactMatches = new HashMap<String, String>();
 	//
@@ -69,4 +69,33 @@ public class WindowModel {
 			e.printStackTrace();
 		}
 	}
+
+	private SimpleMatrix zFunction(SimpleMatrix inputVector){
+		return W.mult(inputVector);
+	}
+
+	private SimpleMatrix hFunction(SimpleMatrix inputVector){
+		int numRows = inputVector.numRows();
+		int numCols = inputVector.numCols();
+		SimpleMatrix output = new SimpleMatrix(numRows, numCols);
+		for(int index = 0; index < numRows*numCols; index++){
+			output.set(index, Math.tanh(inputVector.get(index)));
+		}
+		return output;
+	}
+
+	private SimpleMatrix gFunction(SimpleMatrix inputVector){
+		SimpleMatrix gMat = U.mult(inputVector);
+		int numRows = gMat.numRows();
+		int numCols = gMat.numCols();
+		int denom = 0;
+		for(int index = 0; index < numCols*numRows; index++){
+			denom += Math.exp(gMat.get(index));
+		}
+		for(int index = 0; index < numCols*numRows; index++){
+			gMat.set(index, Math.exp(gMat.get(index))/denom);
+		}
+		return gMat;
+	}
+
 }
