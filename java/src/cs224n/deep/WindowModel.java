@@ -16,6 +16,7 @@ public class WindowModel {
 	private HashMap<String,String> exactMatches = new HashMap<String, String>();
 	//
 	public int windowSize,wordSize, hiddenSize;
+	public int[][] matrix;
 
 	public WindowModel(int _windowSize, int _hiddenSize, double _lr){
 		//TODO
