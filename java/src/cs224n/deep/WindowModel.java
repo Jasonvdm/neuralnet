@@ -153,7 +153,8 @@ public class WindowModel {
 		double total = 0;
 
 		for (int i = 0; i < list.size(); i++) {
-			total += list.get(i)*list.get(i);
+			double val = list.get(i);
+			total += val*val;
 		}
 		total = Math.sqrt(total);
 		return total;
