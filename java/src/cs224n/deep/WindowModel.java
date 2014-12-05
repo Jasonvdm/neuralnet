@@ -18,6 +18,7 @@ public class WindowModel {
 	//
 	public int windowSize,wordSize, hiddenSize, H;
 	public int K = 5;
+	public int m = 0;
 
 	public int[][] matrix;
 
@@ -79,13 +80,11 @@ public class WindowModel {
 	}
 
 
-	public double costFunction(int m, SimpleMatrix xVector, SimpleMatrix yLabels){
+	public double costFunction(SimpleMatrix xVector, SimpleMatrix yLabels){
 		double cost = 0;
 		double lTotal = 0;
-		for (int i=0; i < m; i++) {
-			for (int j=0; j < K; j++) {
-				lTotal += yLabels.get(i, j) * Math.log(gFunction(xVector.get(i)).get(j));
-			}
+		for (int j=0; j < K; j++) {
+			lTotal += yLabels.get(j) * Math.log(gFunction(xVector).get(j));
 		}
 		return (-1 * lTotal/m);
 	}
@@ -113,16 +112,61 @@ public class WindowModel {
 		return costF + (lambda * (wSum + uSum))/(2*m);
 	}
 
-	public void gradientCheck() {
+	public void gradientCheck(SimpleMatrix xVector, SimpleMatrix yLabels) {
 		double epsilon = 0.0004;
+		ArrayList diffVector = new ArrayList<Double>();
 		// Change L by epsilon first
 		SimpleMatrix theta = new SimpleMatrix(L);
 		for (int i = 0; i < theta.numRows(); i++){
 			for (int j = 0; j < theta.numCols(); j++){
 				theta.set(i, j, theta.get(i,j) + epsilon);
-				
+				double jPlus = costFunction(xVector, yLabels);
+				theta.set(i, j, theta.get(i,j) - 2*epsilon);
+				double jMinus = costFunction(xVector, yLabels);
+				double costDiff = (jPlus - jMinus)/2*epsilon;
+				double gradientVal = uGradient(i,j, xVector, yLabels);
+				diffVector.append(gradientVal - costDiff);
 			}
 		}
+
+		SimpleMatrix theta = new SimpleMatrix(W);
+		for (int i = 0; i < theta.numRows(); i++){
+			for (int j = 0; j < theta.numCols(); j++){
+				theta.set(i, j, theta.get(i,j) + epsilon);
+				double jPlus = costFunction(xVector, yLabels);
+				theta.set(i, j, theta.get(i,j) - 2*epsilon);
+				double jMinus = costFunction(xVector, yLabels);
+				double costDiff = (jPlus - jMinus)/2*epsilon;
+				double gradientVal = uGradient(i,j, xVector, yLabels);
+				diffVector.append(gradientVal - costDiff);
+			}
+		}
+
+		SimpleMatrix theta = new SimpleMatrix(U);
+		for (int i = 0; i < theta.numRows(); i++){
+			for (int j = 0; j < theta.numCols(); j++){
+				theta.set(i, j, theta.get(i,j) + epsilon);
+				double jPlus = costFunction(xVector, yLabels);
+				theta.set(i, j, theta.get(i,j) - 2*epsilon);
+				double jMinus = costFunction(xVector, yLabels);
+				double costDiff = (jPlus - jMinus)/2*epsilon;
+				double gradientVal = uGradient(i,j, xVector, yLabels);
+				diffVector.append(gradientVal - costDiff);
+			}
+		}
+
+		double gradientDifference = normalizeVector(diffVector);
+		System.out.println("Gradient difference is: " + gradientDifference);
+	}
+
+	private double normalizeVector(ArrayList list) {
+		double total = 0;
+
+		for (int i = 0; i < list.size(); i++) {
+			total += list.get(i)*list.get(i);
+		}
+		total = Math.sqrt(total);
+		return total;
 	}
 
 	public void baselineTest(List<Datum> testData){
