@@ -14,7 +14,6 @@ public class WindowModel {
 	protected SimpleMatrix L, W, Wout, U;
 
 	private HashMap<String,String> exactMatches = new HashMap<String, String>();
-	private HashMap<String, Integer> wordNum;
 	//
 	public int windowSize,wordSize, hiddenSize, H;
 	public int K = 5;
@@ -33,13 +32,12 @@ public class WindowModel {
 	/**
 	 * Initializes the weights randomly. 
 	 */
-	public void initWeights(SimpleMatrix wordMat, HashMap<String, Integer> wordToNum){
+	public void initWeights(SimpleMatrix wordMat){
 		//TODO
 		// initialize with bias inside as the last column
 		// W = SimpleMatrix...
 		// U for the score
 		// U = SimpleMatrix...
-		wordNum = wordToNum;
 		L = wordMat;
 		int lastIndex = wordSize*windowSize;
 		W = SimpleMatrix.random(H,lastIndex + 1,0,1, new Random());
@@ -65,7 +63,6 @@ public class WindowModel {
 
 			}
 		}
-
 	}
 
 	
@@ -89,8 +86,8 @@ public class WindowModel {
 		return (-1 * lTotal/m);
 	}
 
-	public double regularizedCostFunction(int m, SimpleMatrix xVector, SimpleMatrix yLabels) {
-		double costF = costFunction(m, xVector, yLabels);
+	public double regularizedCostFunction(SimpleMatrix xVector, SimpleMatrix yLabels) {
+		double costF = costFunction(xVector, yLabels);
 
 		double lambda = 1.0;
 		int nC = 50 * 3;
@@ -125,11 +122,11 @@ public class WindowModel {
 				double jMinus = costFunction(xVector, yLabels);
 				double costDiff = (jPlus - jMinus)/2*epsilon;
 				double gradientVal = uGradient(i,j, xVector, yLabels);
-				diffVector.append(gradientVal - costDiff);
+				diffVector.add(gradientVal - costDiff);
 			}
 		}
 
-		SimpleMatrix theta = new SimpleMatrix(W);
+		theta = new SimpleMatrix(W);
 		for (int i = 0; i < theta.numRows(); i++){
 			for (int j = 0; j < theta.numCols(); j++){
 				theta.set(i, j, theta.get(i,j) + epsilon);
@@ -138,11 +135,11 @@ public class WindowModel {
 				double jMinus = costFunction(xVector, yLabels);
 				double costDiff = (jPlus - jMinus)/2*epsilon;
 				double gradientVal = uGradient(i,j, xVector, yLabels);
-				diffVector.append(gradientVal - costDiff);
+				diffVector.add(gradientVal - costDiff);
 			}
 		}
 
-		SimpleMatrix theta = new SimpleMatrix(U);
+		theta = new SimpleMatrix(U);
 		for (int i = 0; i < theta.numRows(); i++){
 			for (int j = 0; j < theta.numCols(); j++){
 				theta.set(i, j, theta.get(i,j) + epsilon);
@@ -151,7 +148,7 @@ public class WindowModel {
 				double jMinus = costFunction(xVector, yLabels);
 				double costDiff = (jPlus - jMinus)/2*epsilon;
 				double gradientVal = uGradient(i,j, xVector, yLabels);
-				diffVector.append(gradientVal - costDiff);
+				diffVector.add(gradientVal - costDiff);
 			}
 		}
 
@@ -159,11 +156,13 @@ public class WindowModel {
 		System.out.println("Gradient difference is: " + gradientDifference);
 	}
 
-	private double normalizeVector(ArrayList list) {
+	private double normalizeVector(ArrayList<Double> list) {
 		double total = 0;
 
 		for (int i = 0; i < list.size(); i++) {
-			total += list.get(i)*list.get(i);
+			Double v = list.get(i);
+			double val = v.doubleValue();
+			total += val*val;
 		}
 		total = Math.sqrt(total);
 		return total;
@@ -230,6 +229,7 @@ public class WindowModel {
 	private double wGradient(int i, int j, SimpleMatrix inputVector, SimpleMatrix trueLabel){
 		SimpleMatrix delta2 = trueLabel.minus(gFunction(inputVector));
 		double out = calculateWOutput(delta2, j);
+		return out;
 	}
 
 	private double calculateWOutput(SimpleMatrix delta2, int j){
@@ -237,6 +237,7 @@ public class WindowModel {
 		for(int i = 0; i < K; i ++){
 			output += delta2.get(i)*U.get(i,j);
 		}
+		return output;
 	}
 
 }
