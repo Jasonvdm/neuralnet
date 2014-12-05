@@ -144,6 +144,19 @@ public class WindowModel {
 				diffVector.append(gradientVal - costDiff);
 			}
 		}
+
+		double gradientDifference = normalizeVector(diffVector);
+		System.out.println("Gradient difference is: " + gradientDifference);
+	}
+
+	private double normalizeVector(ArrayList list) {
+		double total = 0;
+
+		for (int i = 0; i < list.size(); i++) {
+			total += list.get(i)*list.get(i);
+		}
+		total = Math.sqrt(total);
+		return total;
 	}
 
 	public void baselineTest(List<Datum> testData){
