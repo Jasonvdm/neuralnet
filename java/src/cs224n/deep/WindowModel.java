@@ -11,7 +11,7 @@ import java.text.*;
 
 public class WindowModel {
 
-	protected SimpleMatrix L, W, Wout, U;
+	protected SimpleMatrix L, W, Wout, U, FeatureMat;
 
 	private HashMap<String,String> exactMatches = new HashMap<String, String>();
 	//
@@ -37,7 +37,7 @@ public class WindowModel {
 		// W = SimpleMatrix...
 		// U for the score
 		// U = SimpleMatrix...
-		L = wordMat;
+		FeatureMat = wordMat;
 		int lastIndex = wordSize*windowSize;
 		W = SimpleMatrix.random(H,lastIndex + 1,0,1, new Random());
 		for(int i = 0; i < H; i++){
@@ -72,9 +72,9 @@ public class WindowModel {
 	public double costFunction(int m, SimpleMatrix xVector, SimpleMatrix yLabels){
 		double cost = 0;
 		double lTotal = 0;
-		for (int i=0; i < m; i++) {
-			for (int j=0; j < K; j++) {
-				lTotal += yLabels.get(i, j) * Math.log(gFunction(xVector.get(i)).get(j));
+		for (int i=1; i < m; i++) {
+			for (int j=1; j < K; j++) {
+				lTotal += yLabels.get(i, j) * Math.log(gFunction(xVector.get(i)));
 			}
 		}
 		return (-1 * lTotal/m);
@@ -88,14 +88,14 @@ public class WindowModel {
 
 		double wSum = 0;
 		double uSum = 0;
-		for (int i=0; i < H; i++) {
-			for (int j=0; j < nC; j++) {
+		for (int i=1; i < H; i++) {
+			for (int j=1; j < nC; j++) {
 				wSum += (W.get(i, j) * W.get(i, j));
 			}
 		}
 
-		for (int i=0; i < K; i++) {
-			for (int j=0; j < H; j++) {
+		for (int i=1; i < K; i++) {
+			for (int j=1; j < H; j++) {
 				uSum += (U.get(i, j) * U.get(i, j));
 			}
 		}
@@ -106,10 +106,10 @@ public class WindowModel {
 	public void gradientCheck() {
 		double epsilon = 0.0004;
 		// Change L by epsilon first
-
-		for (int i = 0; i < L.numRows(); i++){
-			for (int j = 0; j < L.numCols(); j++){
-				L.set(i, j, L.get(i,j) + epsilon);
+		SimpleMatrix theta = new SimpleMatrix(L);
+		for (int i = 0; i < theta.numRows(); i++){
+			for (int j = 0; j < theta.numCols(); j++){
+				theta.set(i, j, theta.get(i,j) + epsilon);
 				
 			}
 		}
@@ -165,24 +165,6 @@ public class WindowModel {
 			gMat.set(index, Math.exp(gMat.get(index))/denom);
 		}
 		return gMat;
-	}
-
-	private double uGradient(int i, int j, SimpleMatrix inputVector, SimpleMatrix trueLabel){
-		SimpleMatrix delta2 = trueLabel.minus(gFunction(inputVector));
-		SimpleMatrix a = hFunction(zFunction(inputVector));
-		return delta2.get(i)*a.get(j);
-	}
-
-	private double wGradient(int i, int j, SimpleMatrix inputVector, SimpleMatrix trueLabel){
-		SimpleMatrix delta2 = trueLabel.minus(gFunction(inputVector));
-		double out = calculateWOutput(delta2, j);
-	}
-
-	private double calculateWOutput(SimpleMatrix delta2, int j){
-		double output = 0;
-		for(int i = 0; i < K; i ++){
-			output += delta2.get(i)*U.get(i,j);
-		}
 	}
 
 }
