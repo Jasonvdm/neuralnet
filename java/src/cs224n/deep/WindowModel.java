@@ -88,9 +88,9 @@ public class WindowModel {
 	}
 
 	private SimpleMatrix zFunction(SimpleMatrix inputVector){
-		SimpleMatrix newVec = SimpleMatrix.random(inputVector.getRows(),1,1,1, new Random());
+		SimpleMatrix newVec = SimpleMatrix.random(inputVector.numRows(),1,1,1, new Random());
 		newVec.insertIntoThis(0,0,inputVector);
-		return W.mult(newVector);
+		return W.mult(newVec);
 	}
 
 	private SimpleMatrix hFunction(SimpleMatrix inputVector){
@@ -104,7 +104,7 @@ public class WindowModel {
 	}
 
 	private SimpleMatrix gFunction(SimpleMatrix inputVector){
-		SimpleMatrix newVec = SimpleMatrix.random(inputVector.getRows(),1,1,1, new Random());
+		SimpleMatrix newVec = SimpleMatrix.random(inputVector.numRows(),1,1,1, new Random());
 		newVec.insertIntoThis(0,0,inputVector);
 
 		SimpleMatrix gMat = U.mult(newVec);
