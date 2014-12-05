@@ -80,6 +80,29 @@ public class WindowModel {
 		return (-1 * lTotal/m);
 	}
 
+	public double regularizedCostFunction(int m, SimpleMatrix xVector, SimpleMatrix yLabels) {
+		double costF = costFunction(m, xVector, yLabels);
+
+		double lambda = 1.0;
+		int nC = 50 * 3;
+
+		double wSum = 0;
+		double uSum = 0;
+		for (int i=1; i < H; i++) {
+			for (int j=1; j < nC; j++) {
+				wSum += (W.get(i, j) * W.get(i, j));
+			}
+		}
+
+		for (int i=1; i < K; i++) {
+			for (int j=1; j < H; j++) {
+				uSum += (U.get(i, j) * U.get(i, j));
+			}
+		}
+
+		return costF + (lambda * (wSum + uSum))/(2*m);
+	}
+
 
 	public void baselineTest(List<Datum> testData){
 		try{
