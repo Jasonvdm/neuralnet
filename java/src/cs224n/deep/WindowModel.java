@@ -56,13 +56,6 @@ public class WindowModel {
 	 */
 	public void train(List<Datum> _trainData ){
 		//	TODO
-		for(int index = 0; index < _trainData.size(); index++){
-			SimpleMatrix xVector = new SimpleMatrix(wordSize*windowSize,1);
-			int[] wordNums = 
-			for(int wordIndex = index - (windowSize/2); wordIndex <= index + (windowSize/2); wordIndex++){
-
-			}
-		}
 	}
 
 	
