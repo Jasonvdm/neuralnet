@@ -18,4 +18,4 @@ COMMAND LINE:
 If you want to develop on the command line, use the following commands:
 $ mkdir classes
 $ ant
-$ java -Xmx1g -cp classes cs224n.deep.NER ../data/train ../data/dev -print
+$ java -Xmx1g -cp "classes:extlib/*" cs224n.deep.NER ../data/train ../data/dev -print

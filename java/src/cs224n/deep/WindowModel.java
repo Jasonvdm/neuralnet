@@ -59,10 +59,11 @@ public class WindowModel {
 	public void train(List<Datum> _trainData ){
 		//	TODO
 		for(int index = 0; index < _trainData.size(); index++){
-			// SimpleMatrix xVector = new SimpleMatrix(wordSize*windowSize,1);
-			// for(int wordIndex = index - (windowSize/2); wordIndex <= index + (windowSize/2); wordIndex++){
+			SimpleMatrix xVector = new SimpleMatrix(wordSize*windowSize,1);
+			int[] wordNums = 
+			for(int wordIndex = index - (windowSize/2); wordIndex <= index + (windowSize/2); wordIndex++){
 
-			// }
+			}
 		}
 
 	}
@@ -74,7 +75,6 @@ public class WindowModel {
 
 	public void baselineTrain(List<Datum> _trainData ){
 		for(Datum data: _trainData){
-			System.out.println(data.word);
 			exactMatches.put(data.word, data.label);
 		}
 	}
