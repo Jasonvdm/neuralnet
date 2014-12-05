@@ -116,8 +116,9 @@ public class WindowModel {
 	}
 
 	private SimpleMatrix gFunction(SimpleMatrix inputVector){
-		SimpleMatrix newVec = SimpleMatrix.random(inputVector.numRows(),1,1,1, new Random());
-		newVec.insertIntoThis(0,0,inputVector);
+		SimpleMatrix inputVec = hFunction(zFunction(inputVector))
+		SimpleMatrix newVec = SimpleMatrix.random(inputVec.numRows(),1,1,1, new Random());
+		newVec.insertIntoThis(0,0,inputVec);
 
 		SimpleMatrix gMat = U.mult(newVec);
 		int numRows = gMat.numRows();
