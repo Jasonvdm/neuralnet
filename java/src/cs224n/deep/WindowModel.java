@@ -69,6 +69,18 @@ public class WindowModel {
 	}
 
 
+	public double costFunction(int m, SimpleMatrix xVector, SimpleMatrix yLabels){
+		double cost = 0;
+		double lTotal = 0;
+		for (int i=1; i < m; i++) {
+			for (int j=1; j < K; j++) {
+				lTotal += yLabels.get(i, j) * Math.log(gFunction(xVector.get(i)));
+			}
+		}
+		return (-1 * lTotal/m);
+	}
+
+
 	public void baselineTest(List<Datum> testData){
 		try{
 			File f = new File("../baseline.out");
