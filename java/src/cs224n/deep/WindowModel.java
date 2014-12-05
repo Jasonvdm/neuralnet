@@ -14,6 +14,7 @@ public class WindowModel {
 	protected SimpleMatrix L, W, Wout, U;
 
 	private HashMap<String,String> exactMatches = new HashMap<String, String>();
+	private HashMap<String, Integer> wordNum;
 	//
 	public int windowSize,wordSize, hiddenSize, H;
 	public int K = 5;
@@ -31,12 +32,13 @@ public class WindowModel {
 	/**
 	 * Initializes the weights randomly. 
 	 */
-	public void initWeights(SimpleMatrix wordMat){
+	public void initWeights(SimpleMatrix wordMat, HashMap<String, Integer> wordToNum){
 		//TODO
 		// initialize with bias inside as the last column
 		// W = SimpleMatrix...
 		// U for the score
 		// U = SimpleMatrix...
+		wordNum = wordToNum;
 		L = wordMat;
 		int lastIndex = wordSize*windowSize;
 		W = SimpleMatrix.random(H,lastIndex + 1,0,1, new Random());
@@ -55,6 +57,13 @@ public class WindowModel {
 	 */
 	public void train(List<Datum> _trainData ){
 		//	TODO
+		for(int index = 0; index < _trainData.size(); index++){
+			// SimpleMatrix xVector = new SimpleMatrix(wordSize*windowSize,1);
+			// for(int wordIndex = index - (windowSize/2); wordIndex <= index + (windowSize/2); wordIndex++){
+
+			// }
+		}
+
 	}
 
 	
@@ -64,6 +73,7 @@ public class WindowModel {
 
 	public void baselineTrain(List<Datum> _trainData ){
 		for(Datum data: _trainData){
+			System.out.println(data.word);
 			exactMatches.put(data.word, data.label);
 		}
 	}
@@ -150,7 +160,7 @@ public class WindowModel {
 	}
 
 	private SimpleMatrix gFunction(SimpleMatrix inputVector){
-		SimpleMatrix inputVec = hFunction(zFunction(inputVector))
+		SimpleMatrix inputVec = hFunction(zFunction(inputVector));
 		SimpleMatrix newVec = SimpleMatrix.random(inputVec.numRows(),1,1,1, new Random());
 		newVec.insertIntoThis(0,0,inputVec);
 
