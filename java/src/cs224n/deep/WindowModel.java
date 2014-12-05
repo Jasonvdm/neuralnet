@@ -103,6 +103,17 @@ public class WindowModel {
 		return costF + (lambda * (wSum + uSum))/(2*m);
 	}
 
+	public void gradientCheck() {
+		double epsilon = 0.0004;
+		// Change L by epsilon first
+
+		for (int i = 0; i < L.numRows(); i++){
+			for (int j = 0; j < L.numCols(); j++){
+				L.set(i, j, L.get(i,j) + epsilon);
+				
+			}
+		}
+	}
 
 	public void baselineTest(List<Datum> testData){
 		try{
