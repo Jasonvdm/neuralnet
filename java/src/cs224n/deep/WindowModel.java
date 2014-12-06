@@ -71,10 +71,11 @@ public class WindowModel {
 	public void train(List<Datum> _trainData ){
 		//	TODO
 		for(int index = 0; index < 10; index++){//_trainData.size(); index++){
-			System.out.println(index);
+			System.out.println(_trainData.get(index).word+"\t"+_trainData.get(index).label);
+			String currentWord = _trainData.get(index).word.toLowerCase();
 			SimpleMatrix xVector = new SimpleMatrix(wordSize*windowSize,1);
 			SimpleMatrix yVector = new SimpleMatrix(K,1);
-			int[] wordNums = new int[windowSize]();
+			int[] wordNums = new int[windowSize];
 			int startToken = wordNum.get("<s>");
 			int endToken = wordNum.get("</s>");
 			boolean hitDocStart = false;
@@ -82,19 +83,25 @@ public class WindowModel {
 				continue;
 			}
 			yVector.set(convertLabelToInt.get(_trainData.get(index).label),0,0);
-			wordNums[windowSize/2] = wordNum.get(_trainData.get(index).word);
+			wordNums[windowSize/2] = wordNum.get(currentWord);
 
-			for(int wordIndex = index-1; wordIndex >= index - (windowSize/2); wordIndex--){
-				if(_trainData.get(wordIndex).word.equals("-DOCSTART-")) hitDocStart = true;
-				if(hitDocStart) wordNums[wordIndex - index + (windowSize/2)] = wordNum.get(startToken);
-				else wordNums[wordIndex - index + (windowSize/2)] = wordNum.get(_trainData.get(wordIndex).word);
+			for(int wordIndex = index-1; wordIndex >= index - (windowSize/2); wordIndex--){ 
+				if(!hitDocStart && _trainData.get(wordIndex).word.equals("-DOCSTART-")) hitDocStart = true;
+				if(hitDocStart) wordNums[wordIndex - index + (windowSize/2)] = startToken;
+				else {
+					currentWord = _trainData.get(wordIndex).word.toLowerCase(); 
+					wordNums[wordIndex - index + (windowSize/2)] = wordNum.get(currentWord);
+				}
 			}
 
 			hitDocStart = false;
 			for(int wordIndex = index+1; wordIndex <= index + (windowSize/2); wordIndex++){
-				if(_trainData.get(wordIndex).word.equals("-DOCSTART-")) hitDocStart = true;
-				if(hitDocStart) wordNums[wordIndex - index + (windowSize/2)] = wordNum.get(endToken);
-				else wordNums[wordIndex - index + (windowSize/2)] = wordNum.get(_trainData.get(wordIndex).word);
+				if(wordIndex >= _trainData.size() || _trainData.get(wordIndex).word.equals("-DOCSTART-")) hitDocStart = true;
+				if(hitDocStart) wordNums[wordIndex - index + (windowSize/2)] = endToken;
+				else {
+					currentWord = _trainData.get(wordIndex).word.toLowerCase(); 
+					wordNums[wordIndex - index + (windowSize/2)] = wordNum.get(currentWord);
+				}
 			}
 
 			for(int wordIndex = 0; wordIndex < windowSize; wordIndex++){
@@ -182,6 +189,7 @@ public class WindowModel {
 		// }
 
 		SimpleMatrix theta = new SimpleMatrix(U);
+		System.out.println("U: "+U.numRows()+"x"+U.numCols());
 		for (int i = 0; i < theta.numRows(); i++){
 			for (int j = 0; j < theta.numCols(); j++){
 				theta.set(i, j, theta.get(i,j) + epsilon);
@@ -229,8 +237,9 @@ public class WindowModel {
 	}
 
 	private SimpleMatrix zFunction(SimpleMatrix inputVector){
-		SimpleMatrix newVec = SimpleMatrix.random(inputVector.numRows(),1,1,1, new Random());
+		SimpleMatrix newVec = SimpleMatrix.random(inputVector.numRows()+1,1,1,1, new Random());
 		newVec.insertIntoThis(0,0,inputVector);
+		//System.out.println("W: "+W.numRows()+"x"+W.numCols() + "\tX: "+newVec.numRows()+"x"+newVec.numCols());
 		return W.mult(newVec);
 	}
 
@@ -246,7 +255,7 @@ public class WindowModel {
 
 	private SimpleMatrix gFunction(SimpleMatrix inputVector){
 		SimpleMatrix inputVec = hFunction(zFunction(inputVector));
-		SimpleMatrix newVec = SimpleMatrix.random(inputVec.numRows(),1,1,1, new Random());
+		SimpleMatrix newVec = SimpleMatrix.random(inputVec.numRows()+1,1,1,1, new Random());
 		newVec.insertIntoThis(0,0,inputVec);
 
 		SimpleMatrix gMat = U.mult(newVec);
@@ -264,7 +273,10 @@ public class WindowModel {
 
 	private double uGradient(int i, int j, SimpleMatrix inputVector, SimpleMatrix trueLabel){
 		SimpleMatrix delta2 = trueLabel.minus(gFunction(inputVector));
-		SimpleMatrix a = hFunction(zFunction(inputVector));
+		SimpleMatrix atemp = hFunction(zFunction(inputVector));
+		SimpleMatrix a = SimpleMatrix.random(atemp.numRows()+1,1,1,1, new Random());
+		a.insertIntoThis(0,0,atemp);
+		System.out.println("delta2: "+delta2.numRows()+"x"+delta2.numCols() + "\ta: "+a.numRows()+"x"+a.numCols());
 		return delta2.get(i)*a.get(j);
 	}
 
