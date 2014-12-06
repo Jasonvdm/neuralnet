@@ -54,11 +54,11 @@ public class WindowModel {
 		L = wordMat;
 		wordNum = wordToNum;
 		int lastIndex = wordSize*windowSize;
-		W = SimpleMatrix.random(H,lastIndex + 1,0,1, new Random());
+		W = SimpleMatrix.random(H,lastIndex + 1,-Math.sqrt(6)/Math.sqrt(windowSize*wordSize + H),Math.sqrt(6)/Math.sqrt(windowSize*wordSize + H), new Random());
 		for(int i = 0; i < H; i++){
 			W.set(i, lastIndex, 1);
 		}
-		U = SimpleMatrix.random(K,H+1,0,1, new Random());
+		U = SimpleMatrix.random(K,H+1,-Math.sqrt(6)/Math.sqrt(windowSize*wordSize + H),Math.sqrt(6)/Math.sqrt(windowSize*wordSize + H), new Random());
 		for(int i = 0; i < K; i++){
 			U.set(i,H,1);
 		}
@@ -70,8 +70,8 @@ public class WindowModel {
 	 */
 	public void train(List<Datum> _trainData ){
 		//	TODO
-		m = _trainData.size();
-		for(int index = 0; index < _trainData.size(); index++){
+		m = 10;//_trainData.size();
+		for(int index = 0; index < 10; index++){
 			//System.out.println(_trainData.get(index).word+"\t"+_trainData.get(index).label);
 			String currentWord = _trainData.get(index).word;
 			SimpleMatrix xVector = new SimpleMatrix(wordSize*windowSize,1);
@@ -83,7 +83,7 @@ public class WindowModel {
 			if(_trainData.get(index).word.equals("-DOCSTART-")){
 				continue;
 			}
-			yVector.set(convertLabelToInt.get(_trainData.get(index).label),0,0);
+			yVector.set(convertLabelToInt.get(_trainData.get(index).label),0,1);
 			wordNums[windowSize/2] = getWordsNumber(currentWord);
 
 			for(int wordIndex = index-1; wordIndex >= index - (windowSize/2); wordIndex--){ 
@@ -139,7 +139,7 @@ public class WindowModel {
 		for (int j=0; j < K; j++) {
 			lTotal += yLabels.get(j) * Math.log(gFunction(xVector).get(j));
 		}
-		return (-1 * lTotal/m);
+		return (-1*lTotal/m);
 	}
 
 	public double regularizedCostFunction(SimpleMatrix xVector, SimpleMatrix yLabels) {
@@ -202,10 +202,12 @@ public class WindowModel {
 				double jPlus = costFunction(xVector, yLabels);
 				U.set(i, j, U.get(i,j) - 2*epsilon);
 				double jMinus = costFunction(xVector, yLabels);
-				double costDiff = (jPlus - jMinus)/(2*epsilon);
-				double gradientVal = uGradient(i,j, xVector, yLabels);
-				diffVector.add(gradientVal - costDiff);
+				//System.out.println(jPlus + " : "+jMinus);
+				double costDiff = (jPlus - jMinus)/(2.0*epsilon);
 				U.set(i, j, U.get(i,j) + epsilon);
+				double gradientVal = uGradient(i,j, xVector, yLabels);
+				//System.out.println(gradientVal + " : "+costDiff);
+				diffVector.add(gradientVal - costDiff);
 			}
 		}
 
