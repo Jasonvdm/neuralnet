@@ -20,7 +20,7 @@ public class WindowModel {
 	//
 	public int windowSize,wordSize, hiddenSize, H;
 	public int K = 5;
-	public int m = 1;
+	public int m;
 
 	public int[][] matrix;
 
@@ -70,9 +70,10 @@ public class WindowModel {
 	 */
 	public void train(List<Datum> _trainData ){
 		//	TODO
-		for(int index = 0; index < 10; index++){//_trainData.size(); index++){
-			System.out.println(_trainData.get(index).word+"\t"+_trainData.get(index).label);
-			String currentWord = _trainData.get(index).word.toLowerCase();
+		m = _trainData.size();
+		for(int index = 0; index < _trainData.size(); index++){
+			//System.out.println(_trainData.get(index).word+"\t"+_trainData.get(index).label);
+			String currentWord = _trainData.get(index).word;
 			SimpleMatrix xVector = new SimpleMatrix(wordSize*windowSize,1);
 			SimpleMatrix yVector = new SimpleMatrix(K,1);
 			int[] wordNums = new int[windowSize];
@@ -83,14 +84,14 @@ public class WindowModel {
 				continue;
 			}
 			yVector.set(convertLabelToInt.get(_trainData.get(index).label),0,0);
-			wordNums[windowSize/2] = wordNum.get(currentWord);
+			wordNums[windowSize/2] = getWordsNumber(currentWord);
 
 			for(int wordIndex = index-1; wordIndex >= index - (windowSize/2); wordIndex--){ 
 				if(!hitDocStart && _trainData.get(wordIndex).word.equals("-DOCSTART-")) hitDocStart = true;
 				if(hitDocStart) wordNums[wordIndex - index + (windowSize/2)] = startToken;
 				else {
-					currentWord = _trainData.get(wordIndex).word.toLowerCase(); 
-					wordNums[wordIndex - index + (windowSize/2)] = wordNum.get(currentWord);
+					currentWord = _trainData.get(wordIndex).word; 
+					wordNums[wordIndex - index + (windowSize/2)] = getWordsNumber(currentWord);
 				}
 			}
 
@@ -99,8 +100,8 @@ public class WindowModel {
 				if(wordIndex >= _trainData.size() || _trainData.get(wordIndex).word.equals("-DOCSTART-")) hitDocStart = true;
 				if(hitDocStart) wordNums[wordIndex - index + (windowSize/2)] = endToken;
 				else {
-					currentWord = _trainData.get(wordIndex).word.toLowerCase(); 
-					wordNums[wordIndex - index + (windowSize/2)] = wordNum.get(currentWord);
+					currentWord = _trainData.get(wordIndex).word; 
+					wordNums[wordIndex - index + (windowSize/2)] = getWordsNumber(currentWord);
 				}
 			}
 
@@ -112,6 +113,12 @@ public class WindowModel {
 			}
 			gradientCheck(xVector,yVector);
 		}
+	}
+
+	private int getWordsNumber(String word){
+		String lowerWord = word.toLowerCase();
+		if(wordNum.containsKey(lowerWord)) return wordNum.get(lowerWord);
+		return wordNum.get("UUUNKKK");
 	}
 
 	
@@ -188,17 +195,17 @@ public class WindowModel {
 		// 	}
 		// }
 
-		SimpleMatrix theta = new SimpleMatrix(U);
-		System.out.println("U: "+U.numRows()+"x"+U.numCols());
-		for (int i = 0; i < theta.numRows(); i++){
-			for (int j = 0; j < theta.numCols(); j++){
-				theta.set(i, j, theta.get(i,j) + epsilon);
+		//System.out.println("U: "+U.numRows()+"x"+U.numCols());
+		for (int i = 0; i < U.numRows(); i++){
+			for (int j = 0; j < U.numCols(); j++){
+				U.set(i, j, U.get(i,j) + epsilon);
 				double jPlus = costFunction(xVector, yLabels);
-				theta.set(i, j, theta.get(i,j) - 2*epsilon);
+				U.set(i, j, U.get(i,j) - 2*epsilon);
 				double jMinus = costFunction(xVector, yLabels);
-				double costDiff = (jPlus - jMinus)/2*epsilon;
+				double costDiff = (jPlus - jMinus)/(2*epsilon);
 				double gradientVal = uGradient(i,j, xVector, yLabels);
 				diffVector.add(gradientVal - costDiff);
+				U.set(i, j, U.get(i,j) + epsilon);
 			}
 		}
 
@@ -276,7 +283,7 @@ public class WindowModel {
 		SimpleMatrix atemp = hFunction(zFunction(inputVector));
 		SimpleMatrix a = SimpleMatrix.random(atemp.numRows()+1,1,1,1, new Random());
 		a.insertIntoThis(0,0,atemp);
-		System.out.println("delta2: "+delta2.numRows()+"x"+delta2.numCols() + "\ta: "+a.numRows()+"x"+a.numCols());
+		//System.out.println("delta2: "+delta2.numRows()+"x"+delta2.numCols() + "\ta: "+a.numRows()+"x"+a.numCols());
 		return delta2.get(i)*a.get(j);
 	}
 
