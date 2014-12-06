@@ -87,7 +87,7 @@ public class WindowModel {
 			if(_trainData.get(index).word.equals("-DOCSTART-")){
 				continue;
 			}
-			yVector.set(convertLabelToInt.get(_trainData.get(index).label),0,0);
+			yVector.set(convertLabelToInt.get(_trainData.get(index).label),0,1);
 			wordNums[windowSize/2] = getWordsNumber(currentWord);
 
 			for(int wordIndex = index-1; wordIndex >= index - (windowSize/2); wordIndex--){ 
@@ -144,7 +144,11 @@ public class WindowModel {
 		double lTotal = 0;
 		for (int i = 0; i < m; i++) {
 			for (int j = 0; j < K; j++) {
-				lTotal += YMatrix.get(i, j) * Math.log(gFunction(XMatrix).get(i, j));
+				SimpleMatrix xVector = new SimpleMatrix(nC,1);		
+				for(int k = 0; k < nC; k++){
+					xVector.set(k,0, XMatrix.get(k,i));
+				}
+				lTotal += YMatrix.get(j, i) * Math.log(gFunction(xVector).get(j));
 			}
 		}
 		return (-1 * lTotal/m);
@@ -175,15 +179,16 @@ public class WindowModel {
 
 	public void gradientCheck() {
 		double epsilon = 0.0004;
-		ArrayList diffVector = new ArrayList<Double>();
-		SimpleMatrix xVector = new SimpleMatrix(nC,1);
-		SimpleMatrix yVector = new SimpleMatrix(K,1);
-		for(int i = 0; i < nC; i++){
-			xVector.set(i,1, XMatrix.get(i,0));
-		}
-		for(int i = 0; i < K; i++){
-			yVector.set(i,1, YMatrix.get(i,0));
-		}
+		for(int index = 0; index < m; index++){
+			ArrayList diffVector = new ArrayList<Double>();
+			SimpleMatrix xVector = new SimpleMatrix(nC,1);
+			SimpleMatrix yVector = new SimpleMatrix(K,1);
+			for(int i = 0; i < nC; i++){
+				xVector.set(i,0, XMatrix.get(i,index));
+			}
+			for(int i = 0; i < K; i++){
+				yVector.set(i,0, YMatrix.get(i,index));
+			}
 		// Change L by epsilon first
 		// SimpleMatrix theta = new SimpleMatrix(L);
 		// for (int i = 0; i < theta.numRows(); i++){
@@ -212,21 +217,25 @@ public class WindowModel {
 		// }
 
 		//System.out.println("U: "+U.numRows()+"x"+U.numCols());
-		for (int i = 0; i < U.numRows(); i++){
-			for (int j = 0; j < U.numCols(); j++){
-				U.set(i, j, U.get(i,j) + epsilon);
-				double jPlus = costFunction();
-				U.set(i, j, U.get(i,j) - 2*epsilon);
-				double jMinus = costFunction();
-				double costDiff = (jPlus - jMinus)/(2*epsilon);
-				double gradientVal = uGradient(i,j, xVector, yVector);
-				diffVector.add(gradientVal - costDiff);
-				U.set(i, j, U.get(i,j) + epsilon);
+			for (int i = 0; i < U.numRows(); i++){
+				for (int j = 0; j < U.numCols(); j++){
+					U.set(i, j, U.get(i,j) + epsilon);
+					double jPlus = costFunction();
+					U.set(i, j, U.get(i,j) - 2*epsilon);
+					double jMinus = costFunction();
+					//System.out.println(jPlus +" : "+ jMinus);
+					double costDiff = (jPlus - jMinus)/(2*epsilon);
+					U.set(i, j, U.get(i,j) + epsilon);
+					double gradientVal = uGradient(i,j, xVector, yVector);
+					//System.out.println(gradientVal +" : "+ costDiff);
+					System.out.println(gradientVal - costDiff);
+					diffVector.add(gradientVal - costDiff);
+				}
 			}
-		}
 
-		double gradientDifference = normalizeVector(diffVector);
-		System.out.println("Gradient difference is: " + gradientDifference);
+			double gradientDifference = normalizeVector(diffVector);
+			System.out.println("Gradient difference is: " + gradientDifference);
+		}
 	}
 
 	private double normalizeVector(ArrayList<Double> list) {
