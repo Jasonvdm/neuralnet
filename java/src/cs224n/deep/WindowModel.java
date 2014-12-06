@@ -214,11 +214,11 @@ public class WindowModel {
 				double jPlus = costFunction();
 				U.set(i, j, U.get(i,j) - 2*epsilon);
 				double jMinus = costFunction();
-					//System.out.println(jPlus +" : "+ jMinus);
+				//System.out.println(jPlus +" : "+ jMinus);
 				double costDiff = (jPlus - jMinus)/(2*epsilon);
 				U.set(i, j, U.get(i,j) + epsilon);
 				double gradientVal = uGradient(i,j);
-					//System.out.println(gradientVal +" : "+ costDiff);
+				System.out.println(gradientVal +" : "+ costDiff);
 				System.out.println(gradientVal - costDiff);
 				diffVector.add(gradientVal - costDiff);
 			}
@@ -294,7 +294,7 @@ public class WindowModel {
 	}
 
 	private double uGradient(int i, int j){
-		int sum = 0;
+		double sum = 0;
 		for(int index = 0; index < m; index++){
 			SimpleMatrix xVector = new SimpleMatrix(nC,1);
 			SimpleMatrix yVector = new SimpleMatrix(K,1);
