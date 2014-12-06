@@ -71,9 +71,10 @@ public class WindowModel {
 	public void train(List<Datum> _trainData ){
 		//	TODO
 		for(int index = 0; index < 10; index++){//_trainData.size(); index++){
+			System.out.println(index);
 			SimpleMatrix xVector = new SimpleMatrix(wordSize*windowSize,1);
 			SimpleMatrix yVector = new SimpleMatrix(K,1);
-			int[] wordNums = new int[windowSize];
+			int[] wordNums = new int[windowSize]();
 			int startToken = wordNum.get("<s>");
 			int endToken = wordNum.get("</s>");
 			boolean hitDocStart = false;
