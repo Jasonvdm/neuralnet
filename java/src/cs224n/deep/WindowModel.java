@@ -54,11 +54,11 @@ public class WindowModel {
 		L = wordMat;
 		wordNum = wordToNum;
 		int lastIndex = wordSize*windowSize;
-		W = SimpleMatrix.random(H,lastIndex + 1,-Math.sqrt(6)/Math.sqrt(windowSize*wordSize + H),Math.sqrt(6)/Math.sqrt(windowSize*wordSize + H), new Random());
+		W = SimpleMatrix.random(H,lastIndex + 1,0,1, new Random());
 		for(int i = 0; i < H; i++){
 			W.set(i, lastIndex, 1);
 		}
-		U = SimpleMatrix.random(K,H+1,-Math.sqrt(6)/Math.sqrt(windowSize*wordSize + H),Math.sqrt(6)/Math.sqrt(windowSize*wordSize + H), new Random());
+		U = SimpleMatrix.random(K,H+1,0,1, new Random());
 		for(int i = 0; i < K; i++){
 			U.set(i,H,1);
 		}
@@ -70,8 +70,8 @@ public class WindowModel {
 	 */
 	public void train(List<Datum> _trainData ){
 		//	TODO
-		m = 10;//_trainData.size();
-		for(int index = 0; index < 10; index++){
+		m = _trainData.size();
+		for(int index = 0; index < _trainData.size(); index++){
 			//System.out.println(_trainData.get(index).word+"\t"+_trainData.get(index).label);
 			String currentWord = _trainData.get(index).word;
 			SimpleMatrix xVector = new SimpleMatrix(wordSize*windowSize,1);
@@ -83,7 +83,7 @@ public class WindowModel {
 			if(_trainData.get(index).word.equals("-DOCSTART-")){
 				continue;
 			}
-			yVector.set(convertLabelToInt.get(_trainData.get(index).label),0,1);
+			yVector.set(convertLabelToInt.get(_trainData.get(index).label),0,0);
 			wordNums[windowSize/2] = getWordsNumber(currentWord);
 
 			for(int wordIndex = index-1; wordIndex >= index - (windowSize/2); wordIndex--){ 
@@ -133,17 +133,19 @@ public class WindowModel {
 	}
 
 
-	public double costFunction(SimpleMatrix xVector, SimpleMatrix yLabels){
+	public double costFunction(){
 		double cost = 0;
 		double lTotal = 0;
-		for (int j=0; j < K; j++) {
-			lTotal += yLabels.get(j) * Math.log(gFunction(xVector).get(j));
+		for (int i = 0; i < M; i++) {
+			for (int j = 0; j < K; j++) {
+				lTotal += YMatrix.get(i, j) * Math.log(gFunction(XMatrix).get(i, j));
+			}
 		}
-		return (-1*lTotal/m);
+		return (-1 * lTotal/m);
 	}
 
-	public double regularizedCostFunction(SimpleMatrix xVector, SimpleMatrix yLabels) {
-		double costF = costFunction(xVector, yLabels);
+	public double regularizedCostFunction() {
+		double costF = costFunction();
 
 		double lambda = 1.0;
 		int nC = 50 * 3;
@@ -202,12 +204,10 @@ public class WindowModel {
 				double jPlus = costFunction(xVector, yLabels);
 				U.set(i, j, U.get(i,j) - 2*epsilon);
 				double jMinus = costFunction(xVector, yLabels);
-				//System.out.println(jPlus + " : "+jMinus);
-				double costDiff = (jPlus - jMinus)/(2.0*epsilon);
-				U.set(i, j, U.get(i,j) + epsilon);
+				double costDiff = (jPlus - jMinus)/(2*epsilon);
 				double gradientVal = uGradient(i,j, xVector, yLabels);
-				//System.out.println(gradientVal + " : "+costDiff);
 				diffVector.add(gradientVal - costDiff);
+				U.set(i, j, U.get(i,j) + epsilon);
 			}
 		}
 
