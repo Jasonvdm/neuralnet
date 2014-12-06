@@ -11,7 +11,7 @@ import java.text.*;
 
 public class WindowModel {
 
-	protected SimpleMatrix L, W, Wout, U;
+	protected SimpleMatrix L, W, Wout, U, XMatrix, YMatrix;
 
 	private HashMap<String,String> exactMatches = new HashMap<String, String>();
 	HashMap<String, Integer> wordNum;
@@ -20,6 +20,7 @@ public class WindowModel {
 	//
 	public int windowSize,wordSize, hiddenSize, H;
 	public int K = 5;
+	public int nC;
 	public int m;
 
 	public int[][] matrix;
@@ -28,6 +29,7 @@ public class WindowModel {
 		//TODO
 		windowSize = _windowSize;
 		wordSize = 50;
+		nC = wordSize*windowSize;
 		hiddenSize = _hiddenSize;
 		H = _hiddenSize;
 		convertIntToLabel.put(0,"O");
@@ -53,12 +55,12 @@ public class WindowModel {
 		// U = SimpleMatrix...
 		L = wordMat;
 		wordNum = wordToNum;
-		int lastIndex = wordSize*windowSize;
-		W = SimpleMatrix.random(H,lastIndex + 1,0,1, new Random());
+		int lastIndex = nC;
+		W = SimpleMatrix.random(H,lastIndex + 1,-Math.sqrt(6)/Math.sqrt(nC + H),Math.sqrt(6)/Math.sqrt(nC + H), new Random());
 		for(int i = 0; i < H; i++){
 			W.set(i, lastIndex, 1);
 		}
-		U = SimpleMatrix.random(K,H+1,0,1, new Random());
+		U = SimpleMatrix.random(K,H+1,-Math.sqrt(6)/Math.sqrt(nC + H),Math.sqrt(6)/Math.sqrt(nC + H), new Random());
 		for(int i = 0; i < K; i++){
 			U.set(i,H,1);
 		}
@@ -70,11 +72,13 @@ public class WindowModel {
 	 */
 	public void train(List<Datum> _trainData ){
 		//	TODO
-		m = _trainData.size();
-		for(int index = 0; index < _trainData.size(); index++){
+		m = 10;//_trainData.size();
+		XMatrix = new SimpleMatrix(nC,m);
+		YMatrix = new SimpleMatrix(K,m);
+		for(int index = 0; index < 10; index++){
 			//System.out.println(_trainData.get(index).word+"\t"+_trainData.get(index).label);
 			String currentWord = _trainData.get(index).word;
-			SimpleMatrix xVector = new SimpleMatrix(wordSize*windowSize,1);
+			SimpleMatrix xVector = new SimpleMatrix(nC,1);
 			SimpleMatrix yVector = new SimpleMatrix(K,1);
 			int[] wordNums = new int[windowSize];
 			int startToken = wordNum.get("<s>");
@@ -111,8 +115,10 @@ public class WindowModel {
 					xVector.set(wordIndex*wordSize+j,0,L.get(i,j));
 				}
 			}
-			gradientCheck(xVector,yVector);
+			XMatrix.insertIntoThis(0,index,xVector);
+			YMatrix.insertIntoThis(0,index,yVector);
 		}
+		gradientCheck();
 	}
 
 	private int getWordsNumber(String word){
@@ -167,9 +173,17 @@ public class WindowModel {
 		return costF + (lambda * (wSum + uSum))/(2*m);
 	}
 
-	public void gradientCheck(SimpleMatrix xVector, SimpleMatrix yLabels) {
+	public void gradientCheck() {
 		double epsilon = 0.0004;
 		ArrayList diffVector = new ArrayList<Double>();
+		SimpleMatrix xVector = new SimpleMatrix(nC,1);
+		SimpleMatrix yVector = new SimpleMatrix(K,1);
+		for(int i = 0; i < nC; i++){
+			xVector.set(i,1, XMatrix.get(i,0));
+		}
+		for(int i = 0; i < K; i++){
+			yVector.set(i,1, YMatrix.get(i,0));
+		}
 		// Change L by epsilon first
 		// SimpleMatrix theta = new SimpleMatrix(L);
 		// for (int i = 0; i < theta.numRows(); i++){
