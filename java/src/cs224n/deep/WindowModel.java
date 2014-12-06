@@ -142,7 +142,7 @@ public class WindowModel {
 	public double costFunction(){
 		double cost = 0;
 		double lTotal = 0;
-		for (int i = 0; i < M; i++) {
+		for (int i = 0; i < m; i++) {
 			for (int j = 0; j < K; j++) {
 				lTotal += YMatrix.get(i, j) * Math.log(gFunction(XMatrix).get(i, j));
 			}
@@ -215,11 +215,11 @@ public class WindowModel {
 		for (int i = 0; i < U.numRows(); i++){
 			for (int j = 0; j < U.numCols(); j++){
 				U.set(i, j, U.get(i,j) + epsilon);
-				double jPlus = costFunction(xVector, yLabels);
+				double jPlus = costFunction();
 				U.set(i, j, U.get(i,j) - 2*epsilon);
-				double jMinus = costFunction(xVector, yLabels);
+				double jMinus = costFunction();
 				double costDiff = (jPlus - jMinus)/(2*epsilon);
-				double gradientVal = uGradient(i,j, xVector, yLabels);
+				double gradientVal = uGradient(i,j, xVector, yVector);
 				diffVector.add(gradientVal - costDiff);
 				U.set(i, j, U.get(i,j) + epsilon);
 			}
