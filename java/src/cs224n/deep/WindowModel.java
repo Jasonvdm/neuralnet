@@ -11,7 +11,7 @@ import java.text.*;
 
 public class WindowModel {
 
-	protected SimpleMatrix L, W, Wout, U, XMatrix, YMatrix, b1, b2;
+	protected SimpleMatrix L, W, Wout, U, XMatrix, YMatrix, b1, b2, LGrad, WGrad, UGrad, b1Grad, b2Grad;
 
 	private HashMap<String,String> exactMatches = new HashMap<String, String>();
 	HashMap<String, Integer> wordNum;
@@ -180,6 +180,7 @@ public class WindowModel {
 			for(int i = 0; i < K; i++){
 				yVector.set(i,0, YMatrix.get(i,index));
 			}
+			b2Gradient(xVector,yVector);
 		// Change L by epsilon first
 		// SimpleMatrix theta = new SimpleMatrix(L);
 		// for (int i = 0; i < theta.numRows(); i++){
@@ -216,7 +217,7 @@ public class WindowModel {
 					//System.out.println(jPlus +" : "+ jMinus);
 				double costDiff = (jPlus - jMinus)/(2*epsilon);
 				b2.set(i, 0, b2.get(i,0) + epsilon);
-				double gradientVal = b2Gradient(i, xVector, yVector);
+				double gradientVal = b2Grad.get(i,0);
 					//System.out.println(gradientVal +" : "+ costDiff);
 					//System.out.println(gradientVal - costDiff);
 				diffVector.add(gradientVal - costDiff);
@@ -298,16 +299,15 @@ public class WindowModel {
 		return gMat;
 	}
 
-	private double uGradient(int i, int j, SimpleMatrix xVector, SimpleMatrix yVector){
-			SimpleMatrix delta2 = yVector.minus(gFunction(xVector));
+	private void uGradient(SimpleMatrix xVector, SimpleMatrix yVector){
+			SimpleMatrix delta2 = gFunction(xVector).minus(yVector);
 			SimpleMatrix a = hFunction(zFunction(xVector));
 		//System.out.println("delta2: "+delta2.numRows()+"x"+delta2.numCols() + "\ta: "+a.numRows()+"x"+a.numCols());
-		return -1*delta2.get(i)*a.get(j);
+		UGrad = delta2.mult(a.transpose());
 	}
 
-	private double b2Gradient(int i, SimpleMatrix xVector, SimpleMatrix yVector){
-		SimpleMatrix delta2 = yVector.minus(gFunction(xVector));
-		return -1*delta2.get(i);
+	private void b2Gradient(SimpleMatrix xVector, SimpleMatrix yVector){
+		b2Grad = gFunction(xVector).minus(yVector);
 	}
 
 	private double wGradient(int i, int j, SimpleMatrix inputVector, SimpleMatrix trueLabel){
