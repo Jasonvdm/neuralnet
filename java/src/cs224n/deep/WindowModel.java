@@ -11,7 +11,7 @@ import java.text.*;
 
 public class WindowModel {
 
-	protected SimpleMatrix L, W, Wout, U, XMatrix, YMatrix;
+	protected SimpleMatrix L, W, Wout, U, XMatrix, YMatrix, b1, b2, LGrad, WGrad, UGrad, b1Grad, b2Grad;
 
 	private HashMap<String,String> exactMatches = new HashMap<String, String>();
 	HashMap<String, Integer> wordNum;
@@ -55,14 +55,10 @@ public class WindowModel {
 		// U = SimpleMatrix...
 		L = wordMat;
 		wordNum = wordToNum;
-		W = SimpleMatrix.random(H,nC + 1,-Math.sqrt(6)/Math.sqrt(nC + H),Math.sqrt(6)/Math.sqrt(nC + H), new Random());
-		for(int i = 0; i < H; i++){
-			W.set(i, nC, 1);
-		}
-		U = SimpleMatrix.random(K,H+1,-Math.sqrt(6)/Math.sqrt(K + H),Math.sqrt(6)/Math.sqrt(K + H), new Random());
-		for(int i = 0; i < K; i++){
-			U.set(i,H,1);
-		}
+		W = SimpleMatrix.random(H,nC,-Math.sqrt(6)/Math.sqrt(nC + H),Math.sqrt(6)/Math.sqrt(nC + H), new Random());
+		U = SimpleMatrix.random(K,H,-Math.sqrt(6)/Math.sqrt(K + H),Math.sqrt(6)/Math.sqrt(K + H), new Random());
+		b1 = new SimpleMatrix(H,1);
+		b2 = new SimpleMatrix(K,1);
 	}
 
 
@@ -71,10 +67,10 @@ public class WindowModel {
 	 */
 	public void train(List<Datum> _trainData ){
 		//	TODO
-		m = 100;//_trainData.size();
+		m = 10;//_trainData.size();
 		XMatrix = new SimpleMatrix(nC,m);
 		YMatrix = new SimpleMatrix(K,m);
-		for(int index = 0; index < 100; index++){
+		for(int index = 0; index < 10; index++){
 			//System.out.println(_trainData.get(index).word+"\t"+_trainData.get(index).label);
 			String currentWord = _trainData.get(index).word;
 			SimpleMatrix xVector = new SimpleMatrix(nC,1);
@@ -84,7 +80,7 @@ public class WindowModel {
 			int endToken = wordNum.get("</s>");
 			boolean hitDocStart = false;
 			if(_trainData.get(index).word.equals("-DOCSTART-")){
-				continue;
+				hitDocStart = true;
 			}
 			yVector.set(convertLabelToInt.get(_trainData.get(index).label),0,1);
 			wordNums[windowSize/2] = getWordsNumber(currentWord);
@@ -99,6 +95,9 @@ public class WindowModel {
 			}
 
 			hitDocStart = false;
+			if(_trainData.get(index).word.equals("-DOCSTART-")){
+				hitDocStart = true;
+			}
 			for(int wordIndex = index+1; wordIndex <= index + (windowSize/2); wordIndex++){
 				if(wordIndex >= _trainData.size() || _trainData.get(wordIndex).word.equals("-DOCSTART-")) hitDocStart = true;
 				if(hitDocStart) wordNums[wordIndex - index + (windowSize/2)] = endToken;
@@ -140,7 +139,6 @@ public class WindowModel {
 
 
 	public double costFunction(SimpleMatrix inputVector, SimpleMatrix trueLabel){
-		double cost = 0;
 		double lTotal = 0;
 		for (int j = 0; j < K; j++) {
 			lTotal += trueLabel.get(j) * Math.log(gFunction(inputVector).get(j));
@@ -183,6 +181,7 @@ public class WindowModel {
 			for(int i = 0; i < K; i++){
 				yVector.set(i,0, YMatrix.get(i,index));
 			}
+			b2Gradient(xVector,yVector);
 		// Change L by epsilon first
 		// SimpleMatrix theta = new SimpleMatrix(L);
 		// for (int i = 0; i < theta.numRows(); i++){
@@ -210,23 +209,36 @@ public class WindowModel {
 		// 	}
 		// }
 
-		//System.out.println("U: "+U.numRows()+"x"+U.numCols());
-			for (int i = 0; i < U.numRows(); i++){
-				for (int j = 0; j < U.numCols(); j++){
-					U.set(i, j, U.get(i,j) + epsilon);
-					double jPlus = costFunction(xVector,yVector);
-					U.set(i, j, U.get(i,j) - 2*epsilon);
-					double jMinus = costFunction(xVector,yVector);
+		//System.out.println("b2: "+b2.numRows()+"x"+b2.numCols());
+			for(int i = 0; i < b2.numRows(); i ++){
+				b2.set(i,0,b2.get(i,0)+epsilon);
+				double jPlus = costFunction(xVector,yVector);
+				b2.set(i, 0, b2.get(i,0) - 2*epsilon);
+				double jMinus = costFunction(xVector,yVector);
 					//System.out.println(jPlus +" : "+ jMinus);
-					double costDiff = (jPlus - jMinus)/(2*epsilon);
-					U.set(i, j, U.get(i,j) + epsilon);
-					double gradientVal = uGradient(i,j, xVector, yVector);
-					System.out.println(gradientVal +" : "+ costDiff);
+				double costDiff = (jPlus - jMinus)/(2*epsilon);
+				b2.set(i, 0, b2.get(i,0) + epsilon);
+				double gradientVal = b2Grad.get(i,0);
+					//System.out.println(gradientVal +" : "+ costDiff);
 					//System.out.println(gradientVal - costDiff);
-					diffVector.add(gradientVal - costDiff);
-				}
+				diffVector.add(gradientVal - costDiff);
 			}
-			
+			// for (int i = 0; i < U.numRows(); i++){
+			// 	for (int j = 0; j < U.numCols(); j++){
+			// 		U.set(i, j, U.get(i,j) + epsilon);
+			// 		double jPlus = costFunction(xVector,yVector);
+			// 		U.set(i, j, U.get(i,j) - 2*epsilon);
+			// 		double jMinus = costFunction(xVector,yVector);
+			// 		//System.out.println(jPlus +" : "+ jMinus);
+			// 		double costDiff = (jPlus - jMinus)/(2*epsilon);
+			// 		U.set(i, j, U.get(i,j) + epsilon);
+			// 		double gradientVal = uGradient(i,j, xVector, yVector);
+			// 		//System.out.println(gradientVal +" : "+ costDiff);
+			// 		//System.out.println(gradientVal - costDiff);
+			// 		diffVector.add(gradientVal - costDiff);
+			// 	}
+			// }
+
 			double gradientDifference = normalizeVector(diffVector);
 			System.out.println("Gradient difference is: " + gradientDifference);
 		}
@@ -263,10 +275,7 @@ public class WindowModel {
 	}
 
 	private SimpleMatrix zFunction(SimpleMatrix inputVector){
-		SimpleMatrix newVec = SimpleMatrix.random(inputVector.numRows()+1,1,1,1, new Random());
-		newVec.insertIntoThis(0,0,inputVector);
-		//System.out.println("W: "+W.numRows()+"x"+W.numCols() + "\tX: "+newVec.numRows()+"x"+newVec.numCols());
-		return W.mult(newVec);
+		return W.mult(inputVector).plus(b1);
 	}
 
 	private SimpleMatrix hFunction(SimpleMatrix inputVector){
@@ -294,13 +303,15 @@ public class WindowModel {
 		return gMat;
 	}
 
-	private double uGradient(int i, int j, SimpleMatrix xVector, SimpleMatrix yVector){
-			SimpleMatrix delta2 = yVector.minus(gFunction(xVector));
-			SimpleMatrix atemp = hFunction(zFunction(xVector));
-			SimpleMatrix a = SimpleMatrix.random(atemp.numRows()+1,1,1,1, new Random());
-			a.insertIntoThis(0,0,atemp);
+	private void uGradient(SimpleMatrix xVector, SimpleMatrix yVector){
+			SimpleMatrix delta2 = gFunction(xVector).minus(yVector);
+			SimpleMatrix a = hFunction(zFunction(xVector));
 		//System.out.println("delta2: "+delta2.numRows()+"x"+delta2.numCols() + "\ta: "+a.numRows()+"x"+a.numCols());
-		return -1*delta2.get(i)*a.get(j);
+		UGrad = delta2.mult(a.transpose());
+	}
+
+	private void b2Gradient(SimpleMatrix xVector, SimpleMatrix yVector){
+		b2Grad = gFunction(xVector).minus(yVector);
 	}
 
 	private double wGradient(int i, int j, SimpleMatrix inputVector, SimpleMatrix trueLabel){
