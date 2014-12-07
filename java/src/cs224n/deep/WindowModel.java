@@ -184,32 +184,34 @@ public class WindowModel {
 			b2Gradient(xVector,yVector);
 			uGradient(xVector,yVector);
 			wGradient(xVector,yVector);
+			lGradient(xVector,yVector);
 			// Change L by epsilon first
 			// SimpleMatrix theta = new SimpleMatrix(L);
-			// for (int i = 0; i < theta.numRows(); i++){
-			// 	for (int j = 0; j < theta.numCols(); j++){
-			// 		theta.set(i, j, theta.get(i,j) + epsilon);
-			// 		double jPlus = costFunction(xVector, yVector);
-			// 		theta.set(i, j, theta.get(i,j) - 2*epsilon);
-			// 		double jMinus = costFunction(xVector, yVector);
-			// 		double costDiff = (jPlus - jMinus)/2*epsilon;
-			// 		double gradientVal = uGradient(i,j, xVector, yVector);
-			// 		diffVector.add(gradientVal - costDiff);
-			// 	}
-			// }
-
-			for (int i = 0; i < W.numRows(); i++){
-				for (int j = 0; j < W.numCols(); j++){
-					W.set(i, j, W.get(i,j) + epsilon);
+			for (int i = 0; i < L.numRows(); i++){
+				for (int j = 0; j < L.numCols(); j++){
+					L.set(i, j, L.get(i,j) + epsilon);
 					double jPlus = costFunction(xVector, yVector);
-					W.set(i, j, W.get(i,j) - 2*epsilon);
+					L.set(i, j, L.get(i,j) - 2*epsilon);
 					double jMinus = costFunction(xVector, yVector);
 					double costDiff = (jPlus - jMinus)/2*epsilon;
-					W.set(i, j, W.get(i,j) + epsilon);
-					double gradientVal = WGrad.get(i,j);
+					L.set(i, j, L.get(i,j) + epsilon);
+					double gradientVal = LGrad.get(i,j);
 					diffVector.add(gradientVal - costDiff);
 				}
 			}
+
+			// for (int i = 0; i < W.numRows(); i++){
+			// 	for (int j = 0; j < W.numCols(); j++){
+			// 		W.set(i, j, W.get(i,j) + epsilon);
+			// 		double jPlus = costFunction(xVector, yVector);
+			// 		W.set(i, j, W.get(i,j) - 2*epsilon);
+			// 		double jMinus = costFunction(xVector, yVector);
+			// 		double costDiff = (jPlus - jMinus)/2*epsilon;
+			// 		W.set(i, j, W.get(i,j) + epsilon);
+			// 		double gradientVal = WGrad.get(i,j);
+			// 		diffVector.add(gradientVal - costDiff);
+			// 	}
+			// }
 			for(int i = 0; i < b1.numRows(); i ++){
 				b1.set(i,0,b1.get(i,0)+epsilon);
 				double jPlus = costFunction(xVector,yVector);
@@ -330,7 +332,12 @@ public class WindowModel {
 		for(int index = 0; index < H; index++){
 			tanTerm.set(index,0,(1.0-Math.pow(Math.tanh(z.get(index,0)),2)));
 		}
-		WGrad = ((U.transpose().mult(delta2)).elementMult(tanTerm)).mult(xVector.transpose());
+		SimpleMatrix firstTerm = U.transpose().mult(delta2);
+		SimpleMatrix temp = new SimpleMatrix(H,H);
+		for(int i = 0; i < H; i++){
+			temp.set(i,i,firstTerm.get(i,0));
+		}
+		WGrad = temp.mult(tanTerm.mult(xVector.transpose()));
 	}
 
 	private void b1Gradient(SimpleMatrix xVector, SimpleMatrix trueLabel){
@@ -341,6 +348,16 @@ public class WindowModel {
 			tanTerm.set(index,0,(1.0-Math.pow(Math.tanh(z.get(index,0)),2)));
 		}
 		b1Grad = (U.transpose().mult(delta2)).elementMult(tanTerm);
+	}
+
+	private void lGradient(SimpleMatrix xVector, SimpleMatrix trueLabel){
+		SimpleMatrix delta2 = pFunction(xVector).minus(trueLabel);
+		SimpleMatrix tanTerm = new SimpleMatrix(H,1);
+		SimpleMatrix z = zFunction(xVector);
+		for(int index = 0; index < H; index++){
+			tanTerm.set(index,0,(1.0-Math.pow(Math.tanh(z.get(index,0)),2)));
+		}
+		LGrad = W.transpose().mult((U.transpose().mult(delta2)).elementMult(tanTerm));
 	}
 
 
