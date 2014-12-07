@@ -55,12 +55,11 @@ public class WindowModel {
 		// U = SimpleMatrix...
 		L = wordMat;
 		wordNum = wordToNum;
-		int lastIndex = nC;
-		W = SimpleMatrix.random(H,lastIndex + 1,-Math.sqrt(6)/Math.sqrt(nC + H),Math.sqrt(6)/Math.sqrt(nC + H), new Random());
+		W = SimpleMatrix.random(H,nC + 1,-Math.sqrt(6)/Math.sqrt(nC + H),Math.sqrt(6)/Math.sqrt(nC + H), new Random());
 		for(int i = 0; i < H; i++){
-			W.set(i, lastIndex, 1);
+			W.set(i, nC, 1);
 		}
-		U = SimpleMatrix.random(K,H+1,-Math.sqrt(6)/Math.sqrt(nC + H),Math.sqrt(6)/Math.sqrt(nC + H), new Random());
+		U = SimpleMatrix.random(K,H+1,-Math.sqrt(6)/Math.sqrt(K + H),Math.sqrt(6)/Math.sqrt(K + H), new Random());
 		for(int i = 0; i < K; i++){
 			U.set(i,H,1);
 		}
@@ -139,23 +138,17 @@ public class WindowModel {
 	}
 
 
-	public double costFunction(){
+	public double costFunction(SimpleMatrix inputVector, SimpleMatrix trueLabel){
 		double cost = 0;
 		double lTotal = 0;
-		for (int i = 0; i < m; i++) {
-			for (int j = 0; j < K; j++) {
-				SimpleMatrix xVector = new SimpleMatrix(nC,1);		
-				for(int k = 0; k < nC; k++){
-					xVector.set(k,0, XMatrix.get(k,i));
-				}
-				lTotal += YMatrix.get(j, i) * Math.log(gFunction(xVector).get(j));
-			}
+		for (int j = 0; j < K; j++) {
+			lTotal += trueLabel.get(j) * Math.log(gFunction(inputVector).get(j));
 		}
-		return (-1 * lTotal/m);
+		return (-1 * lTotal);
 	}
 
-	public double regularizedCostFunction() {
-		double costF = costFunction();
+	public double regularizedCostFunction(SimpleMatrix input, SimpleMatrix label) {
+		double costF = costFunction(input, label);
 
 		double lambda = 1.0;
 		int nC = 50 * 3;
@@ -179,7 +172,16 @@ public class WindowModel {
 
 	public void gradientCheck() {
 		double epsilon = 0.0001;
-		ArrayList diffVector = new ArrayList<Double>();
+		for(int index = 0; index < m; index++){
+			ArrayList diffVector = new ArrayList<Double>();
+			SimpleMatrix xVector = new SimpleMatrix(nC,1);
+			SimpleMatrix yVector = new SimpleMatrix(K,1);
+			for(int i = 0; i < nC; i++){
+				xVector.set(i,0, XMatrix.get(i,index));
+			}
+			for(int i = 0; i < K; i++){
+				yVector.set(i,0, YMatrix.get(i,index));
+			}
 		// Change L by epsilon first
 		// SimpleMatrix theta = new SimpleMatrix(L);
 		// for (int i = 0; i < theta.numRows(); i++){
@@ -208,24 +210,25 @@ public class WindowModel {
 		// }
 
 		//System.out.println("U: "+U.numRows()+"x"+U.numCols());
-		for (int i = 0; i < U.numRows(); i++){
-			for (int j = 0; j < U.numCols(); j++){
-				U.set(i, j, U.get(i,j) + epsilon);
-				double jPlus = costFunction();
-				U.set(i, j, U.get(i,j) - 2*epsilon);
-				double jMinus = costFunction();
-				//System.out.println(jPlus +" : "+ jMinus);
-				double costDiff = (jPlus - jMinus)/(2*epsilon);
-				U.set(i, j, U.get(i,j) + epsilon);
-				double gradientVal = uGradient(i,j);
-				System.out.println(gradientVal +" : "+ costDiff);
-				System.out.println(gradientVal - costDiff);
-				diffVector.add(gradientVal - costDiff);
+			for (int i = 0; i < U.numRows(); i++){
+				for (int j = 0; j < U.numCols(); j++){
+					U.set(i, j, U.get(i,j) + epsilon);
+					double jPlus = costFunction(xVector,yVector);
+					U.set(i, j, U.get(i,j) - 2*epsilon);
+					double jMinus = costFunction(xVector,yVector);
+					//System.out.println(jPlus +" : "+ jMinus);
+					double costDiff = (jPlus - jMinus)/(2*epsilon);
+					U.set(i, j, U.get(i,j) + epsilon);
+					double gradientVal = uGradient(i,j, xVector, yVector);
+					System.out.println(gradientVal +" : "+ costDiff);
+					//System.out.println(gradientVal - costDiff);
+					diffVector.add(gradientVal - costDiff);
+				}
 			}
+			
+			double gradientDifference = normalizeVector(diffVector);
+			System.out.println("Gradient difference is: " + gradientDifference);
 		}
-
-		double gradientDifference = normalizeVector(diffVector);
-		System.out.println("Gradient difference is: " + gradientDifference);
 	}
 
 	private double normalizeVector(ArrayList<Double> list) {
@@ -267,10 +270,9 @@ public class WindowModel {
 
 	private SimpleMatrix hFunction(SimpleMatrix inputVector){
 		int numRows = inputVector.numRows();
-		int numCols = inputVector.numCols();
-		SimpleMatrix output = new SimpleMatrix(numRows, numCols);
-		for(int index = 0; index < numRows*numCols; index++){
-			output.set(index, Math.tanh(inputVector.get(index)));
+		SimpleMatrix output = new SimpleMatrix(numRows, 1);
+		for(int index = 0; index < numRows; index++){
+			output.set(index,0, Math.tanh(inputVector.get(index,0)));
 		}
 		return output;
 	}
@@ -281,37 +283,23 @@ public class WindowModel {
 		newVec.insertIntoThis(0,0,inputVec);
 
 		SimpleMatrix gMat = U.mult(newVec);
-		int numRows = gMat.numRows();
-		int numCols = gMat.numCols();
 		int denom = 0;
-		for(int index = 0; index < numCols*numRows; index++){
-			denom += Math.exp(gMat.get(index));
+		for(int index = 0; index < K; index++){
+			denom += Math.exp(gMat.get(index,0));
 		}
-		for(int index = 0; index < numCols*numRows; index++){
-			gMat.set(index, Math.exp(gMat.get(index))/denom);
+		for(int index = 0; index < K; index++){
+			gMat.set(index,0, Math.exp(gMat.get(index))/denom);
 		}
 		return gMat;
 	}
 
-	private double uGradient(int i, int j){
-		double sum = 0;
-		for(int index = 0; index < m; index++){
-			SimpleMatrix xVector = new SimpleMatrix(nC,1);
-			SimpleMatrix yVector = new SimpleMatrix(K,1);
-			for(int k = 0; k < nC; k++){
-				xVector.set(k,0, XMatrix.get(k,index));
-			}
-			for(int k = 0; k < K; k++){
-				yVector.set(k,0, YMatrix.get(k,index));
-			}
+	private double uGradient(int i, int j, SimpleMatrix xVector, SimpleMatrix yVector){
 			SimpleMatrix delta2 = yVector.minus(gFunction(xVector));
 			SimpleMatrix atemp = hFunction(zFunction(xVector));
 			SimpleMatrix a = SimpleMatrix.random(atemp.numRows()+1,1,1,1, new Random());
 			a.insertIntoThis(0,0,atemp);
 		//System.out.println("delta2: "+delta2.numRows()+"x"+delta2.numCols() + "\ta: "+a.numRows()+"x"+a.numCols());
-			sum += delta2.get(i)*a.get(j);
-		}
-		return (-1*sum/m);
+		return -1*delta2.get(i)*a.get(j);
 	}
 
 	private double wGradient(int i, int j, SimpleMatrix inputVector, SimpleMatrix trueLabel){
