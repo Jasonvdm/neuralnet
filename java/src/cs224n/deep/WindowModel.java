@@ -283,7 +283,7 @@ public class WindowModel {
 		newVec.insertIntoThis(0,0,inputVec);
 
 		SimpleMatrix gMat = U.mult(newVec);
-		int denom = 0;
+		double denom = 0;
 		for(int index = 0; index < K; index++){
 			denom += Math.exp(gMat.get(index,0));
 		}
