@@ -22,6 +22,7 @@ public class WindowModel {
 	public int K = 5;
 	public int nC;
 	public int m;
+	public double learningRate;
 
 	public int[][] matrix;
 
@@ -32,6 +33,7 @@ public class WindowModel {
 		nC = wordSize*windowSize;
 		hiddenSize = _hiddenSize;
 		H = _hiddenSize;
+		learningRate = _lr;
 		convertIntToLabel.put(0,"O");
 		convertIntToLabel.put(1,"MISC");
 		convertIntToLabel.put(2,"PER");
@@ -116,7 +118,42 @@ public class WindowModel {
 			XMatrix.insertIntoThis(0,index,xVector);
 			YMatrix.insertIntoThis(0,index,yVector);
 		}
-		gradientCheck();
+		// gradientCheck();
+
+
+	}
+
+	private void runSGD(){
+		int iters = 10;
+		for (int step = 0; step < iters; step++){
+			
+		}
+	}
+
+
+	private void updateU(SimpleMatrix xVector, SimpleMatrix yVector){
+		uGradient(xVector, yVector);
+		U = U.minus(UGrad.scale(learningRate));
+	}
+
+	private void updateW(SimpleMatrix xVector, SimpleMatrix yVector){
+		wGradient(xVector, yVector);
+		W = W.minus(UGrad.scale(learningRate));	
+	}
+
+	private void updateL(SimpleMatrix xVector, SimpleMatrix yVector){
+		uGradient(xVector, yVector);
+		U = U.minus(UGrad.scale(learningRate));
+	}
+
+	private void updateB1(SimpleMatrix xVector, SimpleMatrix yVector){
+		b1Gradient(xVector, yVector);
+		b1 = b1.minus(UGrad.scale(learningRate));	
+	}
+
+	private void updateB2(SimpleMatrix xVector, SimpleMatrix yVector){
+		b2Gradient(xVector, yVector);
+		b2 = b2.minus(UGrad.scale(learningRate));
 	}
 
 	private int getWordsNumber(String word){
