@@ -58,7 +58,7 @@ public class WindowModel {
 		// W = SimpleMatrix...
 		// U for the score
 		// U = SimpleMatrix...
-		L = wordMat;
+		L = SimpleMatrix.random(wordMat.numRows(),wordMat.numCols(),-1,1, new Random());
 		wordNum = wordToNum;
 		W = SimpleMatrix.random(H,nC,-Math.sqrt(6)/Math.sqrt(nC + H),Math.sqrt(6)/Math.sqrt(nC + H), new Random());
 		U = SimpleMatrix.random(K,H,-Math.sqrt(6)/Math.sqrt(K + H),Math.sqrt(6)/Math.sqrt(K + H), new Random());
