@@ -9,14 +9,15 @@ import org.ejml.simple.SimpleMatrix;
 public class NER {
     
     public static void main(String[] args) throws IOException {
-	if (args.length < 2) {
-	    System.out.println("USAGE: java -cp classes NER ../data/train ../data/dev");
+	if (args.length < 3) {
+	    System.out.println("USAGE: java -cp classes NER ../data/train ../data/dev fileName");
 	    return;
 	}	    
 
 	// this reads in the train and test datasets
 	List<Datum> trainData = FeatureFactory.readTrainData(args[0]);
-	List<Datum> testData = FeatureFactory.readTestData(args[1]);	
+	List<Datum> testData = FeatureFactory.readTestData(args[1]);
+	String outPutFile = args[2];	
 	
 	//	read the train and test data
 	//TODO: Implement this function (just reads in vocab and word vectors)
@@ -24,14 +25,15 @@ public class NER {
 	SimpleMatrix allVecs= FeatureFactory.readWordVectors("../data/wordVectors.txt");
 
 	// initialize model 
-	WindowModel model = new WindowModel(3, 100,0.001);
+	WindowModel model = new WindowModel(5, 100,0.001,0.00001);
+	System.out.println(outPutFile);
 	HashMap<String, Integer> wordToNum = FeatureFactory.wordToNum;
 	model.initWeights(allVecs, wordToNum);
 
 
 	//TODO: Implement those two functions
 	model.train(trainData);
-	model.test(testData);
+	model.test(testData, outPutFile);
 	model.baselineTrain(trainData);
 	model.baselineTest(testData);
     }

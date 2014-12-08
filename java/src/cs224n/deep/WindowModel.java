@@ -23,11 +23,13 @@ public class WindowModel {
 	public int nC;
 	public int m;
 	public double learningRate;
+	public double lambda;
 
 	public int[][] matrix;
 
-	public WindowModel(int _windowSize, int _hiddenSize, double _lr){
+	public WindowModel(int _windowSize, int _hiddenSize, double _lr, double _lambda){
 		//TODO
+		lambda = _lambda;
 		windowSize = _windowSize;
 		wordSize = 50;
 		nC = wordSize*windowSize;
@@ -72,7 +74,7 @@ public class WindowModel {
 		m = _trainData.size();
 		XMatrix = new SimpleMatrix(windowSize,m);
 		YMatrix = new SimpleMatrix(K,m);
-		for(int index = 0; index < _trainData.size(); index++){
+		for(int index = 0; index < m; index++){
 			//System.out.println(_trainData.get(index).word+"\t"+_trainData.get(index).label);
 			String currentWord = _trainData.get(index).word;
 			SimpleMatrix xVector = new SimpleMatrix(nC,1);
@@ -120,7 +122,7 @@ public class WindowModel {
 	}
 
 	private void runSGD(){
-		int iters = 5;
+		int iters = 10;
 		for (int step = 0; step < iters; step++){
 			System.out.println(step);
 			for(int exampleNum = 0; exampleNum < m; exampleNum++){
@@ -142,7 +144,7 @@ public class WindowModel {
 				b2Gradient(xVector, yVector);
 				updateU();
 				updateW();
-				//updateL(exampleNum);
+				updateL(exampleNum);
 				updateB1();
 				updateB2();
 			}
@@ -183,7 +185,7 @@ public class WindowModel {
 	}
 
 	
-	public void test(List<Datum> testData){
+	public void test(List<Datum> testData, String fileName){
 		testXMatrix = new SimpleMatrix(windowSize,testData.size());
 		for(int index = 0; index < testData.size(); index++){
 			//System.out.println(testData.get(index).word+"\t"+testData.get(index).label);
@@ -224,20 +226,17 @@ public class WindowModel {
 			}
 		}
 		try{
-			File f = new File("../neural100.out");
-			PrintWriter writer = new PrintWriter("../neural100.out", "UTF-8");
+			File f = new File("neural.out");
+			PrintWriter writer = new PrintWriter("neural.out", "UTF-8");
 			for(int exampleNum = 0; exampleNum < testData.size(); exampleNum++){
 				SimpleMatrix xVector = new SimpleMatrix(nC,1);
 				for(int wordIndex = 0; wordIndex < windowSize; wordIndex++){
-					int i = (int)XMatrix.get(wordIndex,exampleNum);
+					int i = (int)testXMatrix.get(wordIndex,exampleNum);
 					for(int j = 0; j < wordSize; j++){
 						xVector.set(wordIndex*wordSize+j,0,L.get(i,j));
 					}
 				}
 				String guessedLabel = predictLabel(xVector);
-				if(exactMatches.containsKey(testData.get(exampleNum).word)){
-					guessedLabel = exactMatches.get(testData.get(exampleNum).word);
-				}
 				writer.println(testData.get(exampleNum).word + "\t" + testData.get(exampleNum).label +"\t"+ guessedLabel);
 			}
 			writer.close();
@@ -448,6 +447,12 @@ public class WindowModel {
 		UGrad = delta2.mult(a.transpose());
 	}
 
+	private void uRegGradient(SimpleMatrix xVector, SimpleMatrix yVector){
+		SimpleMatrix delta2 = pFunction(xVector).minus(yVector);
+		SimpleMatrix a = aFunction(xVector);
+		UGrad = delta2.mult(a.transpose()).plus(U.scale(lambda));
+	}
+
 	private void b2Gradient(SimpleMatrix xVector, SimpleMatrix yVector){
 		b2Grad = pFunction(xVector).minus(yVector);
 	}
@@ -460,6 +465,16 @@ public class WindowModel {
 			tanTerm.set(index,0,(1.0-Math.pow(Math.tanh(z.get(index,0)),2)));
 		}
 		WGrad = tanTerm.elementMult(U.transpose().mult(delta2)).mult(xVector.transpose());
+	}
+
+	private void wRegGradient(SimpleMatrix xVector, SimpleMatrix trueLabel){
+		SimpleMatrix delta2 = pFunction(xVector).minus(trueLabel);
+		SimpleMatrix tanTerm = new SimpleMatrix(H,1);
+		SimpleMatrix z = zFunction(xVector);
+		for(int index = 0; index < H; index++){
+			tanTerm.set(index,0,(1.0-Math.pow(Math.tanh(z.get(index,0)),2)));
+		}
+		WGrad = (tanTerm.elementMult(U.transpose().mult(delta2)).mult(xVector.transpose())).plus(W.scale(lambda));
 	}
 
 	private void b1Gradient(SimpleMatrix xVector, SimpleMatrix trueLabel){
