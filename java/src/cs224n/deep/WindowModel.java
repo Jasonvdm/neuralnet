@@ -29,6 +29,7 @@ public class WindowModel {
 
 	public WindowModel(int _windowSize, int _hiddenSize, double _lr, double _lambda){
 		//TODO
+		System.out.println(_windowSize + " : " +_hiddenSize + " : " +_lr + " : " + _lambda);
 		lambda = _lambda;
 		windowSize = _windowSize;
 		wordSize = 50;
