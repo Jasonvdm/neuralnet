@@ -54,15 +54,16 @@ public class FeatureFactory {
 	// Look up table matrix with all word vectors as defined in lecture with dimensionality n x |V|
 	//access it directly in WindowModel
 	public static SimpleMatrix readWordVectors(String vecFilename) throws IOException {
-		SimpleMatrix allVecs = new SimpleMatrix(100232, 50); 
+		SimpleMatrix allVecs = new SimpleMatrix(10255, 50); 
 		int wordIndex = 0;
 		try{
 			BufferedReader br = new BufferedReader(new FileReader(vecFilename));
 			String line;
 			while ((line = br.readLine()) != null) {
-				String[] stringVec = line.split(" ");
+				String[] stringVec = line.split("\\s+");
 				int index = 0;
 				for (String s : stringVec) {
+					if(s.equals("")) continue;
 					double value = Double.parseDouble(s);
 					allVecs.set(wordIndex, index, value);
 					index++;

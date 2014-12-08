@@ -22,7 +22,7 @@ public class NER {
 	//	read the train and test data
 	//TODO: Implement this function (just reads in vocab and word vectors)
 	FeatureFactory.initializeVocab("../data/vocab.txt");
-	SimpleMatrix allVecs= FeatureFactory.readWordVectors("../data/wordVectors.txt");
+	SimpleMatrix allVecs= FeatureFactory.readWordVectors("../data/word2vec.txt");
 
 	// initialize model 
 	WindowModel model = new WindowModel(5, 100,0.01,0.00001);
