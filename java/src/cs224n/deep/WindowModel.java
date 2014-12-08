@@ -29,6 +29,7 @@ public class WindowModel {
 
 	public WindowModel(int _windowSize, int _hiddenSize, double _lr, double _lambda){
 		//TODO
+		System.out.println(_windowSize + " : " +_hiddenSize + " : " +_lr + " : " + _lambda);
 		lambda = _lambda;
 		windowSize = _windowSize;
 		wordSize = 50;
@@ -137,8 +138,8 @@ public class WindowModel {
 				for(int i = 0; i < K; i++){
 					yVector.set(i,0, YMatrix.get(i,exampleNum));
 				}
-				uGradient(xVector, yVector);
-				wGradient(xVector, yVector);
+				uRegGradient(xVector, yVector);
+				wRegGradient(xVector, yVector);
 				lGradient(xVector, yVector);
 				b1Gradient(xVector, yVector);
 				b2Gradient(xVector, yVector);
