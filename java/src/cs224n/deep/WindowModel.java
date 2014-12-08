@@ -137,8 +137,8 @@ public class WindowModel {
 				for(int i = 0; i < K; i++){
 					yVector.set(i,0, YMatrix.get(i,exampleNum));
 				}
-				uGradient(xVector, yVector);
-				wGradient(xVector, yVector);
+				uRegGradient(xVector, yVector);
+				wRegGradient(xVector, yVector);
 				lGradient(xVector, yVector);
 				b1Gradient(xVector, yVector);
 				b2Gradient(xVector, yVector);
