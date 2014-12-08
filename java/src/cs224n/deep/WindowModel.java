@@ -11,7 +11,7 @@ import java.text.*;
 
 public class WindowModel {
 
-	protected SimpleMatrix L, W, Wout, U, XMatrix, YMatrix, b1, b2, LGrad, WGrad, UGrad, b1Grad, b2Grad;
+	protected SimpleMatrix L, W, Wout, U, XMatrix, YMatrix, testXMatrix, b1, b2, LGrad, WGrad, UGrad, b1Grad, b2Grad;
 
 	private HashMap<String,String> exactMatches = new HashMap<String, String>();
 	HashMap<String, Integer> wordNum;
@@ -69,10 +69,10 @@ public class WindowModel {
 	 */
 	public void train(List<Datum> _trainData ){
 		//	TODO
-		m = 10;//_trainData.size();
-		XMatrix = new SimpleMatrix(nC,m);
+		m = _trainData.size();
+		XMatrix = new SimpleMatrix(windowSize,m);
 		YMatrix = new SimpleMatrix(K,m);
-		for(int index = 0; index < 10; index++){
+		for(int index = 0; index < _trainData.size(); index++){
 			//System.out.println(_trainData.get(index).word+"\t"+_trainData.get(index).label);
 			String currentWord = _trainData.get(index).word;
 			SimpleMatrix xVector = new SimpleMatrix(nC,1);
@@ -108,52 +108,72 @@ public class WindowModel {
 					wordNums[wordIndex - index + (windowSize/2)] = getWordsNumber(currentWord);
 				}
 			}
-
-			for(int wordIndex = 0; wordIndex < windowSize; wordIndex++){
-				int i = wordNums[wordIndex];
-				for(int j = 0; j < wordSize; j++){
-					xVector.set(wordIndex*wordSize+j,0,L.get(i,j));
-				}
+			for(int wordNumIndex = 0; wordNumIndex<windowSize; wordNumIndex++){
+				XMatrix.set(wordNumIndex,index,wordNums[wordNumIndex]);
 			}
-			XMatrix.insertIntoThis(0,index,xVector);
+
 			YMatrix.insertIntoThis(0,index,yVector);
 		}
-		// gradientCheck();
-
+		//gradientCheck();
+		runSGD();
 
 	}
 
 	private void runSGD(){
-		int iters = 10;
+		int iters = 100;
 		for (int step = 0; step < iters; step++){
-			
+			System.out.println(step);
+			for(int exampleNum = 0; exampleNum < m; exampleNum++){
+				SimpleMatrix xVector = new SimpleMatrix(nC,1);
+				SimpleMatrix yVector = new SimpleMatrix(K,1);
+				for(int wordIndex = 0; wordIndex < windowSize; wordIndex++){
+					int i = (int)XMatrix.get(wordIndex,exampleNum);
+					for(int j = 0; j < wordSize; j++){
+						xVector.set(wordIndex*wordSize+j,0,L.get(i,j));
+					}
+				}
+				for(int i = 0; i < K; i++){
+					yVector.set(i,0, YMatrix.get(i,exampleNum));
+				}
+				uGradient(xVector, yVector);
+				wGradient(xVector, yVector);
+				lGradient(xVector, yVector);
+				b1Gradient(xVector, yVector);
+				b2Gradient(xVector, yVector);
+				updateU();
+				updateW();
+				updateL(exampleNum);
+				updateB1();
+				updateB2();
+			}
 		}
 	}
 
 
-	private void updateU(SimpleMatrix xVector, SimpleMatrix yVector){
-		uGradient(xVector, yVector);
+	private void updateU(){
 		U = U.minus(UGrad.scale(learningRate));
 	}
 
-	private void updateW(SimpleMatrix xVector, SimpleMatrix yVector){
-		wGradient(xVector, yVector);
-		W = W.minus(UGrad.scale(learningRate));	
+	private void updateW(){
+		W = W.minus(WGrad.scale(learningRate));	
 	}
 
-	private void updateL(SimpleMatrix xVector, SimpleMatrix yVector){
-		uGradient(xVector, yVector);
-		U = U.minus(UGrad.scale(learningRate));
+	private void updateL(int exampleNum){
+		for(int index = 0; index < windowSize; index++){
+			int updateIndex = (int)XMatrix.get(index,exampleNum);
+			for(int singleWordIndex = 0; singleWordIndex < wordSize; singleWordIndex++){
+				double oldVal = L.get(updateIndex,singleWordIndex);
+				L.set(updateIndex,singleWordIndex,oldVal - learningRate*LGrad.get(index*wordSize+singleWordIndex,0));
+			}
+		}
 	}
 
-	private void updateB1(SimpleMatrix xVector, SimpleMatrix yVector){
-		b1Gradient(xVector, yVector);
-		b1 = b1.minus(UGrad.scale(learningRate));	
+	private void updateB1(){
+		b1 = b1.minus(b1Grad.scale(learningRate));	
 	}
 
-	private void updateB2(SimpleMatrix xVector, SimpleMatrix yVector){
-		b2Gradient(xVector, yVector);
-		b2 = b2.minus(UGrad.scale(learningRate));
+	private void updateB2(){
+		b2 = b2.minus(b2Grad.scale(learningRate));
 	}
 
 	private int getWordsNumber(String word){
@@ -164,7 +184,80 @@ public class WindowModel {
 
 	
 	public void test(List<Datum> testData){
-		// TODO
+		testXMatrix = new SimpleMatrix(windowSize,testData.size());
+		for(int index = 0; index < testData.size(); index++){
+			//System.out.println(testData.get(index).word+"\t"+testData.get(index).label);
+			String currentWord = testData.get(index).word;
+			SimpleMatrix xVector = new SimpleMatrix(nC,1);
+			int[] wordNums = new int[windowSize];
+			int startToken = wordNum.get("<s>");
+			int endToken = wordNum.get("</s>");
+			boolean hitDocStart = false;
+			if(testData.get(index).word.equals("-DOCSTART-")){
+				hitDocStart = true;
+			}
+			wordNums[windowSize/2] = getWordsNumber(currentWord);
+
+			for(int wordIndex = index-1; wordIndex >= index - (windowSize/2); wordIndex--){ 
+				if(!hitDocStart && testData.get(wordIndex).word.equals("-DOCSTART-")) hitDocStart = true;
+				if(hitDocStart) wordNums[wordIndex - index + (windowSize/2)] = startToken;
+				else {
+					currentWord = testData.get(wordIndex).word; 
+					wordNums[wordIndex - index + (windowSize/2)] = getWordsNumber(currentWord);
+				}
+			}
+
+			hitDocStart = false;
+			if(testData.get(index).word.equals("-DOCSTART-")){
+				hitDocStart = true;
+			}
+			for(int wordIndex = index+1; wordIndex <= index + (windowSize/2); wordIndex++){
+				if(wordIndex >= testData.size() || testData.get(wordIndex).word.equals("-DOCSTART-")) hitDocStart = true;
+				if(hitDocStart) wordNums[wordIndex - index + (windowSize/2)] = endToken;
+				else {
+					currentWord = testData.get(wordIndex).word; 
+					wordNums[wordIndex - index + (windowSize/2)] = getWordsNumber(currentWord);
+				}
+			}
+			for(int wordNumIndex = 0; wordNumIndex<windowSize; wordNumIndex++){
+				testXMatrix.set(wordNumIndex,index,wordNums[wordNumIndex]);
+			}
+		}
+		try{
+			File f = new File("../neural100.out");
+			PrintWriter writer = new PrintWriter("../neural100.out", "UTF-8");
+			for(int exampleNum = 0; exampleNum < testData.size(); exampleNum++){
+				SimpleMatrix xVector = new SimpleMatrix(nC,1);
+				for(int wordIndex = 0; wordIndex < windowSize; wordIndex++){
+					int i = (int)XMatrix.get(wordIndex,exampleNum);
+					for(int j = 0; j < wordSize; j++){
+						xVector.set(wordIndex*wordSize+j,0,L.get(i,j));
+					}
+				}
+				String guessedLabel = predictLabel(xVector);
+				if(exactMatches.containsKey(testData.get(exampleNum).word)){
+					guessedLabel = exactMatches.get(testData.get(exampleNum).word);
+				}
+				writer.println(testData.get(exampleNum).word + "\t" + testData.get(exampleNum).label +"\t"+ guessedLabel);
+			}
+			writer.close();
+		}
+		catch(Exception e){
+			e.printStackTrace();
+		}
+	}
+	private String predictLabel(SimpleMatrix xVector){
+		SimpleMatrix g = pFunction(xVector);
+		int bestIndex = 0;
+		double bestVal = g.get(0,0);
+		for(int i = 1; i < K; i++){
+			double value = g.get(i,0);
+			if(value > bestVal){
+				bestVal = value;
+				bestIndex = i;
+			}
+		}
+		return convertIntToLabel.get(bestIndex);
 	}
 
 	public void baselineTrain(List<Datum> _trainData ){
@@ -211,8 +304,11 @@ public class WindowModel {
 			ArrayList diffVector = new ArrayList<Double>();
 			SimpleMatrix xVector = new SimpleMatrix(nC,1);
 			SimpleMatrix yVector = new SimpleMatrix(K,1);
-			for(int i = 0; i < nC; i++){
-				xVector.set(i,0, XMatrix.get(i,index));
+			for(int wordIndex = 0; wordIndex < windowSize; wordIndex++){
+				int i = (int)XMatrix.get(wordIndex,index);
+				for(int j = 0; j < wordSize; j++){
+					xVector.set(wordIndex*wordSize+j,0,L.get(i,j));
+				}
 			}
 			for(int i = 0; i < K; i++){
 				yVector.set(i,0, YMatrix.get(i,index));
