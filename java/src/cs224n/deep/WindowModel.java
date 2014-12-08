@@ -120,7 +120,7 @@ public class WindowModel {
 	}
 
 	private void runSGD(){
-		int iters = 100;
+		int iters = 5;
 		for (int step = 0; step < iters; step++){
 			System.out.println(step);
 			for(int exampleNum = 0; exampleNum < m; exampleNum++){
@@ -142,7 +142,7 @@ public class WindowModel {
 				b2Gradient(xVector, yVector);
 				updateU();
 				updateW();
-				updateL(exampleNum);
+				//updateL(exampleNum);
 				updateB1();
 				updateB2();
 			}
