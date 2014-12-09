@@ -19,3 +19,13 @@ If you want to develop on the command line, use the following commands:
 $ mkdir classes
 $ ant
 $ java -Xmx1g -cp "classes:extlib/*" cs224n.deep.NER ../data/train ../data/dev -print
+
+In order to check the accuracy of the system run this command from the java folder
+$ ./../conlleval -r -d '\t' < neural.out
+
+To change the Parameters:
+Windowsize, H, learning rate, and lambda are all passed into constructor of the model.
+The number of epochs to run SGD for is set in the runSGD() function, on line 127 of WindowModel
+
+To use randomly initialized word vectors, comment out line 62, and uncomment line 61 of WindowModel
+

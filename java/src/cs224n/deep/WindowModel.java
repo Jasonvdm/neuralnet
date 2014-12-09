@@ -124,8 +124,8 @@ public class WindowModel {
 	}
 
 	private void runSGD(){
-		int iters = 10;
-		for (int step = 0; step < iters; step++){
+		int epochs = 10;
+		for (int step = 0; step < epochs; step++){
 			System.out.println(step);
 			for(int exampleNum = 0; exampleNum < m; exampleNum++){
 				SimpleMatrix xVector = new SimpleMatrix(nC,1);
@@ -187,7 +187,7 @@ public class WindowModel {
 	}
 
 	
-	public void test(List<Datum> testData, String fileName){
+	public void test(List<Datum> testData){
 		testXMatrix = new SimpleMatrix(windowSize,testData.size());
 		for(int index = 0; index < testData.size(); index++){
 			//System.out.println(testData.get(index).word+"\t"+testData.get(index).label);

@@ -54,7 +54,7 @@ public class FeatureFactory {
 	// Look up table matrix with all word vectors as defined in lecture with dimensionality n x |V|
 	//access it directly in WindowModel
 	public static SimpleMatrix readWordVectors(String vecFilename) throws IOException {
-		SimpleMatrix allVecs = new SimpleMatrix(10255, 50); 
+		SimpleMatrix allVecs = new SimpleMatrix(100232, 50); 
 		int wordIndex = 0;
 		try{
 			BufferedReader br = new BufferedReader(new FileReader(vecFilename));
