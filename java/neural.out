@@ -12,7 +12,7 @@ VICTORY	O	O
 .	O	O
 LONDON	LOC	LOC
 1996-08-30	O	O
-West	MISC	LOC
+West	MISC	MISC
 Indian	MISC	MISC
 all-rounder	O	LOC
 Phil	PER	O
@@ -60,12 +60,21 @@ short-lived	O	O
 as	O	O
 title	O	O
 rivals	O	O
+<<<<<<< HEAD
 Essex	ORG	O
 ,	O	O
 Derbyshire	ORG	O
 and	O	O
 Surrey	ORG	O
 all	O	O
+=======
+Essex	ORG	ORG
+,	O	O
+Derbyshire	ORG	ORG
+and	O	O
+Surrey	ORG	ORG
+all	O	ORG
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 closed	O	O
 in	O	O
 on	O	O
@@ -82,11 +91,11 @@ their	O	O
 rain-affected	O	O
 match	O	O
 against	O	O
-Nottinghamshire	ORG	O
+Nottinghamshire	ORG	MISC
 .	O	O
 After	O	O
 bowling	O	O
-Somerset	ORG	O
+Somerset	ORG	ORG
 out	O	O
 for	O	O
 83	O	O
@@ -146,7 +155,7 @@ out	O	O
 for	O	O
 174	O	O
 .	O	O
-Essex	ORG	LOC
+Essex	ORG	ORG
 ,	O	O
 however	O	O
 ,	O	O
@@ -158,11 +167,19 @@ their	O	O
 top	O	O
 spot	O	O
 after	O	O
+<<<<<<< HEAD
 Nasser	PER	O
 Hussain	PER	O
 and	O	O
 Peter	PER	PER
 Such	PER	PER
+=======
+Nasser	PER	PER
+Hussain	PER	PER
+and	O	O
+Peter	PER	PER
+Such	PER	O
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 gave	O	O
 them	O	O
 a	O	O
@@ -253,7 +270,7 @@ At	O	O
 the	O	O
 Oval	LOC	LOC
 ,	O	O
-Surrey	ORG	O
+Surrey	ORG	ORG
 captain	O	O
 Chris	PER	PER
 Lewis	PER	PER
@@ -369,7 +386,7 @@ O'Gorman	PER	PER
 109	O	O
 ,	O	O
 took	O	O
-Derbyshire	ORG	O
+Derbyshire	ORG	ORG
 to	O	O
 471	O	O
 and	O	O
@@ -552,8 +569,13 @@ Oval	LOC	MISC
 Warwickshire	ORG	PER
 195	O	O
 ,	O	O
+<<<<<<< HEAD
 Surrey	ORG	PER
 429-7	O	PER
+=======
+Surrey	ORG	ORG
+429-7	O	O
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 (	O	O
 C.	PER	PER
 Lewis	PER	PER
@@ -596,8 +618,13 @@ Austin	PER	PER
 4-37	O	O
 )	O	O
 ,	O	O
+<<<<<<< HEAD
 Lancashire	ORG	PER
 197-8	O	PER
+=======
+Lancashire	ORG	ORG
+197-8	O	O
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 (	O	O
 W.	PER	PER
 Hegg	PER	PER
@@ -651,8 +678,13 @@ K.	PER	O
 Barnett	PER	PER
 87	O	O
 ;	O	O
+<<<<<<< HEAD
 T.	PER	O
 Moody	PER	O
+=======
+T.	PER	PER
+Moody	PER	PER
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 6-82	O	O
 )	O	O
 Bristol	LOC	O
@@ -669,8 +701,13 @@ not	O	O
 out	O	O
 )	O	O
 ,	O	O
+<<<<<<< HEAD
 Northamptonshire	ORG	PER
 190	O	PER
+=======
+Northamptonshire	ORG	ORG
+190	O	O
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 (	O	O
 K.	PER	O
 Curran	PER	O
@@ -715,9 +752,15 @@ year	O	O
 the	O	O
 Test	ORG	O
 and	ORG	O
+<<<<<<< HEAD
 County	ORG	ORG
 Cricket	ORG	O
 Board	ORG	O
+=======
+County	ORG	O
+Cricket	ORG	ORG
+Board	ORG	ORG
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 said	O	O
 on	O	O
 Friday	O	O
@@ -784,15 +827,21 @@ May	O	O
 Practice	O	O
 at	O	O
 Lord	LOC	LOC
-'s	LOC	O
+'s	LOC	LOC
 May	O	O
 15	O	O
 v	O	O
 Duke	ORG	O
 of	ORG	O
+<<<<<<< HEAD
 Norfolk	ORG	LOC
 's	ORG	O
 XI	ORG	O
+=======
+Norfolk	ORG	O
+'s	ORG	O
+XI	ORG	PER
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 (	O	O
 at	O	O
 Arundel	LOC	LOC
@@ -813,7 +862,7 @@ May	O	O
 22	O	O
 First	O	O
 one-day	O	O
-international	O	O
+international	O	MISC
 (	O	O
 at	O	O
 Headingley	LOC	LOC
@@ -839,19 +888,32 @@ one-day	O	O
 international	O	O
 (	O	O
 at	O	O
+<<<<<<< HEAD
 Lord	LOC	LOC
 's	LOC	O
+=======
+Lord	LOC	O
+'s	LOC	LOC
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 ,	O	O
 London	LOC	LOC
 )	O	O
 May	O	O
 27-29	O	O
 v	O	O
+<<<<<<< HEAD
 Gloucestershire	ORG	O
 or	O	O
 Sussex	ORG	O
 or	O	O
 Surrey	ORG	O
+=======
+Gloucestershire	ORG	ORG
+or	O	ORG
+Sussex	ORG	LOC
+or	O	O
+Surrey	ORG	LOC
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 (	O	O
 three	O	O
 days	O	O
@@ -862,7 +924,11 @@ May	O	O
 June	O	O
 2	O	O
 v	O	O
+<<<<<<< HEAD
 Derbyshire	ORG	O
+=======
+Derbyshire	ORG	ORG
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 (	O	O
 three	O	O
 days	O	O
@@ -885,16 +951,22 @@ v	O	O
 a	O	O
 first	O	O
 class	O	O
-county	O	ORG
+county	O	O
 (	O	O
 to	O	O
 be	O	O
 confirmed	O	O
 )	O	O
 June	O	O
+<<<<<<< HEAD
 14-16	O	O
 v	O	O
 Leicestershire	ORG	O
+=======
+14-16	O	ORG
+v	O	O
+Leicestershire	ORG	ORG
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 (	O	O
 three	O	O
 days	O	O
@@ -923,7 +995,11 @@ days	O	O
 June	O	O
 28-30	O	O
 v	O	O
+<<<<<<< HEAD
 Hampshire	ORG	O
+=======
+Hampshire	ORG	ORG
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 (	O	O
 three	O	O
 days	O	O
@@ -953,15 +1029,25 @@ Scotland	LOC	LOC
 July	O	O
 16-18	O	O
 v	O	O
+<<<<<<< HEAD
 Glamorgan	ORG	O
+=======
+Glamorgan	ORG	ORG
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 (	O	O
 three	O	O
 days	O	O
 )	O	O
 July	O	O
+<<<<<<< HEAD
 19-21	O	O
 v	O	O
 Middlesex	ORG	O
+=======
+19-21	O	ORG
+v	O	O
+Middlesex	ORG	ORG
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 (	O	O
 three	O	O
 days	O	O
@@ -978,7 +1064,11 @@ August	O	O
 August	O	O
 1-4	O	O
 v	O	O
+<<<<<<< HEAD
 Somerset	ORG	O
+=======
+Somerset	ORG	ORG
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 (	O	O
 four	O	O
 days	O	O
@@ -1047,7 +1137,7 @@ The	O	O
 ,	O	O
 who	O	O
 joined	O	O
-Newcastle	ORG	O
+Newcastle	ORG	ORG
 for	O	O
 15	O	O
 million	O	O
@@ -1238,14 +1328,22 @@ up	O	O
 front	O	O
 .	O	O
 "	O	O
-Shearer	PER	PER
+Shearer	PER	O
 's	O	O
+<<<<<<< HEAD
 Euro	MISC	O
+=======
+Euro	MISC	MISC
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 96	MISC	O
 striking	O	O
 partner	O	O
 Teddy	PER	PER
+<<<<<<< HEAD
 Sheringham	PER	PER
+=======
+Sheringham	PER	O
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 withdrew	O	O
 from	O	O
 the	O	O
@@ -1262,9 +1360,9 @@ probably	O	O
 be	O	O
 replaced	O	O
 by	O	O
-Shearer	PER	PER
+Shearer	PER	O
 's	O	O
-Newcastle	ORG	O
+Newcastle	ORG	ORG
 team	O	O
 mate	O	O
 Les	PER	PER
@@ -1337,7 +1435,7 @@ Scorers	O	O
 Romania	LOC	O
 -	O	O
 Cosmin	PER	PER
-Contra	PER	PER
+Contra	PER	O
 (	O	O
 31st	O	O
 )	O	O
@@ -1370,8 +1468,13 @@ VIOLENCE	O	O
 .	O	O
 MOSCOW	LOC	LOC
 1996-08-30	O	O
+<<<<<<< HEAD
 Rotor	ORG	O
 Volgograd	ORG	O
+=======
+Rotor	ORG	ORG
+Volgograd	ORG	PER
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 must	O	O
 play	O	O
 their	O	O
@@ -1431,7 +1534,11 @@ play	O	O
 Lada	ORG	O
 Togliatti	ORG	O
 to	O	O
+<<<<<<< HEAD
 empty	O	LOC
+=======
+empty	O	O
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 stands	O	O
 on	O	O
 September	O	O
@@ -1442,8 +1549,13 @@ club	O	O
 ,	O	O
 who	O	O
 put	O	O
+<<<<<<< HEAD
 Manchester	ORG	LOC
 United	ORG	O
+=======
+Manchester	ORG	ORG
+United	ORG	ORG
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 out	O	O
 of	O	O
 last	O	O
@@ -1467,7 +1579,7 @@ well	O	O
 placed	O	O
 with	O	O
 11	O	O
-games	O	O
+games	O	MISC
 to	O	O
 play	O	O
 in	O	O
@@ -1486,7 +1598,7 @@ Dynamo	ORG	O
 Moscow	ORG	LOC
 ,	O	O
 the	O	O
-Volgograd	LOC	O
+Volgograd	LOC	MISC
 side	O	O
 have	O	O
 a	O	O
@@ -1506,9 +1618,13 @@ club	O	O
 -DOCSTART-	O	O
 BOXING	O	O
 -	O	O
+<<<<<<< HEAD
 PANAMA	LOC	ORG
+=======
+PANAMA	LOC	PER
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 'S	O	O
-ROBERTO	PER	O
+ROBERTO	PER	PER
 DURAN	PER	O
 FIGHTS	O	O
 THE	O	O
@@ -1553,8 +1669,13 @@ takes	O	O
 on	O	O
 little-known	O	O
 Mexican	MISC	MISC
+<<<<<<< HEAD
 Ariel	PER	O
 Cruz	PER	O
+=======
+Ariel	PER	PER
+Cruz	PER	PER
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 ,	O	O
 30	O	O
 ,	O	O
@@ -1571,7 +1692,7 @@ City	LOC	O
 The	O	O
 fight	O	O
 ,	O	O
-Duran	PER	PER
+Duran	PER	O
 's	O	O
 first	O	O
 on	O	O
@@ -1653,7 +1774,11 @@ different	O	O
 weight	O	O
 classes	O	O
 --	O	O
+<<<<<<< HEAD
 lightweight	O	ORG
+=======
+lightweight	O	PER
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 ,	O	O
 welterweight	O	O
 ,	O	O
@@ -1730,7 +1855,7 @@ a	O	O
 win	O	O
 in	O	O
 the	O	O
-10-round	O	O
+10-round	O	LOC
 bout	O	O
 will	O	O
 earn	O	O
@@ -1782,9 +1907,15 @@ Quarter-final	O	O
 results	O	O
 in	O	O
 the	O	O
+<<<<<<< HEAD
 Hong	MISC	LOC
 Kong	MISC	LOC
 Open	MISC	O
+=======
+Hong	MISC	MISC
+Kong	MISC	MISC
+Open	MISC	MISC
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 on	O	O
 Friday	O	O
 (	O	O
@@ -2005,7 +2136,7 @@ RESULTS	O	O
 OF	O	O
 S.	MISC	MISC
 KOREAN	MISC	MISC
-PROFESSIONAL	O	O
+PROFESSIONAL	O	MISC
 GAMES	O	O
 .	O	O
 SEOUL	LOC	LOC
@@ -2021,11 +2152,15 @@ played	O	O
 on	O	O
 Thursday	O	O
 .	O	O
-LG	ORG	LOC
+LG	ORG	ORG
 2	O	O
 OB	ORG	O
 0	O	O
+<<<<<<< HEAD
 Lotte	ORG	O
+=======
+Lotte	ORG	PER
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 6	O	O
 Hyundai	ORG	O
 2	O	O
@@ -2692,9 +2827,15 @@ W	O	O
 L	O	O
 PCT	O	O
 GB	O	O
+<<<<<<< HEAD
 NEW	ORG	O
 YORK	ORG	LOC
 74	O	O
+=======
+NEW	ORG	ORG
+YORK	ORG	ORG
+74	O	ORG
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 59	O	O
 .556	O	O
 -	O	O
@@ -2744,7 +2885,11 @@ MILWAUKEE	ORG	O
 71	O	O
 .474	O	O
 17	O	O
+<<<<<<< HEAD
 KANSAS	ORG	LOC
+=======
+KANSAS	ORG	ORG
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 CITY	ORG	ORG
 61	O	O
 74	O	O
@@ -2788,8 +2933,13 @@ AT	O	O
 TORONTO	LOC	LOC
 MINNESOTA	ORG	LOC
 AT	O	O
+<<<<<<< HEAD
 MILWAUKEE	LOC	O
 CLEVELAND	ORG	O
+=======
+MILWAUKEE	LOC	LOC
+CLEVELAND	ORG	ORG
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 AT	O	O
 TEXAS	LOC	LOC
 NEW	ORG	LOC
@@ -2825,9 +2975,15 @@ FLORIDA	ORG	LOC
 70	O	O
 .478	O	O
 20	O	O
+<<<<<<< HEAD
 NEW	ORG	O
 YORK	ORG	LOC
 59	O	O
+=======
+NEW	ORG	ORG
+YORK	ORG	ORG
+59	O	ORG
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 75	O	O
 .440	O	O
 25	O	O
@@ -2912,14 +3068,19 @@ PHILADELPHIA	LOC	LOC
 HOUSTON	ORG	O
 AT	O	O
 PITTSBURGH	LOC	LOC
+<<<<<<< HEAD
 SAN	ORG	LOC
 FRANCISCO	ORG	LOC
+=======
+SAN	ORG	ORG
+FRANCISCO	ORG	ORG
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 AT	O	O
 NEW	LOC	LOC
 YORK	LOC	LOC
 COLORADO	ORG	LOC
 AT	O	O
-ST	LOC	LOC
+ST	LOC	O
 LOUIS	LOC	LOC
 -DOCSTART-	O	O
 BASEBALL	O	O
@@ -2951,9 +3112,15 @@ CAPS	O	O
 American	MISC	MISC
 League	MISC	MISC
 DETROIT	ORG	ORG
+<<<<<<< HEAD
 4	O	ORG
 Kansas	ORG	LOC
 City	ORG	LOC
+=======
+4	O	O
+Kansas	ORG	ORG
+City	ORG	ORG
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 1	O	O
 Minnesota	ORG	LOC
 6	O	O
@@ -2961,8 +3128,13 @@ MILWAUKEE	ORG	ORG
 1	O	O
 CALIFORNIA	ORG	LOC
 14	O	O
+<<<<<<< HEAD
 New	ORG	O
 York	ORG	LOC
+=======
+New	ORG	ORG
+York	ORG	ORG
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 3	O	O
 SEATTLE	ORG	LOC
 9	O	O
@@ -2973,7 +3145,11 @@ League	MISC	MISC
 San	ORG	ORG
 Diego	ORG	LOC
 3	O	O
+<<<<<<< HEAD
 NEW	ORG	O
+=======
+NEW	ORG	ORG
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 YORK	ORG	LOC
 2	O	O
 Chicago	ORG	ORG
@@ -2996,7 +3172,11 @@ MONTREAL	ORG	ORG
 Florida	ORG	LOC
 10	O	O
 ST	ORG	ORG
+<<<<<<< HEAD
 LOUIS	ORG	PER
+=======
+LOUIS	ORG	ORG
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 9	O	O
 -DOCSTART-	O	O
 TENNIS	O	O
@@ -3023,7 +3203,11 @@ disaster	O	O
 on	O	O
 Thursday	O	O
 but	O	O
+<<<<<<< HEAD
 Wimbledon	MISC	O
+=======
+Wimbledon	MISC	LOC
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 finalist	O	O
 MaliVai	PER	O
 Washington	PER	LOC
@@ -3077,7 +3261,11 @@ minute	O	O
 struggle	O	O
 on	O	O
 the	O	O
+<<<<<<< HEAD
 Stadium	O	O
+=======
+Stadium	O	LOC
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 court	O	O
 .	O	O
 Next	O	O
@@ -3140,12 +3328,16 @@ winning	O	O
 of	O	O
 the	O	O
 last	O	O
-19	O	O
+19	O	MISC
 games	O	O
 against	O	O
 India	LOC	LOC
 's	O	O
+<<<<<<< HEAD
 Leander	PER	O
+=======
+Leander	PER	ORG
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 Paes	PER	O
 .	O	O
 But	O	O
@@ -3426,8 +3618,13 @@ to	O	O
 Tarango	PER	PER
 ,	O	O
 whose	O	O
+<<<<<<< HEAD
 Wimbledon	MISC	O
 tantrum	O	PER
+=======
+Wimbledon	MISC	MISC
+tantrum	O	O
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 two	O	O
 years	O	O
 ago	O	O
@@ -3475,8 +3672,13 @@ cheering	O	O
 section	O	O
 backed	O	O
 the	O	O
+<<<<<<< HEAD
 distracted	O	O
 Chilean	MISC	O
+=======
+distracted	O	MISC
+Chilean	MISC	MISC
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 and	O	O
 booed	O	O
 the	O	O
@@ -3778,9 +3980,13 @@ razzle-dazzle	O	O
 .	O	O
 "	O	O
 -DOCSTART-	O	O
-NFL	ORG	O
+NFL	ORG	MISC
 AMERICAN	MISC	MISC
+<<<<<<< HEAD
 FOOTBALL-RANDALL	MISC	O
+=======
+FOOTBALL-RANDALL	MISC	MISC
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 CUNNINGHAM	PER	O
 RETIRES	O	O
 .	O	O
@@ -3938,8 +4144,13 @@ cornerstone	O	O
 of	O	O
 the	O	O
 Eagles	ORG	O
+<<<<<<< HEAD
 '	O	O
 franchise	O	ORG
+=======
+'	O	ORG
+franchise	O	O
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 and	O	O
 brought	O	O
 many	O	O
@@ -3963,7 +4174,11 @@ choice	O	O
 in	O	O
 1985	O	O
 ,	O	O
+<<<<<<< HEAD
 Cunningham	PER	O
+=======
+Cunningham	PER	PER
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 completed	O	O
 1,874-of-3,362	O	O
 passes	O	O
@@ -3997,7 +4212,7 @@ GREATER	MISC	O
 MILWAUKEE	MISC	O
 OPEN	MISC	O
 .	O	O
-MILWAUKEE	LOC	LOC
+MILWAUKEE	LOC	ORG
 ,	O	O
 Wisconsin	LOC	O
 1996-08-29	O	O
@@ -4018,8 +4233,13 @@ par-71	O	O
 6,739-yard	O	O
 Brown	LOC	PER
 Deer	LOC	PER
+<<<<<<< HEAD
 Park	LOC	ORG
 Golf	LOC	O
+=======
+Park	LOC	LOC
+Golf	LOC	LOC
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 Course	LOC	O
 after	O	O
 the	O	O
@@ -4083,7 +4303,7 @@ Cochran	PER	O
 Mark	PER	PER
 Calcavecchia	PER	PER
 ,	O	O
-Payne	PER	PER
+Payne	PER	O
 Stewart	PER	PER
 ,	O	O
 Billy	PER	PER
@@ -4098,8 +4318,13 @@ Kelly	PER	PER
 Tim	PER	PER
 Simpson	PER	PER
 ,	O	O
+<<<<<<< HEAD
 Olin	PER	PER
 Browne	PER	PER
+=======
+Olin	PER	O
+Browne	PER	O
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 ,	O	O
 Shane	PER	PER
 Bortsch	PER	PER
@@ -4129,7 +4354,7 @@ MILWAUKEE	LOC	O
 ,	O	O
 WOODS	PER	PER
 MAKES	O	O
-PRO	O	O
+PRO	O	MISC
 DEBUT	O	O
 .	O	O
 MILWAUKEE	LOC	LOC
@@ -4410,8 +4635,13 @@ none	O	O
 since	O	O
 the	O	O
 1993	O	O
+<<<<<<< HEAD
 BellSouth	MISC	O
 Classic	MISC	O
+=======
+BellSouth	MISC	MISC
+Classic	MISC	MISC
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 .	O	O
 Estes	PER	PER
 ,	O	O
@@ -4421,9 +4651,15 @@ win	O	O
 came	O	O
 at	O	O
 the	O	O
+<<<<<<< HEAD
 1994	O	O
 Texas	MISC	LOC
 Open	MISC	O
+=======
+1994	O	LOC
+Texas	MISC	MISC
+Open	MISC	MISC
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 and	O	O
 whose	O	O
 best	O	O
@@ -4505,10 +4741,17 @@ at	O	O
 last	O	O
 week	O	O
 's	O	O
+<<<<<<< HEAD
 World	MISC	O
 Series	MISC	O
 of	MISC	O
 Golf	MISC	O
+=======
+World	MISC	MISC
+Series	MISC	MISC
+of	MISC	MISC
+Golf	MISC	MISC
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 ,	O	O
 and	O	O
 former	O	O
@@ -4627,7 +4870,7 @@ FIFA	ORG	O
 ,	O	O
 soccer	O	O
 's	O	O
-world	O	O
+world	O	MISC
 governing	O	O
 body	O	O
 ,	O	O
@@ -4834,8 +5077,13 @@ finished	O	O
 fourth	O	O
 at	O	O
 the	O	O
+<<<<<<< HEAD
 Atlanta	MISC	O
 Games	MISC	O
+=======
+Atlanta	MISC	LOC
+Games	MISC	MISC
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 ,	O	O
 upstaged	O	O
 a	O	O
@@ -4868,7 +5116,11 @@ Berlin	LOC	LOC
 ,	O	O
 Brussels	LOC	LOC
 and	O	O
+<<<<<<< HEAD
 Zurich	LOC	O
+=======
+Zurich	LOC	LOC
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 all	O	O
 belong	O	O
 to	O	O
@@ -4881,7 +5133,11 @@ the	O	O
 sport	O	O
 ,	O	O
 the	O	O
+<<<<<<< HEAD
 Golden	MISC	O
+=======
+Golden	MISC	MISC
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 Four	MISC	O
 .	O	O
 Among	O	O
@@ -4987,8 +5243,13 @@ in	O	O
 ATHLETICS	O	LOC
 -	O	O
 BERLIN	MISC	LOC
+<<<<<<< HEAD
 GRAND	MISC	O
 PRIX	MISC	O
+=======
+GRAND	MISC	MISC
+PRIX	MISC	MISC
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 RESULTS	O	O
 .	O	O
 BERLIN	LOC	LOC
@@ -4998,9 +5259,15 @@ results	O	O
 at	O	O
 the	O	O
 Berlin	MISC	LOC
+<<<<<<< HEAD
 Grand	MISC	O
 Prix	MISC	MISC
 athletics	O	ORG
+=======
+Grand	MISC	MISC
+Prix	MISC	MISC
+athletics	O	O
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 meeting	O	O
 on	O	O
 Friday	O	O
@@ -5251,7 +5518,11 @@ Women	O	O
 shot	O	O
 put	O	O
 1.	O	O
+<<<<<<< HEAD
 Astrid	PER	PER
+=======
+Astrid	PER	O
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 Kumbernuss	PER	PER
 (	O	O
 Germany	LOC	LOC
@@ -5352,7 +5623,7 @@ Men	O	O
 's	O	O
 discus	O	O
 1.	O	O
-Lars	PER	PER
+Lars	PER	O
 Riedel	PER	PER
 (	O	O
 Germany	LOC	LOC
@@ -5474,7 +5745,11 @@ Women	O	O
 5,000	O	O
 metres	O	O
 1.	O	O
+<<<<<<< HEAD
 Gabriela	PER	O
+=======
+Gabriela	PER	PER
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 Szabo	PER	O
 (	O	O
 Romania	LOC	O
@@ -5484,7 +5759,11 @@ minutes	O	O
 04.95	O	O
 seconds	O	O
 2.	O	O
+<<<<<<< HEAD
 Gete	PER	O
+=======
+Gete	PER	PER
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 Wami	PER	O
 (	O	O
 Ethiopia	LOC	O
@@ -5567,7 +5846,7 @@ Italy	LOC	LOC
 )	O	O
 49.21	O	O
 5.	O	O
-Sven	PER	PER
+Sven	PER	O
 Nylander	PER	PER
 (	O	O
 Sweden	LOC	LOC
@@ -5599,7 +5878,11 @@ Women	O	O
 400	O	O
 metres	O	O
 1.	O	O
+<<<<<<< HEAD
 Falilat	PER	O
+=======
+Falilat	PER	PER
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 Ogunkoya	PER	O
 (	O	O
 Nigeria	LOC	O
@@ -5872,7 +6155,11 @@ Norway	LOC	LOC
 Nele	PER	O
 Zilinskiene	PER	O
 (	O	O
+<<<<<<< HEAD
 Lithuania	LOC	O
+=======
+Lithuania	LOC	MISC
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 )	O	O
 1.91	O	O
 6=	O	O
@@ -5918,9 +6205,15 @@ Kenya	LOC	O
 )	O	O
 13:06.45	O	O
 4.	O	O
+<<<<<<< HEAD
 El	PER	LOC
 Hassane	PER	O
 Lahssini	PER	O
+=======
+El	PER	ORG
+Hassane	PER	O
+Lahssini	PER	MISC
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 (	O	O
 Morocco	LOC	O
 )	O	O
@@ -5966,7 +6259,11 @@ Britain	LOC	LOC
 17.69	O	O
 metres	O	O
 2.	O	O
+<<<<<<< HEAD
 Yoelvis	PER	O
+=======
+Yoelvis	PER	PER
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 Quesada	PER	O
 (	O	O
 Cuba	LOC	O
@@ -6081,7 +6378,7 @@ relay	O	O
 Jesse	PER	O
 Owens	PER	O
 memorial	O	O
-race	O	O
+race	O	MISC
 1.	O	O
 Donovan	PER	PER
 Bailey	PER	PER
@@ -6179,8 +6476,13 @@ heavily	O	O
 on	O	O
 Belgian	MISC	MISC
 club	O	O
+<<<<<<< HEAD
 Standard	ORG	O
 Liege	ORG	O
+=======
+Standard	ORG	MISC
+Liege	ORG	ORG
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 on	O	O
 Friday	O	O
 for	O	O
@@ -6194,7 +6496,11 @@ Intertoto	MISC	O
 final	O	O
 match	O	O
 against	O	O
+<<<<<<< HEAD
 Karlsruhe	ORG	O
+=======
+Karlsruhe	ORG	MISC
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 of	O	O
 Germany	LOC	LOC
 .	O	O
@@ -6306,7 +6612,11 @@ and	O	O
 qualified	O	O
 for	O	O
 the	O	O
+<<<<<<< HEAD
 UEFA	MISC	O
+=======
+UEFA	MISC	MISC
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 Cup	MISC	O
 .	O	O
 -DOCSTART-	O	O
@@ -6320,8 +6630,13 @@ MEET	O	O
 IN	O	O
 SARAJEVO	LOC	O
 .	O	O
+<<<<<<< HEAD
 MONTE	LOC	O
 CARLO	LOC	O
+=======
+MONTE	LOC	LOC
+CARLO	LOC	PER
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 1996-08-30	O	O
 Olympic	MISC	MISC
 champion	O	O
@@ -6355,7 +6670,11 @@ September	O	O
 The	O	O
 International	ORG	MISC
 Amateur	ORG	MISC
+<<<<<<< HEAD
 Athletic	ORG	ORG
+=======
+Athletic	ORG	MISC
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 Federation	ORG	ORG
 said	O	O
 on	O	O
@@ -6393,7 +6712,7 @@ the	O	O
 war-devastated	O	O
 "	O	O
 Kosevo	LOC	O
-stadium	O	O
+stadium	O	LOC
 .	O	O
 Atlanta	MISC	LOC
 Games	MISC	O
@@ -6435,7 +6754,11 @@ days	O	O
 after	O	O
 the	O	O
 grand	O	O
+<<<<<<< HEAD
 prix	O	O
+=======
+prix	O	MISC
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 final	O	O
 in	O	O
 Milan	LOC	O
@@ -6459,8 +6782,13 @@ going	O	O
 to	O	O
 the	O	O
 IAAF	MISC	O
+<<<<<<< HEAD
 Grand	MISC	O
 Prix	MISC	O
+=======
+Grand	MISC	MISC
+Prix	MISC	MISC
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 Final	MISC	O
 in	O	O
 Milan	LOC	O
@@ -6490,7 +6818,7 @@ gesture	O	O
 -DOCSTART-	O	O
 SOCCER	O	O
 -	O	O
-BARATELLI	PER	O
+BARATELLI	PER	PER
 TO	O	O
 COACH	O	O
 NICE	ORG	O
@@ -6527,8 +6855,13 @@ played	O	O
 for	O	O
 Nice	ORG	O
 and	O	O
+<<<<<<< HEAD
 Paris	ORG	LOC
 St	ORG	PER
+=======
+Paris	ORG	ORG
+St	ORG	O
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 Germain	ORG	ORG
 ,	O	O
 takes	O	O
@@ -6553,7 +6886,11 @@ in	O	O
 the	O	O
 league	O	O
 .	O	O
+<<<<<<< HEAD
 Nice	ORG	PER
+=======
+Nice	ORG	ORG
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 have	O	O
 been	O	O
 unable	O	O
@@ -6632,7 +6969,11 @@ Friday	O	O
 .	O	O
 The	O	O
 Gazzetta	ORG	O
+<<<<<<< HEAD
 dello	ORG	O
+=======
+dello	ORG	ORG
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 Sport	ORG	ORG
 said	O	O
 the	O	O
@@ -6726,7 +7067,11 @@ with	O	O
 ex-Milan	MISC	O
 coach	O	O
 Fabio	PER	PER
+<<<<<<< HEAD
 Capello	PER	O
+=======
+Capello	PER	PER
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 last	O	O
 season	O	O
 ,	O	O
@@ -6738,7 +7083,11 @@ at	O	O
 Torino	ORG	LOC
 ,	O	O
 Emiliano	PER	O
+<<<<<<< HEAD
 Mondonico	PER	O
+=======
+Mondonico	PER	PER
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 .	O	O
 -DOCSTART-	O	O
 CRICKET	O	O
@@ -6852,7 +7201,7 @@ Chandana	PER	O
 S.	PER	PER
 Waugh	PER	PER
 b	O	O
-Muralitharan	PER	O
+Muralitharan	PER	PER
 22	O	O
 R.	PER	O
 Ponting	PER	O
@@ -6864,19 +7213,25 @@ Lehmann	PER	PER
 st	O	LOC
 Kaluwitharana	PER	O
 b	O	O
-Chandana	PER	O
+Chandana	PER	PER
 2	O	O
 I.	PER	O
 Healy	PER	PER
 c	O	O
 Ranatunga	PER	O
 b	O	O
-Muralitharan	PER	O
+Muralitharan	PER	PER
 8	O	O
 J.	PER	PER
+<<<<<<< HEAD
 Gillespie	PER	PER
 st	O	PER
 Kaluwitharana	PER	O
+=======
+Gillespie	PER	ORG
+st	O	O
+Kaluwitharana	PER	PER
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 b	O	O
 Chandana	PER	O
 6	O	O
@@ -6928,7 +7283,7 @@ Vass	PER	PER
 ,	O	O
 de	PER	O
 Silva	PER	PER
-4-0-25-0	O	O
+4-0-25-0	O	PER
 ,	O	O
 Dharmasena	PER	PER
 9-0-49-1	O	O
@@ -7170,7 +7525,7 @@ captain	O	O
 Michael	PER	PER
 Bevan	PER	PER
 ,	O	O
-Damien	PER	PER
+Damien	PER	O
 Flemming	PER	PER
 ,	O	O
 Jason	PER	PER
@@ -7220,7 +7575,7 @@ de	PER	PER
 Silva	PER	PER
 ,	O	O
 Hashan	PER	PER
-Tillekeratne	PER	O
+Tillekeratne	PER	PER
 ,	O	O
 Roshan	PER	PER
 Mahanama	PER	PER
@@ -7251,7 +7606,7 @@ BUCHAREST	LOC	LOC
 Romanian	MISC	ORG
 listed	O	O
 state	O	O
-engineer	O	O
+engineer	O	MISC
 Comelf	ORG	PER
 said	O	O
 it	O	O
@@ -7327,9 +7682,15 @@ company	O	O
 report	O	O
 to	O	O
 the	O	O
+<<<<<<< HEAD
 Bucharest	LOC	O
 stock	O	O
 exchange	O	O
+=======
+Bucharest	LOC	ORG
+stock	O	ORG
+exchange	O	ORG
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 showed	O	O
 .	O	O
 Comelf	ORG	PER
@@ -7433,7 +7794,7 @@ also	O	O
 hit	O	O
 profits	O	O
 .	O	O
-Year-on-year	O	O
+Year-on-year	O	MISC
 inflation	O	O
 ,	O	O
 initially	O	O
@@ -7512,8 +7873,13 @@ realistic	O	O
 Luli	PER	PER
 Popescu	PER	O
 ,	O	O
+<<<<<<< HEAD
 Bucharest	ORG	O
 Newsroom	ORG	O
+=======
+Bucharest	ORG	ORG
+Newsroom	ORG	ORG
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 40-1	O	O
 3120264	O	O
 -DOCSTART-	O	O
@@ -7528,10 +7894,17 @@ OPERATION	O	O
 WARSAW	LOC	LOC
 1996-08-30	O	O
 The	O	O
+<<<<<<< HEAD
 National	ORG	O
 Bank	ORG	O
 of	ORG	O
 Poland	ORG	LOC
+=======
+National	ORG	ORG
+Bank	ORG	ORG
+of	ORG	ORG
+Poland	ORG	ORG
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 refrained	O	O
 from	O	O
 staging	O	O
@@ -7542,7 +7915,7 @@ operation	O	O
 on	O	O
 Friday	O	O
 ,	O	O
-the	O	O
+the	O	ORG
 bank	O	O
 said	O	O
 .	O	O
@@ -7638,7 +8011,7 @@ of	O	O
 dollars	O	O
 .	O	O
 Chartered	O	ORG
-bank	O	O
+bank	O	ORG
 assets	O	O
 July	O	O
 June	O	O
@@ -7704,10 +8077,17 @@ acquisition	O	ORG
 .	O	O
 ST.	LOC	LOC
 LOUIS	LOC	LOC
+<<<<<<< HEAD
 1996-08-30	O	PER
 Jones	ORG	PER
 Medical	ORG	O
 Industries	ORG	O
+=======
+1996-08-30	O	LOC
+Jones	ORG	ORG
+Medical	ORG	ORG
+Industries	ORG	ORG
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 Inc	ORG	ORG
 said	O	O
 Friday	O	O
@@ -7717,9 +8097,15 @@ the	O	O
 acquisition	O	O
 of	O	O
 Daniels	ORG	ORG
+<<<<<<< HEAD
 Pharmaceuticals	ORG	O
 Inc	ORG	O
 of	O	O
+=======
+Pharmaceuticals	ORG	ORG
+Inc	ORG	ORG
+of	O	ORG
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 St.	LOC	LOC
 Petersburg	LOC	LOC
 ,	O	O
@@ -7734,8 +8120,13 @@ Jones	ORG	ORG
 common	O	O
 stock	O	O
 .	O	O
+<<<<<<< HEAD
 Jones	ORG	PER
 stock	O	PER
+=======
+Jones	ORG	ORG
+stock	O	ORG
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 closed	O	O
 down	O	O
 1/8	O	O
@@ -7772,7 +8163,7 @@ newsdesk	O	O
 312	O	O
 408-8787	O	O
 -DOCSTART-	O	O
-NYMEX	O	O
+NYMEX	O	MISC
 heating	O	O
 oil	O	O
 near	O	O
@@ -7806,9 +8197,15 @@ buying	O	O
 ahead	O	O
 of	O	O
 the	O	O
+<<<<<<< HEAD
 U.S.	LOC	MISC
 Labor	MISC	O
 Day	MISC	O
+=======
+U.S.	LOC	LOC
+Labor	MISC	MISC
+Day	MISC	MISC
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 weekend	O	O
 ,	O	O
 traders	O	PER
@@ -7856,7 +8253,7 @@ cents	O	O
 a	O	O
 gallon	O	O
 .	O	O
-Heat	O	PER
+Heat	O	O
 hit	O	O
 a	O	O
 session	O	O
@@ -8050,19 +8447,30 @@ rise	O	O
 in	O	O
 the	O	O
 August	O	O
+<<<<<<< HEAD
 National	ORG	O
 Association	ORG	O
 of	ORG	O
 Purchasing	ORG	ORG
+=======
+National	ORG	ORG
+Association	ORG	ORG
+of	ORG	ORG
+Purchasing	ORG	MISC
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 Management	ORG	O
 (	O	O
 NAPM	ORG	O
-)	O	O
+)	O	MISC
 index	O	O
 for	O	O
 the	O	O
 Chicago	LOC	LOC
+<<<<<<< HEAD
 area	O	O
+=======
+area	O	LOC
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 ,	O	O
 traders	O	O
 and	O	O
@@ -8071,9 +8479,9 @@ said	O	O
 .	O	O
 The	O	O
 August	O	O
-Chicago	LOC	LOC
+Chicago	LOC	ORG
 NAPM	ORG	O
-rose	O	O
+rose	O	PER
 8.8	O	O
 points	O	O
 to	O	O
@@ -8221,7 +8629,7 @@ of	O	O
 five-year	O	ORG
 notes	O	O
 .	O	O
-Rumors	O	O
+Rumors	O	PER
 circulated	O	O
 that	O	O
 the	O	O
@@ -8235,8 +8643,13 @@ notes	O	O
 and	O	O
 that	O	O
 a	O	O
+<<<<<<< HEAD
 renowned	O	MISC
 hedge	O	O
+=======
+renowned	O	O
+hedge	O	ORG
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 fund	O	O
 manager	O	O
 was	O	O
@@ -8352,9 +8765,15 @@ rates	O	O
 before	O	O
 the	O	O
 next	O	O
+<<<<<<< HEAD
 Federal	ORG	O
 Open	ORG	O
 Market	ORG	ORG
+=======
+Federal	ORG	MISC
+Open	ORG	MISC
+Market	ORG	O
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 Committee	ORG	O
 meeting	O	O
 on	O	O
@@ -8378,7 +8797,7 @@ CNBC	ORG	ORG
 said	O	O
 the	O	O
 U.S.	LOC	LOC
-economy	O	O
+economy	O	ORG
 appears	O	O
 on	O	O
 balance	O	O
@@ -8429,7 +8848,11 @@ within	O	O
 reach	O	O
 for	O	O
 major	O	O
+<<<<<<< HEAD
 nations	O	O
+=======
+nations	O	ORG
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 .	O	O
 Traders	O	PER
 said	O	O
@@ -8561,18 +8984,31 @@ rise	O	O
 on	O	O
 merger	O	O
 .	O	O
+<<<<<<< HEAD
 FARMINGTON	LOC	LOC
 HILLS	LOC	LOC
+=======
+FARMINGTON	LOC	PER
+HILLS	LOC	PER
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 ,	O	O
 Mich	LOC	O
 .	O	O
 1996-08-30	O	PER
 Shares	O	O
+<<<<<<< HEAD
 of	O	O
 Douglas	ORG	PER
 &	ORG	O
 Lomason	ORG	PER
 Co	ORG	O
+=======
+of	O	ORG
+Douglas	ORG	ORG
+&	ORG	ORG
+Lomason	ORG	ORG
+Co	ORG	ORG
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 were	O	O
 up	O	O
 4-1/2	O	O
@@ -8617,6 +9053,7 @@ to	O	O
 48-1/4	O	O
 on	O	O
 the	O	O
+<<<<<<< HEAD
 New	ORG	O
 York	ORG	LOC
 Stock	ORG	O
@@ -8624,6 +9061,15 @@ Exchange	ORG	O
 .	O	O
 Douglas	ORG	PER
 &	ORG	O
+=======
+New	ORG	LOC
+York	ORG	ORG
+Stock	ORG	ORG
+Exchange	ORG	ORG
+.	O	ORG
+Douglas	ORG	ORG
+&	ORG	ORG
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 Lomason	ORG	ORG
 has	O	O
 4.45	O	O
@@ -8662,8 +9108,13 @@ Markham	ORG	O
 Ontario-based	MISC	PER
 Magna	ORG	PER
 's	O	O
+<<<<<<< HEAD
 North	MISC	O
 American	MISC	LOC
+=======
+North	MISC	LOC
+American	MISC	MISC
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 car	O	O
 and	O	O
 truck	O	O
@@ -8678,12 +9129,21 @@ compete	O	O
 with	O	O
 Johnson	ORG	PER
 Controls	ORG	O
+<<<<<<< HEAD
 Inc	ORG	O
 and	O	O
 Lear	ORG	O
 Corp	ORG	O
 .	O	O
 Family-controlled	O	PER
+=======
+Inc	ORG	ORG
+and	O	O
+Lear	ORG	ORG
+Corp	ORG	ORG
+.	O	O
+Family-controlled	O	ORG
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 Douglas	ORG	PER
 &	ORG	O
 Lomason	ORG	ORG
@@ -8788,8 +9248,13 @@ been	O	O
 defined	O	O
 .	O	O
 Douglas	ORG	PER
+<<<<<<< HEAD
 &	ORG	O
 Lomason	ORG	PER
+=======
+&	ORG	ORG
+Lomason	ORG	ORG
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 's	O	O
 profits	O	O
 were	O	O
@@ -8895,10 +9360,15 @@ John	PER	PER
 Casesa	PER	PER
 of	O	O
 Schroder	ORG	O
+<<<<<<< HEAD
 Wertheim	ORG	O
 &	ORG	O
+=======
+Wertheim	ORG	ORG
+&	ORG	ORG
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 Co	ORG	ORG
-.	O	O
+.	O	ORG
 "	O	O
 It	O	O
 should	O	O
@@ -8917,7 +9387,7 @@ that	O	O
 market	O	O
 .	O	O
 "	O	O
-Magna	ORG	PER
+Magna	ORG	O
 's	O	O
 traditional	O	O
 strength	O	O
@@ -8967,7 +9437,7 @@ and	O	O
 headliners	O	O
 .	O	O
 -DOCSTART-	O	O
-UK	LOC	LOC
+UK	LOC	ORG
 meals	O	O
 /	O	O
 feeds	O	O
@@ -9107,7 +9577,7 @@ Sudanese	MISC	O
 airliner	O	O
 with	O	O
 199	O	O
-people	O	O
+people	O	ORG
 aboard	O	O
 and	O	O
 forced	O	O
@@ -9299,7 +9769,7 @@ aircraft	O	O
 following	O	O
 the	O	O
 hijackers	O	O
-'	O	O
+'	O	MISC
 surrender	O	O
 ,	O	O
 police	O	O
@@ -9371,14 +9841,20 @@ future	O	O
 on	O	O
 the	O	O
 London	ORG	LOC
+<<<<<<< HEAD
 International	ORG	O
 Financial	ORG	O
 Futures	ORG	O
+=======
+International	ORG	ORG
+Financial	ORG	ORG
+Futures	ORG	ORG
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 and	ORG	O
 Options	ORG	O
 Exchange	ORG	O
 (	O	O
-LIFFE	ORG	O
+LIFFE	ORG	ORG
 )	O	O
 was	O	O
 trading	O	O
@@ -9434,7 +9910,11 @@ said	O	O
 the	O	O
 market	O	O
 was	O	O
+<<<<<<< HEAD
 nervous	O	PER
+=======
+nervous	O	O
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 anyway	O	O
 ahead	O	O
 of	O	O
@@ -9455,7 +9935,7 @@ long	O	O
 gilt	O	O
 future	O	O
 on	O	O
-LIFFE	ORG	O
+LIFFE	ORG	PER
 was	O	O
 trading	O	O
 at	O	O
@@ -9541,7 +10021,7 @@ September	O	O
 bond	O	O
 future	O	O
 on	O	O
-LIFFE	ORG	O
+LIFFE	ORG	PER
 was	O	O
 trading	O	O
 at	O	O
@@ -9555,8 +10035,13 @@ Thursday	O	O
 settlement	O	O
 price	O	O
 .	O	O
+<<<<<<< HEAD
 UNITED	LOC	LOC
 STATES	LOC	O
+=======
+UNITED	LOC	ORG
+STATES	LOC	LOC
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 -	O	O
 Prices	O	O
 of	O	O
@@ -9584,7 +10069,11 @@ markets	O	O
 ahead	O	O
 of	O	O
 the	O	O
+<<<<<<< HEAD
 long	O	O
+=======
+long	O	LOC
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 Labour	MISC	O
 Day	MISC	O
 weekend	O	O
@@ -9597,7 +10086,11 @@ future	O	O
 on	O	O
 the	O	O
 Chicago	ORG	ORG
+<<<<<<< HEAD
 Board	ORG	O
+=======
+Board	ORG	ORG
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 of	ORG	O
 Trade	ORG	O
 was	O	O
@@ -9670,7 +10163,11 @@ day	O	O
 's	O	O
 gains	O	O
 as	O	O
+<<<<<<< HEAD
 Tokyo	LOC	O
+=======
+Tokyo	LOC	LOC
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 stock	O	O
 prices	O	O
 recovered	O	O
@@ -9686,7 +10183,7 @@ the	O	O
 September	O	O
 future	O	O
 on	O	O
-LIFFE	ORG	O
+LIFFE	ORG	PER
 was	O	O
 trading	O	O
 at	O	O
@@ -9794,7 +10291,11 @@ dollar	O	O
 deals	O	O
 .	O	O
 -DOCSTART-	O	O
+<<<<<<< HEAD
 Boxing-Bruno	MISC	O
+=======
+Boxing-Bruno	MISC	ORG
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 quits	O	O
 on	O	O
 doctor	O	O
@@ -9935,7 +10436,7 @@ another	O	O
 shot	O	O
 at	O	O
 the	O	O
-world	O	O
+world	O	MISC
 title	O	O
 and	O	O
 had	O	O
@@ -10032,7 +10533,7 @@ unanimous	O	O
 points	O	O
 decision	O	O
 at	O	O
-Wembley	LOC	O
+Wembley	LOC	LOC
 in	O	O
 September	O	O
 1995	O	O
@@ -10101,7 +10602,11 @@ punches	O	O
 Soccer	O	O
 -	O	O
 McCarthy	PER	O
+<<<<<<< HEAD
 names	O	O
+=======
+names	O	MISC
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 team	O	O
 to	O	O
 play	O	O
@@ -10132,8 +10637,13 @@ match	O	O
 .	O	O
 Birmingham	ORG	LOC
 's	O	O
+<<<<<<< HEAD
 Gary	PER	O
 Breen	PER	O
+=======
+Gary	PER	PER
+Breen	PER	PER
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 was	O	O
 selected	O	O
 ahead	O	O
@@ -10335,8 +10845,13 @@ $	O	O
 naira	O	O
 )	O	O
 -DOCSTART-	O	O
+<<<<<<< HEAD
 East	ORG	LOC
 Dries	ORG	LOC
+=======
+East	ORG	MISC
+Dries	ORG	MISC
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 miners	O	O
 fail	O	O
 to	O	O
@@ -10349,8 +10864,13 @@ JOHANNESBURG	LOC	O
 Workers	O	O
 at	O	O
 Driefontein	ORG	O
+<<<<<<< HEAD
 Consolidated	ORG	O
 Ltd	ORG	PER
+=======
+Consolidated	ORG	ORG
+Ltd	ORG	ORG
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 's	O	O
 east	O	ORG
 gold	O	O
@@ -10371,8 +10891,13 @@ Gold	ORG	O
 Fields	ORG	O
 of	ORG	O
 South	ORG	LOC
+<<<<<<< HEAD
 Africa	ORG	LOC
 Ltd	ORG	O
+=======
+Africa	ORG	ORG
+Ltd	ORG	ORG
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 said	O	O
 on	O	O
 Friday	O	O
@@ -10381,7 +10906,7 @@ Friday	O	O
 Discussions	O	O
 with	O	O
 employee	O	O
-and	O	O
+and	O	ORG
 union	O	ORG
 representatives	O	O
 are	O	O
@@ -10419,15 +10944,26 @@ differences	O	O
 --	O	O
 at	O	O
 Driefontein	ORG	O
+<<<<<<< HEAD
 Consolidated	ORG	O
+=======
+Consolidated	ORG	LOC
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 and	ORG	O
 Gold	ORG	O
 Fields	ORG	ORG
 '	ORG	O
+<<<<<<< HEAD
 Kloof	ORG	O
 Gold	ORG	O
 Mining	ORG	O
 Co	ORG	O
+=======
+Kloof	ORG	MISC
+Gold	ORG	ORG
+Mining	ORG	ORG
+Co	ORG	ORG
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 this	O	O
 month	O	O
 .	O	O
@@ -10462,8 +10998,13 @@ days	O	O
 of	O	O
 protests	O	O
 over	O	O
+<<<<<<< HEAD
 grant	O	PER
 arrears	O	O
+=======
+grant	O	O
+arrears	O	ORG
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 in	O	O
 which	O	O
 Education	O	O
@@ -10506,7 +11047,7 @@ by	O	O
 gendarmes	O	O
 ,	O	O
 "	O	O
-one	O	O
+one	O	ORG
 university	O	O
 official	O	O
 said	O	O
@@ -10522,7 +11063,11 @@ water	O	O
 and	O	O
 electricity	O	O
 of	O	O
+<<<<<<< HEAD
 the	O	O
+=======
+the	O	ORG
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 university	O	ORG
 offices	O	O
 before	O	O
@@ -10549,7 +11094,7 @@ protest	O	O
 .	O	O
 The	O	O
 students	O	O
-'	O	O
+'	O	ORG
 union	O	ORG
 said	O	O
 second	O	O
@@ -10564,7 +11109,7 @@ of	O	O
 unpaid	O	O
 grants	O	O
 .	O	O
-End-of-year	O	O
+End-of-year	O	ORG
 examinations	O	O
 would	O	O
 go	O	O
@@ -10581,10 +11126,17 @@ officials	O	O
 said	O	O
 .	O	O
 -DOCSTART-	O	O
+<<<<<<< HEAD
 Yeltsin	PER	ORG
 endorses	O	O
 Lebed	PER	O
 Chechnya	LOC	O
+=======
+Yeltsin	PER	PER
+endorses	O	PER
+Lebed	PER	PER
+Chechnya	LOC	LOC
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 peace	O	O
 plan	O	O
 -	O	O
@@ -10704,7 +11256,11 @@ discussed	O	O
 with	O	O
 rebel	O	O
 chief-of-staff	O	O
+<<<<<<< HEAD
 Aslan	PER	O
+=======
+Aslan	PER	PER
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 Maskhadov	PER	O
 a	O	O
 framework	O	O
@@ -10768,8 +11324,13 @@ a	O	O
 part	O	O
 of	O	O
 the	O	O
+<<<<<<< HEAD
 Russian	LOC	MISC
 Federation	LOC	O
+=======
+Russian	LOC	LOC
+Federation	LOC	ORG
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 ,	O	O
 sent	O	O
 troops	O	O
@@ -10886,7 +11447,11 @@ more	O	O
 work	O	O
 .	O	O
 -DOCSTART-	O	O
+<<<<<<< HEAD
 Lebed	PER	O
+=======
+Lebed	PER	ORG
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 ,	O	O
 Chechens	MISC	O
 sign	O	O
@@ -10946,8 +11511,13 @@ of	O	O
 relations	O	O
 between	O	O
 the	O	O
+<<<<<<< HEAD
 Russian	LOC	MISC
 Federation	LOC	O
+=======
+Russian	LOC	LOC
+Federation	LOC	ORG
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 and	O	O
 the	O	O
 Chechen	LOC	MISC
@@ -10996,7 +11566,7 @@ Lebed	PER	PER
 said	O	O
 he	O	O
 and	O	O
-Maskhadov	PER	O
+Maskhadov	PER	PER
 agreed	O	O
 to	O	O
 defer	O	O
@@ -11009,7 +11579,7 @@ the	O	O
 painful	O	O
 issue	O	O
 of	O	O
-Chechnya	LOC	ORG
+Chechnya	LOC	LOC
 's	O	O
 political	O	O
 status	O	O
@@ -11137,8 +11707,13 @@ talks	O	O
 .	O	O
 -DOCSTART-	O	O
 Ruling	O	O
+<<<<<<< HEAD
 Moslem	MISC	O
 party	O	O
+=======
+Moslem	MISC	MISC
+party	O	ORG
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 ends	O	O
 vote	O	O
 boycott	O	O
@@ -11267,8 +11842,13 @@ September	O	O
 The	O	O
 Party	ORG	O
 of	ORG	O
+<<<<<<< HEAD
 Democratic	ORG	O
 Action	ORG	O
+=======
+Democratic	ORG	MISC
+Action	ORG	MISC
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 (	O	O
 SDA	ORG	O
 )	O	O
@@ -11296,6 +11876,7 @@ among	O	O
 Serb	MISC	O
 refugees	O	O
 .	O	O
+<<<<<<< HEAD
 The	O	O
 Organisation	ORG	O
 for	ORG	O
@@ -11304,6 +11885,16 @@ and	ORG	O
 Cooperation	ORG	O
 in	ORG	O
 Europe	ORG	LOC
+=======
+The	O	ORG
+Organisation	ORG	ORG
+for	ORG	ORG
+Security	ORG	ORG
+and	ORG	ORG
+Cooperation	ORG	ORG
+in	ORG	ORG
+Europe	ORG	ORG
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 (	O	O
 OSCE	ORG	LOC
 )	O	O
@@ -11339,8 +11930,13 @@ has	O	O
 been	O	O
 demanding	O	O
 that	O	O
+<<<<<<< HEAD
 OSCE	ORG	O
 prohibit	O	O
+=======
+OSCE	ORG	ORG
+prohibit	O	ORG
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 refugees	O	O
 voting	O	O
 from	O	O
@@ -11369,7 +11965,7 @@ ethnic	O	MISC
 cleansing	O	O
 .	O	O
 -DOCSTART-	O	O
-Belgrade	LOC	LOC
+Belgrade	LOC	ORG
 airport	O	O
 runway	O	O
 repairs	O	ORG
@@ -11382,8 +11978,13 @@ Belgrade	LOC	O
 's	O	O
 main	O	O
 airport	O	O
+<<<<<<< HEAD
 Aerodrom	LOC	O
 Beograd	LOC	PER
+=======
+Aerodrom	LOC	ORG
+Beograd	LOC	LOC
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 will	O	O
 be	O	O
 closed	O	O
@@ -11502,7 +12103,7 @@ Tanjug	ORG	PER
 said	O	O
 .	O	O
 The	O	O
-Batajnica	LOC	O
+Batajnica	LOC	LOC
 airport	O	O
 will	O	O
 take	O	O
@@ -11516,7 +12117,7 @@ this	O	O
 period	O	O
 ,	O	O
 Federal	ORG	O
-Air	ORG	O
+Air	ORG	ORG
 Traffic	ORG	O
 Control	ORG	O
 Administration	ORG	O
@@ -11529,8 +12130,13 @@ said	O	O
 Amra	PER	PER
 Kevic	PER	O
 ,	O	O
+<<<<<<< HEAD
 Belgrade	LOC	O
 newsroom	O	O
+=======
+Belgrade	LOC	ORG
+newsroom	O	ORG
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 +381	O	O
 11	O	O
 2224305	O	O
@@ -11575,7 +12181,7 @@ the	O	O
 Belarus	LOC	O
 parliament	O	O
 ,	O	O
-Semyon	PER	PER
+Semyon	PER	O
 Sharetsky	PER	PER
 ,	O	O
 told	O	O
@@ -11608,7 +12214,7 @@ ruler	O	O
 .	O	O
 "	O	O
 The	O	O
-world	O	O
+world	O	MISC
 community	O	O
 should	O	O
 not	O	O
@@ -11647,7 +12253,7 @@ Sharetsky	PER	PER
 said	O	O
 .	O	O
 The	O	O
-new	O	O
+new	O	LOC
 constitution	O	O
 calls	O	O
 for	O	O
@@ -11658,6 +12264,7 @@ with	O	O
 a	O	O
 110-seat	O	O
 majority-elected	O	O
+<<<<<<< HEAD
 house	O	O
 of	O	O
 representatives	O	O
@@ -11665,6 +12272,15 @@ and	O	O
 a	O	O
 regionally-represented	O	O
 senate	O	O
+=======
+house	O	ORG
+of	O	ORG
+representatives	O	ORG
+and	O	O
+a	O	O
+regionally-represented	O	O
+senate	O	ORG
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 with	O	O
 a	O	O
 third	O	O
@@ -11707,7 +12323,7 @@ this	O	O
 Sergei	PER	PER
 Posukhov	PER	O
 ,	O	O
-Lukashenko	PER	ORG
+Lukashenko	PER	O
 's	O	O
 political	O	O
 adviser	O	O
@@ -11843,7 +12459,7 @@ this	O	O
 referendum	O	O
 .	O	O
 "	O	O
-Lukashenko	PER	O
+Lukashenko	PER	PER
 signed	O	O
 a	O	O
 pact	O	O
@@ -11858,7 +12474,7 @@ strong	O	O
 economic	O	O
 and	O	O
 political	O	O
-union	O	O
+union	O	ORG
 which	O	O
 he	O	O
 believes	O	O
@@ -11878,7 +12494,7 @@ the	O	O
 prospect	O	O
 of	O	O
 renewed	O	O
-Moscow	LOC	LOC
+Moscow	LOC	ORG
 domination	O	O
 and	O	O
 Russia	LOC	LOC
@@ -11892,7 +12508,7 @@ against	O	O
 the	O	O
 deal	O	O
 .	O	O
-Lukashenko	PER	PER
+Lukashenko	PER	ORG
 responded	O	O
 by	O	O
 cracking	O	PER
@@ -11929,6 +12545,7 @@ opposition	O	O
 leaders	O	O
 ,	O	O
 Zenon	PER	PER
+<<<<<<< HEAD
 Poznyak	PER	O
 and	O	O
 Sergei	PER	O
@@ -11936,6 +12553,15 @@ Naumchik	PER	O
 .	O	O
 -DOCSTART-	O	O
 Tajik	MISC	ORG
+=======
+Poznyak	PER	PER
+and	O	O
+Sergei	PER	O
+Naumchik	PER	PER
+.	O	O
+-DOCSTART-	O	O
+Tajik	MISC	MISC
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 troops	O	O
 now	O	O
 control	O	O
@@ -11959,7 +12585,7 @@ strategically	O	O
 vital	O	O
 town	O	O
 of	O	O
-Tavildara	LOC	O
+Tavildara	LOC	LOC
 after	O	O
 driving	O	O
 out	O	O
@@ -11988,8 +12614,13 @@ armed	O	O
 forces	O	O
 ,	O	O
 Major-General	O	O
+<<<<<<< HEAD
 Nikolai	PER	PER
 Sherbatov	PER	O
+=======
+Nikolai	PER	O
+Sherbatov	PER	PER
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 ,	O	O
 took	O	O
 a	O	O
@@ -12044,7 +12675,11 @@ fighters	O	O
 in	O	O
 the	O	O
 surrounding	O	O
+<<<<<<< HEAD
 mountains	O	LOC
+=======
+mountains	O	O
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 .	O	O
 Sherbatov	PER	PER
 said	O	O
@@ -12128,7 +12763,7 @@ began	O	O
 last	O	O
 February	O	O
 .	O	O
-Tajikistan	LOC	LOC
+Tajikistan	LOC	PER
 ,	O	O
 which	O	O
 borders	O	O
@@ -12157,7 +12792,7 @@ coalition	O	O
 of	O	O
 Islamic	MISC	MISC
 and	O	O
-liberal	O	O
+liberal	O	MISC
 groups	O	O
 .	O	O
 Tens	O	O
@@ -12266,7 +12901,11 @@ build	O	O
 our	O	O
 own	O	O
 earth	O	O
+<<<<<<< HEAD
 shelters	O	O
+=======
+shelters	O	ORG
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 to	O	O
 survive	O	O
 the	O	O
@@ -12439,7 +13078,11 @@ on	O	O
 Friday	O	O
 .	O	O
 During	O	O
+<<<<<<< HEAD
 Rosati	PER	LOC
+=======
+Rosati	PER	PER
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 's	O	O
 trip	O	O
 the	O	O
@@ -12475,8 +13118,13 @@ as	O	O
 saying	O	O
 .	O	O
 The	O	O
+<<<<<<< HEAD
 Federal	LOC	O
 Republic	LOC	O
+=======
+Federal	LOC	ORG
+Republic	LOC	LOC
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 of	LOC	O
 Yugoslavia	LOC	O
 is	O	O
@@ -12488,7 +13136,7 @@ the	O	O
 former	O	O
 Yugoslavia	LOC	O
 where	O	O
-Poles	MISC	O
+Poles	MISC	ORG
 currently	O	O
 require	O	O
 visas	O	O
@@ -12520,7 +13168,7 @@ and	O	O
 Yugoslav	MISC	O
 politicians	O	O
 in	O	O
-Belgrade	LOC	LOC
+Belgrade	LOC	O
 ,	O	O
 before	O	O
 visiting	O	O
@@ -12550,8 +13198,13 @@ end	O	O
 of	O	O
 a	O	O
 three-year	O	O
+<<<<<<< HEAD
 U.N.	ORG	O
 trade	O	O
+=======
+U.N.	ORG	ORG
+trade	O	ORG
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 embargo	O	O
 imposed	O	O
 to	O	O
@@ -12634,7 +13287,7 @@ Yeltsin	PER	PER
 's	O	O
 children	O	O
 and	O	O
-grandchildren	O	PER
+grandchildren	O	O
 had	O	O
 visited	O	O
 the	O	O
@@ -12677,7 +13330,7 @@ getting	O	O
 better	O	O
 ,	O	O
 "	O	O
-Yastrzhembsky	PER	O
+Yastrzhembsky	PER	PER
 quoted	O	O
 Yeltsin	PER	O
 as	O	O
@@ -12690,8 +13343,8 @@ recovering	O	O
 in	O	O
 Moscow	LOC	LOC
 's	O	O
-Central	LOC	O
-Clinical	LOC	ORG
+Central	LOC	LOC
+Clinical	LOC	LOC
 Hospital	LOC	O
 ,	O	O
 where	O	O
@@ -12761,7 +13414,7 @@ the	O	O
 night	O	O
 at	O	O
 the	O	O
-Barvikha	LOC	O
+Barvikha	LOC	MISC
 sanatorium	O	O
 outside	O	O
 Moscow	LOC	LOC
@@ -12792,7 +13445,11 @@ from	O	O
 Moscow	LOC	LOC
 .	O	O
 -DOCSTART-	O	O
+<<<<<<< HEAD
 Lebed	PER	O
+=======
+Lebed	PER	ORG
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 ,	O	O
 Chechens	MISC	O
 start	O	O
@@ -12883,7 +13540,7 @@ talks	O	O
 -DOCSTART-	O	O
 Russian	MISC	MISC
 judge	O	O
-stabbed	O	O
+stabbed	O	PER
 to	O	O
 death	O	O
 over	O	O
@@ -12919,7 +13576,7 @@ of	O	O
 seven	O	O
 dollars	O	O
 for	O	O
-trading	O	O
+trading	O	MISC
 illegally	O	O
 ,	O	O
 Interfax	ORG	ORG
@@ -12974,14 +13631,18 @@ The	O	O
 next	O	O
 morning	O	O
 ,	O	O
+<<<<<<< HEAD
 Ivankov	PER	O
+=======
+Ivankov	PER	ORG
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 appeared	O	O
 in	O	O
 the	O	O
 courtroom	O	O
 and	O	O
 stabbed	O	O
-Lavrentyeva	PER	O
+Lavrentyeva	PER	PER
 .	O	O
 The	O	O
 judge	O	O
@@ -12990,7 +13651,7 @@ later	O	O
 in	O	O
 hospital	O	O
 .	O	O
-Interfax	ORG	PER
+Interfax	ORG	O
 quoted	O	O
 Levrentyeva	PER	PER
 's	O	O
@@ -13007,13 +13668,21 @@ criminal	O	O
 attacks	O	O
 .	O	O
 -DOCSTART-	O	O
+<<<<<<< HEAD
 Cofinec	ORG	O
+=======
+Cofinec	ORG	ORG
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 plunges	O	O
 on	O	O
 H1	O	O
 results	O	O
 .	O	O
+<<<<<<< HEAD
 Emese	PER	O
+=======
+Emese	PER	LOC
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 Bartha	PER	O
 BUDAPEST	LOC	O
 1996-08-30	O	O
@@ -13029,9 +13698,15 @@ plunged	O	O
 sharply	O	O
 on	O	O
 the	O	O
+<<<<<<< HEAD
 Budapest	ORG	O
 Stock	ORG	O
 Exchange	ORG	O
+=======
+Budapest	ORG	LOC
+Stock	ORG	O
+Exchange	ORG	ORG
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 (	O	O
 BSE	ORG	O
 )	O	O
@@ -13057,8 +13732,13 @@ GDRs	O	O
 )	O	O
 opened	O	O
 at	O	O
+<<<<<<< HEAD
 5,200	O	LOC
 forints	O	O
+=======
+5,200	O	O
+forints	O	LOC
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 on	O	O
 the	O	O
 BSE	MISC	O
@@ -13217,12 +13897,17 @@ the	O	O
 conference	O	O
 call	O	O
 ,	O	O
-Frater	PER	PER
+Frater	PER	O
 said	O	O
 he	O	O
 regarded	O	O
+<<<<<<< HEAD
 Cofinec	ORG	PER
 GDRs	O	O
+=======
+Cofinec	ORG	O
+GDRs	O	PER
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 --	O	O
 which	O	O
 are	O	O
@@ -13340,7 +14025,7 @@ Net	O	O
 profit	O	O
 for	O	O
 the	O	O
-January-June	O	O
+January-June	O	MISC
 1996	O	O
 period	O	O
 was	O	O
@@ -13402,8 +14087,13 @@ remain	O	O
 on	O	O
 Petofi	ORG	O
 's	O	O
+<<<<<<< HEAD
 board	O	O
 of	O	O
+=======
+board	O	ORG
+of	O	ORG
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 directors	O	O
 .	O	O
 "	O	O
@@ -13472,10 +14162,17 @@ pct	O	O
 BUCHAREST	LOC	LOC
 1996-08-30	O	O
 The	O	O
+<<<<<<< HEAD
 National	ORG	O
 Bank	ORG	O
 of	ORG	O
 Romania	ORG	ORG
+=======
+National	ORG	ORG
+Bank	ORG	ORG
+of	ORG	ORG
+Romania	ORG	LOC
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 (	O	O
 BNR	ORG	O
 )	O	O
@@ -13528,7 +14225,11 @@ percent	O	O
 ,	O	O
 against	O	O
 the	O	O
+<<<<<<< HEAD
 BNR	ORG	O
+=======
+BNR	ORG	PER
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 's	O	O
 offer	O	O
 of	O	O
@@ -13666,18 +14367,31 @@ terrorist	O	O
 attack	O	O
 on	O	O
 the	O	O
+<<<<<<< HEAD
 ornate	O	MISC
 Casa	LOC	O
 de	LOC	O
 Narino	LOC	PER
+=======
+ornate	O	O
+Casa	LOC	LOC
+de	LOC	ORG
+Narino	LOC	O
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 presidential	O	O
 palace	O	O
 in	O	O
 Bogota	LOC	LOC
 's	O	O
+<<<<<<< HEAD
 historic	O	ORG
 downtown	O	ORG
 area	O	O
+=======
+historic	O	O
+downtown	O	LOC
+area	O	LOC
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 .	O	O
 "	O	O
 They	O	O
@@ -13755,8 +14469,8 @@ police	O	O
 had	O	O
 been	O	O
 "	O	O
-specially	O	O
-adapted	O	PER
+specially	O	PER
+adapted	O	O
 .	O	O
 "	O	O
 The	O	O
@@ -13792,8 +14506,13 @@ Assault	O	O
 charges	O	O
 dropped	O	O
 against	O	O
+<<<<<<< HEAD
 Surinam	LOC	O
 ex-rebel	O	O
+=======
+Surinam	LOC	LOC
+ex-rebel	O	PER
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 .	O	O
 PARAMARIBO	LOC	LOC
 ,	O	O
@@ -13884,7 +14603,11 @@ Pinas	PER	O
 after	O	O
 replacing	O	O
 a	O	O
+<<<<<<< HEAD
 golden	O	MISC
+=======
+golden	O	ORG
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 necklace	O	PER
 lost	O	O
 in	O	O
@@ -13896,7 +14619,7 @@ was	O	O
 the	O	O
 second	O	O
 time	O	O
-Brunswijk	PER	O
+Brunswijk	PER	PER
 had	O	O
 been	O	O
 charged	O	O
@@ -13935,7 +14658,11 @@ the	O	O
 military	O	O
 regime	O	O
 of	O	O
+<<<<<<< HEAD
 Desi	PER	LOC
+=======
+Desi	PER	PER
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 Bouterse	PER	O
 in	O	O
 the	O	O
@@ -13958,7 +14685,7 @@ Cambodian	MISC	O
 opposition	O	O
 newspaper	O	O
 editor	O	O
-pardoned	O	PER
+pardoned	O	O
 .	O	O
 PHNOM	LOC	O
 PENH	LOC	O
@@ -13995,8 +14722,13 @@ the	O	O
 Sereipheap	ORG	O
 Thmei	ORG	O
 (	O	O
+<<<<<<< HEAD
 New	ORG	O
 Liberty	ORG	LOC
+=======
+New	ORG	LOC
+Liberty	ORG	ORG
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 )	O	O
 newspaper	O	O
 ,	O	O
@@ -14008,7 +14740,7 @@ of	O	O
 the	O	O
 run-down	O	O
 French	MISC	MISC
-colonial-era	O	O
+colonial-era	O	MISC
 T3	LOC	O
 prison	O	O
 late	O	O
@@ -14100,7 +14832,11 @@ promised	O	O
 an	O	O
 amnesty	O	O
 to	O	O
+<<<<<<< HEAD
 Hen	PER	PER
+=======
+Hen	PER	O
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 Vipheak	PER	O
 ,	O	O
 along	O	O
@@ -14131,10 +14867,14 @@ June	O	O
 Co-Premiers	O	O
 Prince	O	O
 Norodom	PER	PER
-Ranariddh	PER	O
+Ranariddh	PER	PER
 and	O	O
 Hun	PER	O
+<<<<<<< HEAD
 Sen	PER	O
+=======
+Sen	PER	PER
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 agreed	O	O
 earlier	O	O
 this	O	O
@@ -14192,8 +14932,13 @@ much	O	O
 better	O	O
 .	O	O
 The	O	O
+<<<<<<< HEAD
 Southeast	MISC	LOC
 Asian	MISC	LOC
+=======
+Southeast	MISC	O
+Asian	MISC	ORG
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 gold	O	O
 market	O	O
 was	O	O
@@ -14255,8 +15000,13 @@ London	LOC	LOC
 prices	O	O
 ,	O	O
 with	O	O
+<<<<<<< HEAD
 South	MISC	LOC
 Korean	MISC	LOC
+=======
+South	MISC	MISC
+Korean	MISC	MISC
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 and	O	O
 Indonesian-origin	MISC	O
 premiums	O	O
@@ -14287,8 +15037,13 @@ to	O	O
 sell	O	O
 gold	O	O
 by	O	O
+<<<<<<< HEAD
 South	MISC	LOC
 Korean	MISC	LOC
+=======
+South	MISC	MISC
+Korean	MISC	MISC
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 traders	O	O
 ,	O	O
 following	O	O
@@ -14377,7 +15132,7 @@ lid	O	O
 on	O	O
 premiums	O	O
 .	O	O
-Gold	O	O
+Gold	O	ORG
 closed	O	O
 down	O	O
 at	O	O
@@ -14590,7 +15345,11 @@ celebrations	O	O
 .	O	O
 Mona	PER	LOC
 Eltahawy	PER	O
+<<<<<<< HEAD
 TRIPOLI	LOC	O
+=======
+TRIPOLI	LOC	LOC
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 1996-08-30	O	O
 Libyans	MISC	O
 are	O	O
@@ -14617,7 +15376,7 @@ Gaddafi	PER	O
 to	O	O
 power	O	O
 .	O	O
-Green	O	PER
+Green	O	O
 flags	O	O
 and	O	O
 banners	O	O
@@ -14625,6 +15384,7 @@ praise	O	O
 the	O	O
 "	O	O
 great	O	O
+<<<<<<< HEAD
 revolution	O	O
 "	O	O
 and	O	O
@@ -14637,6 +15397,20 @@ sanctions	O	O
 imposed	O	O
 for	O	O
 Libya	LOC	O
+=======
+revolution	O	MISC
+"	O	O
+and	O	O
+promise	O	O
+defiance	O	O
+against	O	ORG
+United	ORG	ORG
+Nations	ORG	ORG
+sanctions	O	O
+imposed	O	O
+for	O	O
+Libya	LOC	LOC
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 's	O	O
 refusal	O	O
 to	O	O
@@ -14651,12 +15425,16 @@ in	O	O
 connection	O	O
 with	O	O
 the	O	O
-1988	O	O
+1988	O	MISC
 bombing	O	O
 of	O	O
 a	O	O
 Pan	ORG	O
+<<<<<<< HEAD
 Am	ORG	O
+=======
+Am	ORG	ORG
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 flight	O	O
 over	O	O
 Lockerbie	LOC	LOC
@@ -14705,7 +15483,7 @@ at	O	O
 the	O	O
 city	O	O
 's	O	O
-Green	LOC	LOC
+Green	LOC	O
 Square	LOC	O
 where	O	O
 makeshift	O	O
@@ -14742,7 +15520,11 @@ a	O	O
 group	O	O
 of	O	O
 young	O	MISC
+<<<<<<< HEAD
 army	O	MISC
+=======
+army	O	O
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 officers	O	O
 ,	O	O
 led	O	O
@@ -14915,8 +15697,8 @@ Egyptian	MISC	MISC
 workers	O	O
 .	O	O
 -DOCSTART-	O	O
-Twilight	O	LOC
-zone	O	O
+Twilight	O	ORG
+zone	O	ORG
 for	O	O
 Wall	LOC	O
 Street	LOC	O
@@ -14927,8 +15709,13 @@ heats	O	O
 up	O	O
 .	O	O
 Pierre	PER	LOC
+<<<<<<< HEAD
 Belec	PER	O
 NEW	LOC	O
+=======
+Belec	PER	PER
+NEW	LOC	ORG
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 YORK	LOC	LOC
 1996-08-30	O	O
 For	O	O
@@ -15021,7 +15808,7 @@ question	O	O
 of	O	O
 whether	O	O
 the	O	O
-Federal	ORG	O
+Federal	ORG	ORG
 Reserve	ORG	O
 will	O	O
 raise	O	O
@@ -15062,7 +15849,7 @@ could	O	O
 happen	O	O
 for	O	O
 financial	O	O
-markets	O	O
+markets	O	ORG
 is	O	O
 that	O	O
 if	O	O
@@ -15093,7 +15880,11 @@ officer	O	O
 at	O	O
 First	ORG	O
 Albany	ORG	O
+<<<<<<< HEAD
 Corp.	ORG	O
+=======
+Corp.	ORG	MISC
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 "	O	O
 That	O	O
 's	O	O
@@ -15199,7 +15990,11 @@ week	O	O
 the	O	O
 market	O	O
 weighed	O	O
+<<<<<<< HEAD
 Dole	PER	ORG
+=======
+Dole	PER	PER
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 's	O	O
 proposal	O	O
 to	O	O
@@ -15356,7 +16151,11 @@ at	O	O
 the	O	O
 consulting	O	O
 firm	O	O
+<<<<<<< HEAD
 North	ORG	LOC
+=======
+North	ORG	MISC
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 American	ORG	MISC
 Equity	ORG	ORG
 Services	ORG	O
@@ -15397,7 +16196,7 @@ in	O	O
 1984	O	O
 ,	O	O
 while	O	O
-Democrat	MISC	PER
+Democrat	MISC	MISC
 Walter	PER	PER
 Mondale	PER	PER
 ,	O	O
@@ -15413,7 +16212,7 @@ Bush	PER	PER
 became	O	O
 president	O	O
 in	O	O
-1988	O	O
+1988	O	PER
 on	O	O
 his	O	O
 no-new-tax	O	O
@@ -15427,7 +16226,7 @@ with	O	O
 a	O	O
 promise	O	O
 to	O	O
-fatten	O	O
+fatten	O	MISC
 workers	O	O
 '	O	O
 paychecks	O	O
@@ -15761,9 +16560,15 @@ On	O	O
 Friday	O	O
 ,	O	O
 the	O	O
+<<<<<<< HEAD
 Dow	MISC	ORG
 Jones	MISC	PER
 index	O	PER
+=======
+Dow	MISC	MISC
+Jones	MISC	MISC
+index	O	MISC
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 closed	O	O
 down	O	O
 31.44	O	O
@@ -15782,9 +16587,15 @@ down	O	O
 points	O	O
 .	O	O
 The	O	O
+<<<<<<< HEAD
 Nasdaq	MISC	O
 composite	O	O
 index	O	O
+=======
+Nasdaq	MISC	MISC
+composite	O	MISC
+index	O	MISC
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 closed	O	O
 3.53	O	O
 points	O	O
@@ -15805,7 +16616,7 @@ points	O	O
 .	O	O
 The	O	O
 Standard	ORG	O
-&	ORG	O
+&	ORG	ORG
 Poor	ORG	O
 's	O	O
 index	O	O
@@ -15828,9 +16639,15 @@ week	O	O
 .	O	O
 The	O	O
 American	ORG	MISC
+<<<<<<< HEAD
 Stock	ORG	O
 Exchange	ORG	O
 index	O	O
+=======
+Stock	ORG	MISC
+Exchange	ORG	ORG
+index	O	MISC
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 was	O	O
 down	O	O
 1.66	O	O
@@ -15847,17 +16664,22 @@ the	O	O
 week	O	O
 .	O	O
 -DOCSTART-	O	O
-Brisk	O	O
+Brisk	O	MISC
 economic	O	O
 reports	O	O
+<<<<<<< HEAD
 rattle	O	PER
 markets	O	O
+=======
+rattle	O	O
+markets	O	ORG
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 anew	O	O
 .	O	O
 Glenn	PER	LOC
 Somerville	PER	O
 WASHINGTON	LOC	LOC
-1996-08-30	O	O
+1996-08-30	O	LOC
 Factory	O	O
 orders	O	O
 rose	O	O
@@ -15957,7 +16779,11 @@ separate	O	O
 report	O	O
 from	O	O
 Chicago	LOC	LOC
+<<<<<<< HEAD
 area	O	O
+=======
+area	O	MISC
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 purchasing	O	O
 managers	O	O
 underlined	O	O
@@ -16057,7 +16883,7 @@ temporary	O	O
 than	O	O
 Federal	ORG	O
 Reserve	ORG	O
-policy-makers	O	O
+policy-makers	O	ORG
 had	O	O
 wanted	O	O
 .	O	O
@@ -16096,7 +16922,7 @@ Barnett	ORG	ORG
 Banks	ORG	ORG
 Inc.	ORG	ORG
 in	O	O
-Jacksonville	LOC	LOC
+Jacksonville	LOC	ORG
 ,	O	O
 Fla	LOC	O
 .	O	O
@@ -16422,7 +17248,7 @@ the	O	O
 5-1	O	O
 /	O	O
 2-year-old	O	O
-economic	O	O
+economic	O	MISC
 expansion	O	O
 .	O	O
 In	O	O
@@ -16436,8 +17262,13 @@ network	O	O
 CNBC	ORG	ORG
 Friday	O	O
 ,	O	O
+<<<<<<< HEAD
 Federal	ORG	ORG
 Reserve	ORG	O
+=======
+Federal	ORG	O
+Reserve	ORG	ORG
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 Governor	O	O
 Lawrence	PER	PER
 Lindsey	PER	PER
@@ -16702,9 +17533,15 @@ Maggie	PER	LOC
 McNeil	PER	O
 WASHINGTON	LOC	LOC
 1996-08-30	O	O
+<<<<<<< HEAD
 U.S.	ORG	ORG
 Agriculture	ORG	O
 Department	ORG	ORG
+=======
+U.S.	ORG	LOC
+Agriculture	ORG	ORG
+Department	ORG	O
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 officials	O	O
 said	O	O
 Friday	O	O
@@ -16748,7 +17585,11 @@ opportunity	O	O
 to	O	O
 import	O	O
 (	O	O
+<<<<<<< HEAD
 Mexican	MISC	LOC
+=======
+Mexican	MISC	MISC
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 avocados	O	O
 )	O	O
 probably	O	O
@@ -16867,7 +17708,7 @@ protest	O	O
 from	O	O
 U.S.	LOC	LOC
 avocado	O	O
-growers	O	PER
+growers	O	O
 ,	O	O
 who	O	O
 are	O	O
@@ -16934,13 +17775,22 @@ is	O	O
 illegal	O	O
 under	O	O
 international	O	MISC
+<<<<<<< HEAD
 trading	O	O
+=======
+trading	O	MISC
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 rules	O	O
 of	O	O
 the	O	O
 World	ORG	O
+<<<<<<< HEAD
 Trade	ORG	O
 Organisation	ORG	O
+=======
+Trade	ORG	ORG
+Organisation	ORG	ORG
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 .	O	O
 Proponents	O	PER
 of	O	O
@@ -17076,7 +17926,11 @@ is	O	O
 still	O	O
 studying	O	O
 the	O	O
+<<<<<<< HEAD
 new	O	O
+=======
+new	O	ORG
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 data	O	O
 ,	O	O
 and	O	O
@@ -17160,9 +18014,15 @@ Tom	PER	PER
 Bellamore	PER	PER
 of	O	O
 the	O	O
+<<<<<<< HEAD
 California	LOC	LOC
 avocado	O	O
 group	O	O
+=======
+California	LOC	ORG
+avocado	O	ORG
+group	O	ORG
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 .	O	O
 Administration	O	ORG
 officials	O	O
@@ -17201,7 +18061,11 @@ issue	O	O
 "	O	O
 said	O	O
 the	O	O
+<<<<<<< HEAD
 Agriculture	ORG	O
+=======
+Agriculture	ORG	ORG
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 Department	ORG	ORG
 's	O	O
 Drazek	PER	O
@@ -17238,7 +18102,7 @@ cancer	O	O
 CHICAGO	LOC	LOC
 1996-08-30	O	O
 Chicago	LOC	ORG
-Cardinal	O	O
+Cardinal	O	MISC
 Joseph	PER	PER
 Bernardin	PER	PER
 ,	O	O
@@ -17507,14 +18371,14 @@ the	O	O
 disease	O	O
 ,	O	O
 although	O	O
-Bernardin	PER	PER
+Bernardin	PER	O
 's	O	O
 case	O	O
 was	O	O
 caught	O	O
 early	O	O
 .	O	O
-Surgeons	O	O
+Surgeons	O	PER
 removed	O	O
 a	O	O
 cancerous	O	O
@@ -17605,7 +18469,7 @@ chemotherapy	O	O
 The	O	O
 spare	O	O
 ,	O	O
-soft-spoken	O	O
+soft-spoken	O	PER
 son	O	O
 of	O	O
 an	O	O
@@ -17793,7 +18657,11 @@ years	O	O
 he	O	O
 headed	O	O
 the	O	O
+<<<<<<< HEAD
 bishops	O	MISC
+=======
+bishops	O	O
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 '	O	O
 anti-abortion	O	O
 policy	O	O
@@ -17802,7 +18670,7 @@ committee	O	O
 espousing	O	O
 a	O	O
 policy	O	O
-describing	O	O
+describing	O	MISC
 human	O	O
 life	O	O
 as	O	O
@@ -17832,9 +18700,13 @@ billion	O	O
 proposed	O	O
 acquisition	O	ORG
 of	O	O
-Boatmen	ORG	ORG
+Boatmen	ORG	PER
 's	ORG	O
+<<<<<<< HEAD
 Bancshares	ORG	O
+=======
+Bancshares	ORG	PER
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 Inc.	ORG	ORG
 by	O	O
 NationsBank	ORG	ORG
@@ -17917,13 +18789,20 @@ Commerce	ORG	O
 .	O	O
 "	O	O
 St.	MISC	LOC
+<<<<<<< HEAD
 Louis-based	MISC	O
 Mercantile	ORG	O
 Bancorp	ORG	PER
 Inc.	ORG	PER
+=======
+Louis-based	MISC	MISC
+Mercantile	ORG	ORG
+Bancorp	ORG	ORG
+Inc.	ORG	ORG
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 ,	O	O
-a	O	O
-bank	O	O
+a	O	ORG
+bank	O	ORG
 holding	O	O
 company	O	O
 with	O	O
@@ -17989,11 +18868,19 @@ focuses	O	O
 more	O	O
 attention	O	O
 on	O	O
+<<<<<<< HEAD
 Mercantile	ORG	O
+=======
+Mercantile	ORG	PER
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 ,	O	O
 Commerce	ORG	ORG
 and	O	O
+<<<<<<< HEAD
 Roosevelt	ORG	O
+=======
+Roosevelt	ORG	ORG
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 ,	O	O
 "	O	O
 said	O	O
@@ -18002,6 +18889,7 @@ Weber	PER	PER
 ,	O	O
 analyst	O	O
 at	O	O
+<<<<<<< HEAD
 A.G.	ORG	O
 Edwards	ORG	O
 &	ORG	O
@@ -18011,6 +18899,17 @@ Roosevelt	ORG	O
 Financial	ORG	O
 Group	ORG	O
 Inc	ORG	PER
+=======
+A.G.	ORG	ORG
+Edwards	ORG	ORG
+&	ORG	ORG
+Sons	ORG	ORG
+.	O	ORG
+Roosevelt	ORG	ORG
+Financial	ORG	ORG
+Group	ORG	ORG
+Inc	ORG	ORG
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 is	O	O
 a	O	O
 $	O	O
@@ -18019,8 +18918,13 @@ billion	O	O
 asset-St	MISC	O
 .	MISC	O
 Louis	MISC	LOC
+<<<<<<< HEAD
 based	O	PER
 thrift	O	PER
+=======
+based	O	ORG
+thrift	O	ORG
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 .	O	O
 "	O	O
 Now	O	O
@@ -18038,9 +18942,15 @@ Mercantile	ORG	O
 Weber	PER	PER
 said	O	O
 .	O	O
+<<<<<<< HEAD
 Mercantile	ORG	PER
 and	O	O
 Commerce	ORG	ORG
+=======
+Mercantile	ORG	MISC
+and	O	O
+Commerce	ORG	O
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 did	O	O
 not	O	O
 return	O	O
@@ -18070,7 +18980,11 @@ and	O	O
 Norwest	ORG	ORG
 Corp.	ORG	O
 ,	O	O
+<<<<<<< HEAD
 Ohio-based	MISC	O
+=======
+Ohio-based	MISC	PER
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 KeyCorp	ORG	O
 and	O	O
 Banc	ORG	O
@@ -18079,9 +18993,15 @@ Corp.	ORG	O
 ,	O	O
 and	O	O
 First	ORG	O
+<<<<<<< HEAD
 Chicago	ORG	LOC
 NBD	ORG	O
 Corp.	ORG	O
+=======
+Chicago	ORG	ORG
+NBD	ORG	O
+Corp.	ORG	ORG
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 in	O	O
 Illinois	LOC	LOC
 .	O	O
@@ -18134,7 +19054,11 @@ billion	O	O
 in	O	O
 assets	O	O
 ,	O	O
+<<<<<<< HEAD
 Boatmen	ORG	PER
+=======
+Boatmen	ORG	O
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 's	ORG	O
 was	O	O
 the	O	O
@@ -18159,13 +19083,19 @@ banking	O	O
 statute	O	O
 .	O	O
 "	O	O
-Boatmen	ORG	PER
-'s	ORG	O
+Boatmen	ORG	O
+'s	ORG	ORG
 was	O	O
 the	O	O
+<<<<<<< HEAD
 plum	O	ORG
 of	O	O
 Missouri	LOC	LOC
+=======
+plum	O	PER
+of	O	LOC
+Missouri	LOC	ORG
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 and	O	O
 was	O	O
 the	O	O
@@ -18312,7 +19242,7 @@ but	O	O
 the	O	O
 wild	O	O
 premium	O	O
-NationsBank	ORG	O
+NationsBank	ORG	PER
 put	O	O
 on	O	O
 this	O	O
@@ -18349,7 +19279,11 @@ Co	ORG	O
 U.S.	LOC	LOC
 tight-lipped	O	O
 on	O	O
+<<<<<<< HEAD
 Libya	LOC	O
+=======
+Libya	LOC	ORG
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 's	O	O
 award	O	O
 to	O	O
@@ -18377,8 +19311,13 @@ Louis	PER	PER
 Farrakhan	PER	PER
 ,	O	O
 the	O	O
+<<<<<<< HEAD
 U.S.	LOC	MISC
 black	O	MISC
+=======
+U.S.	LOC	LOC
+black	O	O
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 leader	O	O
 who	O	O
 was	O	O
@@ -18438,7 +19377,7 @@ gifts	O	O
 from	O	O
 Libya	LOC	O
 is	O	O
-well-known	O	O
+well-known	O	MISC
 .	O	O
 "	O	O
 Davies	PER	PER
@@ -18534,7 +19473,11 @@ Libya	LOC	PER
 was	O	O
 on	O	O
 the	O	O
+<<<<<<< HEAD
 U.S.	LOC	MISC
+=======
+U.S.	LOC	LOC
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 list	O	O
 of	O	O
 states	O	O
@@ -18560,9 +19503,13 @@ the	O	O
 bombing	O	O
 of	O	O
 Pan	MISC	LOC
+<<<<<<< HEAD
 Am	MISC	O
+=======
+Am	MISC	ORG
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 flight	MISC	O
-103	MISC	O
+103	MISC	MISC
 over	O	O
 Lockerbie	LOC	O
 ,	O	O
@@ -18617,9 +19564,15 @@ the	O	O
 prior	O	O
 week	O	O
 ,	O	O
+<<<<<<< HEAD
 Offshore	ORG	O
 Data	ORG	O
 Services	ORG	O
+=======
+Offshore	ORG	ORG
+Data	ORG	ORG
+Services	ORG	ORG
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 said	O	O
 .	O	O
 The	O	O
@@ -18704,9 +19657,15 @@ percent	O	O
 .	O	O
 --	O	O
 New	ORG	LOC
+<<<<<<< HEAD
 York	ORG	LOC
 Energy	ORG	O
 Desk	ORG	ORG
+=======
+York	ORG	ORG
+Energy	ORG	ORG
+Desk	ORG	O
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 212-859-1620	O	O
 -DOCSTART-	O	O
 Dole	PER	ORG
@@ -18725,12 +19684,16 @@ Calif	LOC	O
 Now	O	O
 that	O	O
 the	O	O
-party	O	O
+party	O	ORG
 conventions	O	O
 are	O	O
 over	O	O
 ,	O	O
+<<<<<<< HEAD
 Republicans	MISC	O
+=======
+Republicans	MISC	ORG
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 have	O	O
 signalled	O	O
 they	O	O
@@ -18841,11 +19804,16 @@ Sept	O	O
 .	O	O
 25	O	O
 ,	O	O
+<<<<<<< HEAD
 Oct.	O	O
 9	O	O
+=======
+Oct.	O	PER
+9	O	PER
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 and	O	O
 Oct.	O	O
-16	O	O
+16	O	PER
 .	O	O
 The	O	O
 vice	O	O
@@ -18896,7 +19864,7 @@ mid-September	O	O
 on	O	O
 whether	O	O
 Texas	LOC	LOC
-billionaire	O	O
+billionaire	O	PER
 Ross	PER	PER
 Perot	PER	PER
 ,	O	O
@@ -19001,7 +19969,7 @@ had	O	O
 been	O	O
 attached	O	O
 by	O	O
-cables	O	O
+cables	O	PER
 to	O	O
 a	O	O
 recovery	O	O
@@ -19010,7 +19978,11 @@ off	O	O
 the	O	O
 coast	O	O
 of	O	O
+<<<<<<< HEAD
 Newfoundland	LOC	LOC
+=======
+Newfoundland	LOC	O
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 ,	O	O
 Canada	LOC	LOC
 ,	O	O
@@ -19027,9 +19999,15 @@ said	O	O
 Erin	PER	PER
 Purcell	PER	O
 of	O	O
+<<<<<<< HEAD
 Boston-based	MISC	O
 Reagan	ORG	O
 Communications	ORG	O
+=======
+Boston-based	MISC	MISC
+Reagan	ORG	ORG
+Communications	ORG	ORG
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 that	O	O
 represents	O	O
 two	O	O
@@ -19103,8 +20081,13 @@ the	O	O
 bags	O	O
 burst	O	O
 and	O	O
+<<<<<<< HEAD
 cables	O	PER
 snapped	O	PER
+=======
+cables	O	ORG
+snapped	O	O
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 ,	O	O
 she	O	O
 said	O	O
@@ -19142,11 +20125,15 @@ on	O	O
 board	O	O
 .	O	O
 The	O	O
+<<<<<<< HEAD
 wreck	O	O
+=======
+wreck	O	LOC
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 was	O	O
 located	O	O
 in	O	O
-1985	O	O
+1985	O	LOC
 .	O	O
 Passengers	O	O
 who	O	O
@@ -19160,10 +20147,14 @@ to	O	O
 accompany	O	O
 the	O	O
 recovery	O	O
+<<<<<<< HEAD
 expedition	O	O
+=======
+expedition	O	ORG
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 on	O	O
 two	O	O
-cruise	O	O
+cruise	O	MISC
 ships	O	O
 had	O	O
 returned	O	O
@@ -19173,11 +20164,15 @@ port	O	O
 on	O	O
 Thursday	O	O
 ,	O	O
-Purcell	PER	PER
+Purcell	PER	O
 said	O	O
 .	O	O
 -DOCSTART-	O	O
+<<<<<<< HEAD
 Bonn	LOC	O
+=======
+Bonn	LOC	ORG
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 appeals	O	O
 for	O	O
 Middle	LOC	LOC
@@ -19376,7 +20371,7 @@ Bank	LOC	O
 .	O	O
 The	O	O
 foreign	O	O
-ministry	O	O
+ministry	O	ORG
 later	O	O
 announced	O	O
 Israeli	MISC	MISC
@@ -19403,7 +20398,11 @@ ministry	O	O
 said	O	O
 Levy	PER	PER
 and	O	O
+<<<<<<< HEAD
 Kinkel	PER	O
+=======
+Kinkel	PER	ORG
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 would	O	O
 discuss	O	O
 the	O	O
@@ -19474,7 +20473,7 @@ defence	O	O
 ministry	O	O
 said	O	O
 .	O	O
-Ruehe	PER	PER
+Ruehe	PER	ORG
 planned	O	O
 to	O	O
 meet	O	O
@@ -19515,8 +20514,13 @@ France	LOC	LOC
 expels	O	O
 African	MISC	MISC
 ,	O	O
+<<<<<<< HEAD
 Air	ORG	LOC
 France	ORG	LOC
+=======
+Air	ORG	MISC
+France	ORG	ORG
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 unions	O	O
 protest	O	O
 .	O	O
@@ -19541,8 +20545,13 @@ church	O	O
 as	O	O
 about	O	O
 100	O	O
+<<<<<<< HEAD
 Air	ORG	O
 France	ORG	LOC
+=======
+Air	ORG	MISC
+France	ORG	MISC
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 workers	O	O
 denounced	O	O
 "	O	O
@@ -19558,7 +20567,7 @@ immigrants	O	O
 home	O	O
 .	O	O
 A	O	O
-Guinean	MISC	O
+Guinean	MISC	MISC
 man	O	O
 ,	O	O
 detained	O	O
@@ -19567,7 +20576,7 @@ a	O	O
 round-up	O	O
 in	O	O
 the	O	O
-Saint-Bernard	LOC	O
+Saint-Bernard	LOC	LOC
 church	O	O
 a	O	O
 week	O	O
@@ -19582,7 +20591,7 @@ Air	ORG	O
 France	ORG	LOC
 flight	O	O
 to	O	O
-Conakry	LOC	O
+Conakry	LOC	LOC
 after	O	O
 his	O	O
 appeals	O	O
@@ -19594,8 +20603,13 @@ for	O	O
 Air	ORG	O
 France	ORG	LOC
 's	O	O
+<<<<<<< HEAD
 pro-Socialist	O	O
 CFDT	ORG	O
+=======
+pro-Socialist	O	ORG
+CFDT	ORG	ORG
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 union	O	ORG
 said	O	O
 .	O	O
@@ -19662,8 +20676,13 @@ Charles	LOC	LOC
 de	LOC	PER
 Gaulle	LOC	LOC
 airport	O	O
+<<<<<<< HEAD
 north	O	LOC
 of	O	O
+=======
+north	O	ORG
+of	O	LOC
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 Paris	LOC	LOC
 against	O	O
 the	O	O
@@ -19691,7 +20710,11 @@ Air	ORG	LOC
 France	ORG	LOC
 chairman	O	O
 )	O	O
+<<<<<<< HEAD
 Christian	PER	O
+=======
+Christian	PER	MISC
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 Blanc	PER	O
 that	O	O
 no	O	O
@@ -19853,7 +20876,7 @@ ring	O	O
 .	O	O
 Police	O	O
 suspect	O	O
-Nicole	PER	PER
+Nicole	PER	O
 Nichterwitz	PER	PER
 's	O	O
 aunt	O	PER
@@ -19883,8 +20906,13 @@ pair	O	O
 from	O	O
 school	O	O
 in	O	O
+<<<<<<< HEAD
 Velten	LOC	LOC
 near	O	O
+=======
+Velten	LOC	O
+near	O	LOC
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 Berlin	LOC	LOC
 on	O	O
 Monday	O	O
@@ -19956,7 +20984,11 @@ found	O	O
 missing	O	O
 German	MISC	MISC
 girl	O	O
+<<<<<<< HEAD
 Nicole	PER	PER
+=======
+Nicole	PER	O
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 Nichterwitz	PER	O
 alive	O	O
 on	O	O
@@ -20007,7 +21039,11 @@ arrested	O	O
 her	O	O
 aunt	O	PER
 and	O	O
+<<<<<<< HEAD
 companion	O	O
+=======
+companion	O	PER
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 ,	O	O
 "	O	O
 said	O	O
@@ -20061,8 +21097,13 @@ from	O	O
 her	O	O
 school	O	O
 in	O	O
+<<<<<<< HEAD
 Velten	LOC	LOC
 near	O	O
+=======
+Velten	LOC	O
+near	O	LOC
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 Berlin	LOC	LOC
 on	O	O
 Monday	O	O
@@ -20071,9 +21112,15 @@ German	MISC	MISC
 police	O	O
 suspected	O	O
 her	O	O
+<<<<<<< HEAD
 aunt	O	PER
 ,	O	O
 47	O	O
+=======
+aunt	O	O
+,	O	O
+47	O	PER
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 ,	O	O
 and	O	O
 companion	O	O
@@ -20159,7 +21206,7 @@ car	O	O
 released	O	O
 to	O	O
 Dutch	MISC	MISC
-media	O	O
+media	O	ORG
 led	O	O
 to	O	O
 their	O	O
@@ -20263,10 +21310,14 @@ fresh	O	O
 buying	O	O
 by	O	O
 stainless	O	O
+<<<<<<< HEAD
 steel	O	PER
+=======
+steel	O	O
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 makers	O	O
 .	O	O
-Tin	O	O
+Tin	O	PER
 was	O	O
 unchanged	O	O
 at	O	O
@@ -20293,8 +21344,13 @@ at	O	O
 rupees	O	O
 .	O	O
 --	O	O
+<<<<<<< HEAD
 Bombay	ORG	ORG
 Commodities	ORG	O
+=======
+Bombay	ORG	PER
+Commodities	ORG	ORG
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 +91-22-265	O	O
 9000	O	O
 -DOCSTART-	O	O
@@ -20349,8 +21405,13 @@ vs	O	O
 -DOCSTART-	O	O
 Canadian	MISC	ORG
 bonds	O	O
+<<<<<<< HEAD
 open	O	O
 softer	O	ORG
+=======
+open	O	MISC
+softer	O	O
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 ,	O	O
 spreads	O	O
 to	O	O
@@ -20456,8 +21517,13 @@ spread	O	O
 between	O	O
 benchmark	O	ORG
 bonds	O	O
+<<<<<<< HEAD
 narrowed	O	ORG
 77	O	O
+=======
+narrowed	O	O
+77	O	MISC
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 basis	O	O
 points	O	O
 from	O	O
@@ -20472,8 +21538,13 @@ trading	O	O
 on	O	O
 Wednesday	O	O
 .	O	O
+<<<<<<< HEAD
 Statistics	ORG	O
 Canada	ORG	LOC
+=======
+Statistics	ORG	ORG
+Canada	ORG	ORG
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 on	O	O
 Friday	O	O
 reported	O	O
@@ -20561,7 +21632,7 @@ the	O	O
 release	O	O
 of	O	O
 strong	O	O
-U.S.	LOC	MISC
+U.S.	LOC	LOC
 economic	O	O
 data	O	O
 ,	O	O
@@ -20570,9 +21641,15 @@ a	O	O
 report	O	O
 showing	O	O
 the	O	O
+<<<<<<< HEAD
 Chicago	ORG	ORG
 Purchasing	ORG	O
 Managers	ORG	O
+=======
+Chicago	ORG	LOC
+Purchasing	ORG	O
+Managers	ORG	MISC
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 August	O	O
 index	O	O
 rose	O	O
@@ -20585,8 +21662,13 @@ July	O	O
 .	O	O
 "	O	O
 The	O	O
+<<<<<<< HEAD
 purchasing	O	O
 managers	O	O
+=======
+purchasing	O	MISC
+managers	O	MISC
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 '	O	O
 number	O	O
 is	O	O
@@ -20604,9 +21686,15 @@ other	O	O
 news	O	O
 ,	O	O
 the	O	O
+<<<<<<< HEAD
 Toronto	ORG	ORG
 Bond	ORG	ORG
 Traders	ORG	ORG
+=======
+Toronto	ORG	LOC
+Bond	ORG	O
+Traders	ORG	O
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 '	ORG	O
 Association	ORG	O
 said	O	O
@@ -20726,7 +21814,7 @@ percent	O	O
 .	O	O
 --	O	O
 Jeffrey	PER	PER
-Hodgson	PER	PER
+Hodgson	PER	O
 (	O	O
 416	O	O
 )	O	O
@@ -20737,16 +21825,22 @@ e-mail	O	O
 jeffrey.hodgson@reuters.com	O	O
 -DOCSTART-	O	O
 Aw	O	ORG
+<<<<<<< HEAD
 Computer	ORG	O
 Systems	ORG	O
 Inc	ORG	O
+=======
+Computer	ORG	ORG
+Systems	ORG	ORG
+Inc	ORG	ORG
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 Q2	O	O
 loss	O	O
 widens	O	O
 .	O	O
 NEW	LOC	LOC
 YORK	LOC	LOC
-1996-08-30	O	O
+1996-08-30	O	ORG
 1996	O	O
 1995	O	O
 Shr	O	O
@@ -20800,8 +21894,13 @@ Share	O	O
 Numbers	O	O
 )	O	O
 --	O	O
+<<<<<<< HEAD
 New	ORG	LOC
 York	ORG	LOC
+=======
+New	ORG	ORG
+York	ORG	ORG
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 Newsdesk	ORG	O
 212-859-1610	O	O
 .	O	O
@@ -20809,18 +21908,31 @@ Newsdesk	ORG	O
 IPO	O	ORG
 FILING	O	O
 --	O	O
+<<<<<<< HEAD
 Homegate	ORG	O
 Hospitality	ORG	O
 Inc	ORG	O
+=======
+Homegate	ORG	ORG
+Hospitality	ORG	ORG
+Inc	ORG	ORG
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 .	O	O
 WASHINGTON	LOC	LOC
 1996-08-30	O	O
 Company	O	O
 Name	MISC	O
+<<<<<<< HEAD
 Homegate	ORG	O
 Hospitality	ORG	O
 Inc	ORG	O
 Nasdaq	MISC	O
+=======
+Homegate	ORG	ORG
+Hospitality	ORG	ORG
+Inc	ORG	ORG
+Nasdaq	MISC	MISC
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 Stock	O	O
 symbol	O	O
 HMGT	O	O
@@ -20908,7 +22020,11 @@ general	O	O
 corporate	O	O
 purposes	O	O
 .	O	O
+<<<<<<< HEAD
 Financial	O	O
+=======
+Financial	O	ORG
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 Data	O	O
 in	O	O
 000s	O	O
@@ -20933,7 +22049,11 @@ N	O	O
 /	O	O
 A	O	O
 -DOCSTART-	O	O
+<<<<<<< HEAD
 Syria	LOC	ORG
+=======
+Syria	LOC	LOC
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 slams	O	O
 Israel	LOC	LOC
 on	O	O
@@ -20993,8 +22113,13 @@ cause	O	O
 ,	O	O
 "	O	O
 state-run	O	O
+<<<<<<< HEAD
 Damascus	ORG	O
 Radio	ORG	O
+=======
+Damascus	ORG	LOC
+Radio	ORG	ORG
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 said	O	O
 in	O	O
 a	O	O
@@ -21057,7 +22182,11 @@ the	O	O
 West	LOC	LOC
 Bank	LOC	O
 and	O	O
+<<<<<<< HEAD
 Gaza	LOC	PER
+=======
+Gaza	LOC	LOC
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 observed	O	O
 a	O	O
 strike	O	O
@@ -21073,7 +22202,11 @@ move	O	O
 The	O	O
 radio	O	O
 urged	O	O
+<<<<<<< HEAD
 Arabs	MISC	O
+=======
+Arabs	MISC	ORG
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 to	O	O
 unify	O	O
 their	O	O
@@ -21094,7 +22227,11 @@ could	O	O
 not	O	O
 confront	O	O
 a	O	O
+<<<<<<< HEAD
 united	O	O
+=======
+united	O	ORG
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 Arab	MISC	MISC
 stand	O	O
 or	O	O
@@ -21123,7 +22260,7 @@ said	O	O
 It	O	O
 welcomed	O	O
 the	O	O
-international	O	O
+international	O	ORG
 criticism	O	O
 of	O	O
 Israel	LOC	LOC
@@ -21181,7 +22318,7 @@ said	O	O
 .	O	O
 Syria	LOC	PER
 and	O	O
-Arabs	MISC	O
+Arabs	MISC	MISC
 have	O	O
 been	O	O
 dismayed	O	O
@@ -21256,10 +22393,14 @@ largest	O	O
 militant	O	O
 group	O	O
 al-Gama'a	ORG	PER
+<<<<<<< HEAD
 al-Islamiya	ORG	PER
+=======
+al-Islamiya	ORG	O
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 (	O	O
 Islamic	ORG	MISC
-Group	ORG	O
+Group	ORG	ORG
 )	O	O
 ,	O	O
 government	O	O
@@ -21276,8 +22417,13 @@ the	O	O
 militants	O	O
 in	O	O
 the	O	O
+<<<<<<< HEAD
 eastern	O	LOC
 Sharqiyah	LOC	LOC
+=======
+eastern	O	O
+Sharqiyah	LOC	MISC
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 province	O	O
 after	O	O
 capturing	O	O
@@ -21292,8 +22438,13 @@ city	O	O
 outside	O	O
 Cairo	LOC	LOC
 .	O	O
+<<<<<<< HEAD
 Al-Akhbar	ORG	PER
 newspapers	O	O
+=======
+Al-Akhbar	ORG	O
+newspapers	O	ORG
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 said	O	O
 the	O	O
 men	O	O
@@ -21345,7 +22496,11 @@ the	O	O
 armed	O	O
 struggle	O	O
 the	O	O
+<<<<<<< HEAD
 Gama'a	MISC	O
+=======
+Gama'a	MISC	ORG
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 launched	O	O
 in	O	O
 1992	O	O
@@ -21373,7 +22528,11 @@ pilgrims	O	O
 '	O	O
 progress	O	O
 .	O	O
+<<<<<<< HEAD
 Sami	PER	LOC
+=======
+Sami	PER	ORG
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 Aboudi	PER	O
 AL-RAM	LOC	O
 ,	O	O
@@ -21396,7 +22555,11 @@ the	O	O
 38-year-old	O	O
 Palestinian	MISC	O
 from	O	O
+<<<<<<< HEAD
 answering	O	LOC
+=======
+answering	O	MISC
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 Yasser	PER	PER
 Arafat	PER	PER
 's	O	O
@@ -21472,10 +22635,14 @@ to	O	O
 go	O	O
 to	O	O
 the	O	O
-holy	O	MISC
+holy	O	O
 city	O	O
 .	O	O
+<<<<<<< HEAD
 Pilgrims	O	LOC
+=======
+Pilgrims	O	O
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 stood	O	O
 little	O	O
 chance	O	O
@@ -21560,8 +22727,13 @@ state	O	O
 Only	O	O
 a	O	O
 few	O	O
+<<<<<<< HEAD
 Palestinians	MISC	O
 trickled	O	O
+=======
+Palestinians	MISC	MISC
+trickled	O	ORG
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 to	O	O
 the	O	O
 roadblocks	O	O
@@ -21597,7 +22769,11 @@ is	O	O
 our	O	O
 duty	O	O
 towards	O	O
+<<<<<<< HEAD
 al-Aqsa	LOC	O
+=======
+al-Aqsa	LOC	LOC
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 to	O	O
 come	O	O
 and	O	O
@@ -21729,8 +22905,13 @@ Hoshiyeh	PER	O
 a	O	O
 27-year-old	O	O
 West	LOC	LOC
+<<<<<<< HEAD
 Bank	LOC	O
 labourer	O	O
+=======
+Bank	LOC	ORG
+labourer	O	ORG
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 turned	O	O
 around	O	O
 by	O	O
@@ -21783,14 +22964,18 @@ refugee	O	O
 camp	O	O
 .	O	O
 -DOCSTART-	O	O
-PRESALE	O	O
+PRESALE	O	ORG
 -	O	O
 Bay	ORG	ORG
 Co	ORG	ORG
 Bldg	ORG	O
 Auth	ORG	O
 ,	O	O
+<<<<<<< HEAD
 Mich	LOC	O
+=======
+Mich	LOC	PER
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 ..	O	O
 AMT	O	O
 :	O	O
@@ -21821,7 +23006,11 @@ auth	O	O
 (	O	O
 law	O	O
 enforcement	O	O
+<<<<<<< HEAD
 ctr	O	ORG
+=======
+ctr	O	PER
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 )	O	O
 Series	O	O
 1996-A	O	O
@@ -21871,7 +23060,7 @@ CPN	O	O
 CALL	O	O
 :	O	O
 11/1/05	O	O
-@	O	PER
+@	O	O
 101	O	O
 ,	O	O
 dtp	O	O
@@ -21895,10 +23084,17 @@ Detroit	LOC	LOC
 L.O.	O	O
 :	O	O
 Bodman	ORG	O
+<<<<<<< HEAD
 ,	ORG	O
 Longely	ORG	O
 &	ORG	O
 Dahling	ORG	PER
+=======
+,	ORG	ORG
+Longely	ORG	ORG
+&	ORG	ORG
+Dahling	ORG	ORG
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 ,	O	O
 Detroit	LOC	LOC
 F.A.	O	O
@@ -21906,7 +23102,11 @@ F.A.	O	O
 First	ORG	O
 of	ORG	O
 Michigan	ORG	LOC
+<<<<<<< HEAD
 Corp.	ORG	O
+=======
+Corp.	ORG	ORG
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 ,	O	O
 Detroit	LOC	LOC
 LAST	O	O
@@ -21956,8 +23156,13 @@ COMPETITIVE	O	O
 PRE-SALE	O	O
 CONTRIBUTED	O	O
 BY	O	O
+<<<<<<< HEAD
 J.J.	ORG	O
 KENNY	ORG	O
+=======
+J.J.	ORG	ORG
+KENNY	ORG	PER
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 K-SHEETS	O	O
 :	O	O
 -DOCSTART-	O	O
@@ -22051,7 +23256,7 @@ jump	O	O
 in	O	O
 June	O	O
 .	O	O
-Department	O	ORG
+Department	O	O
 officials	O	O
 said	O	O
 July	O	O
@@ -22098,7 +23303,11 @@ paychecks	O	O
 The	O	O
 department	O	ORG
 said	O	O
+<<<<<<< HEAD
 wages	O	PER
+=======
+wages	O	O
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 and	O	O
 salaries	O	O
 decreased	O	O
@@ -22306,7 +23515,11 @@ In	O	O
 addition	O	LOC
 ,	O	O
 the	O	O
+<<<<<<< HEAD
 Labour	ORG	O
+=======
+Labour	ORG	ORG
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 Department	ORG	ORG
 's	O	O
 July	O	O
@@ -22382,7 +23595,11 @@ fuel	O	O
 two-thirds	O	O
 of	O	O
 national	O	O
+<<<<<<< HEAD
 economic	O	O
+=======
+economic	O	MISC
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 activity	O	O
 .	O	O
 Spending	O	O
@@ -22492,7 +23709,11 @@ STOCKS	O	O
 GOLD	O	O
 METALS	O	O
 NY	MISC	O
+<<<<<<< HEAD
 Dow	MISC	O
+=======
+Dow	MISC	MISC
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 close	O	O
 London	LOC	LOC
 opening	O	O
@@ -22640,10 +23861,17 @@ million	O	O
 shares	O	O
 on	O	O
 the	O	O
+<<<<<<< HEAD
 New	ORG	O
 York	ORG	LOC
 Stock	ORG	O
 Exchange	ORG	O
+=======
+New	ORG	LOC
+York	ORG	ORG
+Stock	ORG	ORG
+Exchange	ORG	ORG
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 .	O	O
 In	O	O
 the	O	O
@@ -22652,8 +23880,13 @@ market	O	O
 ,	O	O
 the	O	O
 30-year	O	O
+<<<<<<< HEAD
 Treasury	ORG	O
 bond	O	PER
+=======
+Treasury	ORG	ORG
+bond	O	O
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 fell	O	O
 23/32	O	O
 of	O	O
@@ -22796,7 +24029,11 @@ said	O	O
 David	PER	PER
 Shulman	PER	PER
 ,	O	O
+<<<<<<< HEAD
 Salomon	ORG	O
+=======
+Salomon	ORG	PER
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 Bros	ORG	O
 .	ORG	O
 '	O	O
@@ -22875,7 +24112,7 @@ report	O	O
 ,	O	O
 sales	O	O
 of	O	O
-new	O	O
+new	O	MISC
 homes	O	O
 jumped	O	O
 unexpectedly	O	O
@@ -22964,7 +24201,7 @@ who	O	O
 is	O	O
 credited	O	O
 with	O	O
-resurrecting	O	PER
+resurrecting	O	O
 Clinton	PER	PER
 's	O	O
 political	O	O
@@ -23093,10 +24330,17 @@ heating	O	O
 oil	O	O
 on	O	O
 the	O	O
+<<<<<<< HEAD
 New	ORG	O
 York	ORG	LOC
 Mercantile	ORG	O
 Exchange	ORG	O
+=======
+New	ORG	LOC
+York	ORG	LOC
+Mercantile	ORG	O
+Exchange	ORG	ORG
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 closed	O	O
 1.63	O	O
 cents	O	O
@@ -23248,7 +24492,7 @@ MILAN	LOC	PER
 Italian	MISC	MISC
 tyre	O	O
 and	O	O
-cables	O	O
+cables	O	ORG
 giant	O	O
 Pirelli	ORG	ORG
 on	O	O
@@ -23261,7 +24505,7 @@ into	O	O
 China	LOC	LOC
 with	O	O
 a	O	O
-cables	O	O
+cables	O	ORG
 joint	O	O
 venture	O	ORG
 set	O	O
@@ -23271,7 +24515,7 @@ on	O	O
 the	O	O
 rapidly-growing	O	O
 Chinese	MISC	MISC
-telecommunications	O	O
+telecommunications	O	ORG
 market	O	O
 .	O	O
 Pirelli	ORG	LOC
@@ -23281,7 +24525,11 @@ with	O	O
 Hong	MISC	LOC
 Kong-based	MISC	O
 group	O	O
+<<<<<<< HEAD
 CITIC	ORG	O
+=======
+CITIC	ORG	ORG
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 Pacific	ORG	ORG
 in	O	O
 a	O	O
@@ -23333,7 +24581,7 @@ copper	O	O
 cable	O	O
 plant	O	O
 at	O	O
-Wuxi	LOC	O
+Wuxi	LOC	LOC
 to	O	O
 update	O	O
 technology	O	O
@@ -23367,7 +24615,7 @@ move	O	O
 by	O	O
 Pirelli	ORG	PER
 's	O	O
-cables	O	O
+cables	O	ORG
 division	O	O
 to	O	O
 expand	O	O
@@ -23418,7 +24666,7 @@ September	O	O
 compared	O	O
 to	O	O
 other	O	O
-industrial	O	O
+industrial	O	MISC
 Italian	MISC	MISC
 companies	O	O
 ,	O	O
@@ -23446,7 +24694,7 @@ control	O	O
 of	O	O
 the	O	O
 Chinese	MISC	MISC
-venture	O	ORG
+venture	O	O
 ,	O	O
 and	O	O
 it	O	O
@@ -23555,7 +24803,7 @@ a	O	O
 mandate	O	O
 from	O	O
 the	O	O
-central	O	O
+central	O	LOC
 government	O	O
 to	O	O
 establish	O	O
@@ -23572,8 +24820,13 @@ year	O	O
 which	O	O
 will	O	O
 necessitate	O	O
+<<<<<<< HEAD
 new	O	O
 trunk	O	MISC
+=======
+new	O	LOC
+trunk	O	O
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 line	O	O
 systems	O	O
 and	O	O
@@ -23622,8 +24875,13 @@ Marco	PER	PER
 Tonchetti	PER	PER
 Provera	PER	O
 .	O	O
+<<<<<<< HEAD
 Pirelli	ORG	O
 Cables	ORG	O
+=======
+Pirelli	ORG	PER
+Cables	ORG	ORG
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 has	O	O
 global	O	O
 sales	O	O
@@ -23655,25 +24913,42 @@ U.S.	LOC	LOC
 Europe	LOC	LOC
 and	O	O
 the	O	O
+<<<<<<< HEAD
 Far	LOC	O
 East	LOC	O
+=======
+Far	LOC	LOC
+East	LOC	LOC
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 .	O	O
 CITIC	ORG	LOC
 Pacific	ORG	LOC
 is	O	O
 a	O	O
 major	O	O
+<<<<<<< HEAD
 Hong	MISC	LOC
 Kong-listed	MISC	O
 company	O	O
 focusing	O	PER
+=======
+Hong	MISC	MISC
+Kong-listed	MISC	O
+company	O	O
+focusing	O	O
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 on	O	O
 infrastruture	O	O
 ,	O	O
 trading	O	O
 ,	O	O
+<<<<<<< HEAD
 distribution	O	ORG
 and	O	O
+=======
+distribution	O	O
+and	O	ORG
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 property	O	O
 ,	O	O
 with	O	O
@@ -23701,8 +24976,13 @@ China	LOC	LOC
 -DOCSTART-	O	O
 Dutch	MISC	MISC
 bond	O	O
+<<<<<<< HEAD
 futures	O	ORG
 revival	O	PER
+=======
+futures	O	O
+revival	O	O
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 delayed	O	O
 -	O	O
 EOE	ORG	O
@@ -23749,7 +25029,11 @@ Friday	O	O
 Market-making	O	O
 in	O	O
 the	O	O
+<<<<<<< HEAD
 rarely-traded	O	O
+=======
+rarely-traded	O	MISC
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 FTO	ORG	O
 contract	O	O
 was	O	O
@@ -23764,7 +25048,11 @@ EOE	ORG	O
 spokesman	O	O
 said	O	O
 the	O	O
+<<<<<<< HEAD
 10	O	O
+=======
+10	O	LOC
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 banks	O	O
 and	O	O
 brokers	O	O
@@ -23889,7 +25177,7 @@ ago	O	O
 failed	O	O
 .	O	O
 --	O	O
-Amsterdam	LOC	ORG
+Amsterdam	LOC	LOC
 newsroom	O	O
 +31	O	O
 20	O	O
@@ -23956,6 +25244,7 @@ the	O	O
 chairman	O	O
 of	O	O
 the	O	O
+<<<<<<< HEAD
 Organisation	ORG	O
 for	ORG	O
 Security	ORG	O
@@ -23963,6 +25252,15 @@ and	ORG	O
 Cooperation	ORG	O
 in	ORG	O
 Europe	ORG	LOC
+=======
+Organisation	ORG	ORG
+for	ORG	ORG
+Security	ORG	ORG
+and	ORG	ORG
+Cooperation	ORG	ORG
+in	ORG	ORG
+Europe	ORG	ORG
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 (	O	O
 OSCE	ORG	O
 )	O	O
@@ -24058,7 +25356,7 @@ was	O	O
 biased	O	O
 toward	O	O
 Zelimkhan	PER	O
-Yandarbiyev	PER	O
+Yandarbiyev	PER	PER
 ,	O	O
 president	O	O
 of	O	O
@@ -24251,7 +25549,7 @@ Cotti	PER	O
 -DOCSTART-	O	O
 Dutch	MISC	MISC
 say	O	O
-no	O	O
+no	O	MISC
 reason	O	O
 to	O	O
 reopen	O	O
@@ -24288,9 +25586,15 @@ the	O	O
 crash	O	O
 of	O	O
 an	O	O
+<<<<<<< HEAD
 El	ORG	MISC
 Al	ORG	O
 freighter	O	O
+=======
+El	ORG	PER
+Al	ORG	MISC
+freighter	O	MISC
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 which	O	O
 left	O	O
 43	O	O
@@ -24312,7 +25616,11 @@ for	O	O
 the	O	O
 aircraft	O	O
 's	O	O
+<<<<<<< HEAD
 waybill	O	O
+=======
+waybill	O	PER
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 documentation	O	O
 and	O	O
 further	O	O
@@ -24329,7 +25637,11 @@ complied	O	O
 with	O	O
 by	O	O
 El	ORG	PER
+<<<<<<< HEAD
 Al	ORG	LOC
+=======
+Al	ORG	PER
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 's	O	O
 head	O	O
 office	O	O
@@ -24338,8 +25650,13 @@ Tel	LOC	O
 Aviv	LOC	O
 .	O	O
 The	O	O
+<<<<<<< HEAD
 Dutch	MISC	MISC
 transport	O	O
+=======
+Dutch	MISC	ORG
+transport	O	ORG
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 ministry	O	ORG
 had	O	O
 come	O	O
@@ -24392,8 +25709,13 @@ the	O	O
 latest	O	O
 evidence	O	O
 from	O	O
+<<<<<<< HEAD
 El	ORG	LOC
 Al	ORG	O
+=======
+El	ORG	PER
+Al	ORG	PER
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 in	O	O
 no	O	O
 way	O	O
@@ -24416,9 +25738,15 @@ the	O	O
 incident	O	O
 .	O	O
 --	O	O
+<<<<<<< HEAD
 Air	ORG	LOC
 Cargo	ORG	O
 Newsroom	ORG	O
+=======
+Air	ORG	ORG
+Cargo	ORG	ORG
+Newsroom	ORG	ORG
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 Tel+44	O	O
 171	O	O
 542	O	O
@@ -24618,7 +25946,11 @@ but	O	O
 will	O	O
 not	O	O
 accept	O	O
+<<<<<<< HEAD
 Armenia	LOC	O
+=======
+Armenia	LOC	PER
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 's	O	O
 demands	O	O
 for	O	O
@@ -24703,15 +26035,25 @@ Finland	LOC	O
 Sombre	O	O
 mood	O	O
 on	O	O
+<<<<<<< HEAD
 Arctic	MISC	LOC
+=======
+Arctic	MISC	MISC
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 island	O	O
 after	O	O
 plane	O	O
 crash	O	O
 .	O	O
+<<<<<<< HEAD
 Rolf	PER	LOC
 Soderlind	PER	O
 LONGYEAR	LOC	O
+=======
+Rolf	PER	PER
+Soderlind	PER	O
+LONGYEAR	LOC	PER
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 ,	O	O
 Norway	LOC	LOC
 1996-08-30	O	O
@@ -24723,7 +26065,7 @@ streets	O	O
 of	O	O
 this	O	O
 tiny	O	O
-Arctic	MISC	O
+Arctic	MISC	MISC
 town	O	O
 are	O	O
 all	O	O
@@ -24739,7 +26081,7 @@ beneath	O	O
 a	O	O
 brooding	O	O
 ,	O	O
-clouded	O	O
+clouded	O	PER
 sky	O	O
 .	O	O
 Longyear	LOC	PER
@@ -24747,7 +26089,7 @@ is	O	O
 a	O	O
 town	O	O
 in	O	O
-mourning	O	LOC
+mourning	O	O
 ,	O	O
 a	O	O
 close-knit	O	O
@@ -24922,14 +26264,19 @@ reporters	O	O
 and	O	O
 from	O	O
 the	O	O
+<<<<<<< HEAD
 polar	O	LOC
 bears	O	O
+=======
+polar	O	PER
+bears	O	PER
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 that	O	O
 roam	O	O
 freely	O	O
 across	O	O
 the	O	O
-icy	O	O
+icy	O	LOC
 expanses	O	O
 .	O	O
 The	O	O
@@ -25142,7 +26489,11 @@ Around	O	O
 100	O	O
 Russian	MISC	O
 and	O	O
+<<<<<<< HEAD
 Ukrainian	MISC	O
+=======
+Ukrainian	MISC	ORG
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 miners	O	O
 were	O	O
 waiting	O	O
@@ -25287,7 +26638,11 @@ it	O	O
 sees	O	O
 the	O	O
 sun	O	O
+<<<<<<< HEAD
 for	O	O
+=======
+for	O	ORG
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 24	O	O
 hours	O	O
 a	O	O
@@ -25320,7 +26675,11 @@ tracks	O	O
 Norway	LOC	LOC
 rules	O	O
 the	O	O
+<<<<<<< HEAD
 island	O	MISC
+=======
+island	O	O
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 group	O	O
 under	O	O
 the	O	O
@@ -25375,7 +26734,11 @@ telecoms	O	O
 group	O	O
 LM	ORG	O
 Ericsson	ORG	PER
+<<<<<<< HEAD
 AB	ORG	PER
+=======
+AB	ORG	ORG
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 said	O	O
 on	O	O
 Friday	O	O
@@ -25395,7 +26758,11 @@ telecoms	O	O
 network	O	O
 in	O	O
 the	O	O
+<<<<<<< HEAD
 Guangdong	LOC	O
+=======
+Guangdong	LOC	MISC
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 province	O	O
 of	O	O
 China	LOC	LOC
@@ -25410,9 +26777,15 @@ order	O	O
 was	O	O
 from	O	O
 the	O	O
+<<<<<<< HEAD
 Guangdong	ORG	O
 Post	ORG	O
 and	ORG	O
+=======
+Guangdong	ORG	ORG
+Post	ORG	O
+and	ORG	ORG
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 Telecommunications	ORG	ORG
 Administration	ORG	O
 (	O	O
@@ -25429,7 +26802,11 @@ equipment	O	O
 ISDN	O	O
 equipment	O	O
 ,	O	O
+<<<<<<< HEAD
 Intelligent	MISC	PER
+=======
+Intelligent	MISC	ORG
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 Network	MISC	PER
 (	O	O
 IN	MISC	O
@@ -25467,7 +26844,7 @@ company	O	O
 said	O	O
 .	O	O
 --	O	O
-Stockholm	LOC	ORG
+Stockholm	LOC	LOC
 newsroom	O	O
 +46-8-700	O	O
 1017	O	O
@@ -25513,7 +26890,7 @@ under	O	O
 Chinese	MISC	MISC
 sovereignty	O	O
 from	O	O
-mid-1997	O	O
+mid-1997	O	ORG
 .	O	O
 "	O	O
 We	O	O
@@ -25536,7 +26913,7 @@ the	O	O
 best	O	O
 transport	O	O
 and	O	O
-telecommunications	O	O
+telecommunications	O	ORG
 infrastructure	O	O
 in	O	O
 the	O	O
@@ -25644,8 +27021,13 @@ acknowledged	O	O
 that	O	O
 many	O	O
 Hong	LOC	LOC
+<<<<<<< HEAD
 Kong	LOC	O
 people	O	O
+=======
+Kong	LOC	LOC
+people	O	ORG
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 had	O	O
 decided	O	O
 to	O	O
@@ -25790,10 +27172,17 @@ POST	ORG	O
 Speaker	O	O
 of	O	O
 the	O	O
+<<<<<<< HEAD
 House	ORG	O
 of	ORG	O
 Representatives	ORG	O
 Wahono	PER	O
+=======
+House	ORG	ORG
+of	ORG	ORG
+Representatives	ORG	ORG
+Wahono	PER	ORG
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 has	O	O
 called	O	O
 on	O	O
@@ -25817,7 +27206,7 @@ all	O	O
 barriers	O	O
 to	O	O
 social	O	O
-justice	O	O
+justice	O	ORG
 .	O	O
 An	O	O
 agreement	O	O
@@ -25874,7 +27263,7 @@ region	O	O
 -	O	O
 -	O	O
 MEDIA	ORG	O
-INDONESIA	ORG	LOC
+INDONESIA	ORG	ORG
 Around	O	O
 2,000	O	LOC
 of	O	O
@@ -25887,8 +27276,13 @@ car	O	O
 made	O	O
 by	O	O
 Kia	ORG	O
+<<<<<<< HEAD
 Motor	ORG	O
 Corp	ORG	O
+=======
+Motor	ORG	ORG
+Corp	ORG	ORG
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 of	O	O
 South	LOC	LOC
 Korea	LOC	LOC
@@ -25942,10 +27336,15 @@ Indonesia	LOC	LOC
 -	O	O
 REPUBLIKA	ORG	O
 The	O	O
-Central	ORG	O
+Central	ORG	ORG
 Jakarta	ORG	LOC
+<<<<<<< HEAD
 District	ORG	ORG
 Court	ORG	O
+=======
+District	ORG	O
+Court	ORG	ORG
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 has	O	O
 started	O	O
 to	O	O
@@ -25966,7 +27365,11 @@ Megawati	PER	PER
 Sukarnoputri	PER	PER
 against	O	O
 the	O	O
+<<<<<<< HEAD
 government	O	O
+=======
+government	O	ORG
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 and	O	O
 party	O	O
 rivals	O	O
@@ -26051,7 +27454,7 @@ million	O	O
 million	O	O
 NOTE	O	O
 -	O	O
-Jeans	ORG	PER
+Jeans	ORG	O
 Mate	ORG	O
 Corp	ORG	PER
 is	O	O
@@ -26120,7 +27523,7 @@ leading	O	O
 manufacturer	O	O
 of	O	O
 semiconductor	O	ORG
-leadframes	O	O
+leadframes	O	PER
 .	O	O
 -DOCSTART-	O	O
 Bootleg	O	O
@@ -26150,7 +27553,7 @@ making	O	O
 and	O	O
 selling	O	O
 homemade	O	O
-alcohol	O	O
+alcohol	O	PER
 that	O	O
 killed	O	O
 35	O	O
@@ -26172,7 +27575,11 @@ group	O	O
 of	O	O
 farmers	O	O
 in	O	O
+<<<<<<< HEAD
 Huize	LOC	LOC
+=======
+Huize	LOC	MISC
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 county	O	O
 in	O	O
 the	O	O
@@ -26184,7 +27591,7 @@ were	O	O
 arrested	O	O
 for	O	O
 blending	O	O
-alcohol	O	O
+alcohol	O	PER
 with	O	O
 methanol	O	O
 and	O	O
@@ -26253,8 +27660,8 @@ area	O	O
 it	O	O
 said	O	O
 .	O	O
-Post-mortem	O	PER
-examinations	O	PER
+Post-mortem	O	O
+examinations	O	O
 showed	O	O
 they	O	O
 were	O	O
@@ -26284,9 +27691,15 @@ further	O	O
 details	O	O
 .	O	O
 -DOCSTART-	O	O
+<<<<<<< HEAD
 Singapore	LOC	LOC
 hangs	O	O
 Thai	MISC	O
+=======
+Singapore	LOC	ORG
+hangs	O	MISC
+Thai	MISC	MISC
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 drug	O	O
 trafficker	O	O
 .	O	O
@@ -26307,9 +27720,15 @@ drug	O	O
 trafficking	O	O
 ,	O	O
 the	O	O
+<<<<<<< HEAD
 Central	ORG	O
 Narcotics	ORG	ORG
 Bureau	ORG	O
+=======
+Central	ORG	ORG
+Narcotics	ORG	LOC
+Bureau	ORG	ORG
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 (	O	O
 CNB	ORG	O
 )	O	O
@@ -26376,7 +27795,7 @@ of	O	O
 heroin	O	O
 ,	O	O
 30	O	PER
-grams	O	PER
+grams	O	O
 (	O	O
 an	O	O
 ounce	O	O
@@ -26440,7 +27859,11 @@ arrived	O	O
 in	O	O
 the	O	O
 West	LOC	LOC
+<<<<<<< HEAD
 Bank	LOC	LOC
+=======
+Bank	LOC	ORG
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 self-rule	O	ORG
 enclave	O	O
 of	O	O
@@ -26467,7 +27890,7 @@ the	O	O
 Palestinian	ORG	MISC
 self-rule	ORG	ORG
 Authority	ORG	ORG
-'s	O	O
+'s	O	ORG
 cabinet	O	O
 in	O	O
 Nablus	LOC	LOC
@@ -26545,7 +27968,7 @@ Israel	LOC	LOC
 which	O	O
 captured	O	O
 and	O	O
-annexed	O	LOC
+annexed	O	O
 East	LOC	LOC
 Jerusalem	LOC	LOC
 in	O	O
@@ -26573,7 +27996,7 @@ deal	O	O
 with	O	O
 Israel	LOC	O
 in	O	O
-1993	O	O
+1993	O	ORG
 that	O	O
 set	O	O
 up	O	O
@@ -26638,11 +28061,19 @@ from	O	O
 the	O	O
 the	O	O
 Palestinian	MISC	MISC
+<<<<<<< HEAD
 U.N.	ORG	O
 observer	O	O
 mission	O	O
 ,	O	O
 Security	ORG	O
+=======
+U.N.	ORG	ORG
+observer	O	MISC
+mission	O	ORG
+,	O	O
+Security	ORG	ORG
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 Council	ORG	O
 President	O	O
 Tono	PER	PER
@@ -26772,8 +28203,13 @@ Israel	LOC	LOC
 and	O	O
 the	O	O
 Palestinian	ORG	MISC
+<<<<<<< HEAD
 Liberation	ORG	O
 Organisation	ORG	O
+=======
+Liberation	ORG	ORG
+Organisation	ORG	ORG
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 .	O	O
 "	O	O
 This	O	O
@@ -26811,7 +28247,7 @@ City	LOC	O
 We	O	O
 expect	O	O
 the	O	O
-international	O	O
+international	O	ORG
 community	O	O
 to	O	O
 take	O	O
@@ -26823,8 +28259,13 @@ position	O	O
 ,	O	O
 based	O	O
 on	O	O
+<<<<<<< HEAD
 international	O	O
 law	O	O
+=======
+international	O	MISC
+law	O	ORG
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 and	O	O
 in	O	O
 accordance	O	O
@@ -26890,15 +28331,24 @@ centre	O	O
 called	O	O
 the	O	O
 Burj	LOC	O
+<<<<<<< HEAD
 al-Laqlaq	LOC	O
+=======
+al-Laqlaq	LOC	MISC
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 Society	LOC	O
 .	O	O
 -DOCSTART-	O	O
 SOCCER	O	O
 -	O	O
 REAL	ORG	O
+<<<<<<< HEAD
 SCRAPE	O	MISC
 1-1	O	PER
+=======
+SCRAPE	O	O
+1-1	O	O
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 DRAW	O	O
 IN	O	O
 SCRAPPY	O	O
@@ -26946,7 +28396,7 @@ Saturday	O	O
 The	O	O
 Brazilian	MISC	MISC
 's	O	O
-79th-minute	O	O
+79th-minute	O	MISC
 effort	O	O
 was	O	O
 enough	O	O
@@ -26967,7 +28417,7 @@ contenders	O	O
 Deportivo	ORG	O
 Coruna	ORG	O
 .	O	O
-Deportivo	ORG	O
+Deportivo	ORG	ORG
 started	O	O
 strongly	O	O
 ,	O	O
@@ -26984,7 +28434,11 @@ former	O	O
 Auxerre	ORG	O
 playmaker	O	O
 Corentine	PER	O
+<<<<<<< HEAD
 Martins	PER	O
+=======
+Martins	PER	PER
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 headed	O	O
 home	O	O
 a	O	O
@@ -26995,7 +28449,11 @@ flick-on	O	O
 by	O	O
 Brazilian-born	MISC	O
 Spanish	MISC	MISC
+<<<<<<< HEAD
 international	O	MISC
+=======
+international	O	ORG
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 midfielder	O	O
 Donato	PER	O
 .	O	O
@@ -27138,8 +28596,13 @@ decision	O	O
 banning	O	O
 Brazilian	MISC	MISC
 midfielder	O	O
+<<<<<<< HEAD
 Mauro	PER	O
 Silva	PER	O
+=======
+Mauro	PER	PER
+Silva	PER	PER
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 from	O	O
 playing	O	O
 in	O	O
@@ -27223,7 +28686,11 @@ SOCCER	O	O
 -	O	O
 ISRAEL	LOC	LOC
 BEAT	O	O
+<<<<<<< HEAD
 BULGARIA	LOC	O
+=======
+BULGARIA	LOC	ORG
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 IN	O	O
 EUROPEAN	MISC	MISC
 UNDER-21	O	O
@@ -27244,7 +28711,7 @@ qualifier	O	O
 on	O	O
 Saturday	O	O
 :	O	O
-Israel	LOC	LOC
+Israel	LOC	ORG
 2	O	O
 ,	O	O
 Bulgaria	LOC	PER
@@ -27288,7 +28755,11 @@ Liechtenstein	LOC	O
 1996-08-31	O	O
 The	O	O
 Republic	LOC	O
+<<<<<<< HEAD
 of	LOC	O
+=======
+of	LOC	LOC
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 Ireland	LOC	LOC
 's	O	O
 new-look	O	O
@@ -27301,12 +28772,12 @@ their	O	O
 last	O	O
 visit	O	O
 to	O	O
-Liechtenstein	LOC	O
+Liechtenstein	LOC	LOC
 by	O	O
 beating	O	O
 the	O	O
 Alpine	MISC	O
-part-timers	O	O
+part-timers	O	PER
 5-0	O	O
 in	O	O
 a	O	O
@@ -27345,7 +28816,11 @@ O'Neill	PER	O
 ,	O	O
 Sunderland	ORG	O
 forward	O	O
+<<<<<<< HEAD
 Niall	PER	O
+=======
+Niall	PER	PER
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 Quinn	PER	O
 and	O	O
 teenager	O	O
@@ -27437,8 +28912,13 @@ Republic	LOC	O
 of	LOC	O
 Ireland	LOC	LOC
 beat	O	O
+<<<<<<< HEAD
 Liechtenstein	LOC	PER
 5-0	O	PER
+=======
+Liechtenstein	LOC	LOC
+5-0	O	O
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 (	O	O
 halftime	O	O
 4-0	O	O
@@ -27450,7 +28930,11 @@ Cup	MISC	MISC
 soccer	O	O
 European	MISC	MISC
 group	O	O
+<<<<<<< HEAD
 8	O	O
+=======
+8	O	ORG
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 qualifier	O	O
 on	O	O
 Saturday	O	O
@@ -27748,8 +29232,13 @@ Islands	LOC	LOC
 Slovakia	LOC	O
 beat	O	O
 the	O	O
+<<<<<<< HEAD
 Faroe	LOC	O
 Islands	LOC	MISC
+=======
+Faroe	LOC	MISC
+Islands	LOC	LOC
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 2-1	O	O
 (	O	O
 halftime	O	O
@@ -27851,7 +29340,11 @@ Pakistan	LOC	LOC
 185	O	O
 (	O	O
 Ijaz	PER	O
+<<<<<<< HEAD
 Ahmed	PER	O
+=======
+Ahmed	PER	PER
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 79	O	O
 ;	O	O
 A.	PER	PER
@@ -27889,7 +29382,7 @@ of	MISC	O
 the	MISC	O
 Netherlands	MISC	LOC
 between	O	O
-Roermond	LOC	LOC
+Roermond	LOC	MISC
 and	O	O
 Landgraaf	LOC	O
 on	O	O
@@ -27968,7 +29461,11 @@ Anguita	PER	PER
 Spain	LOC	LOC
 )	O	O
 MX	ORG	O
+<<<<<<< HEAD
 Onda	ORG	O
+=======
+Onda	ORG	ORG
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 9.	O	O
 Michael	PER	PER
 Andersson	PER	PER
@@ -28040,7 +29537,7 @@ Breukink	PER	O
 same	O	O
 time	O	O
 8.	O	O
-Maarten	PER	O
+Maarten	PER	PER
 den	PER	PER
 Bakker	PER	PER
 (	O	O
@@ -28082,14 +29579,20 @@ on	O	O
 Saturday	O	O
 :	O	O
 England	LOC	LOC
+<<<<<<< HEAD
 N.	PER	ORG
 Knight	PER	O
 st	O	PER
+=======
+N.	PER	PER
+Knight	PER	PER
+st	O	O
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 Moin	PER	PER
 Khan	PER	PER
 b	O	O
-Saqlain	PER	O
-Mushtaq	PER	O
+Saqlain	PER	PER
+Mushtaq	PER	PER
 113	O	O
 A.	PER	PER
 Stewart	PER	PER
@@ -28222,8 +29725,13 @@ lbw	O	O
 b	O	O
 Mullally	PER	O
 0	O	O
+<<<<<<< HEAD
 Ijaz	PER	O
 Ahmed	PER	O
+=======
+Ijaz	PER	PER
+Ahmed	PER	PER
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 b	O	O
 Croft	PER	O
 79	O	O
@@ -28257,8 +29765,13 @@ Mushtaq	PER	O
 b	O	O
 Hollioake	PER	O
 0	O	O
+<<<<<<< HEAD
 Waqar	PER	O
 Younis	PER	O
+=======
+Waqar	PER	PER
+Younis	PER	PER
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 lbw	O	O
 b	O	O
 Gough	PER	O
@@ -28379,7 +29892,7 @@ Australia	LOC	LOC
 )	O	O
 3:31.830	O	O
 4.	O	O
-Yvonne	PER	PER
+Yvonne	PER	O
 McGregor	PER	PER
 (	O	O
 Britain	LOC	LOC
@@ -28450,7 +29963,7 @@ beat	O	O
 Russia	LOC	LOC
 (	O	O
 Anton	PER	PER
-Chantyr	PER	O
+Chantyr	PER	PER
 ,	O	O
 Edouard	PER	PER
 Gritsoun	PER	PER
@@ -28462,7 +29975,7 @@ Kouznetsov	PER	O
 .	O	O
 France	LOC	LOC
 (	O	O
-Cyril	PER	O
+Cyril	PER	PER
 Bos	PER	O
 ,	O	O
 Philippe	PER	PER
@@ -28568,7 +30081,7 @@ Germany	LOC	LOC
 36.491	O	O
 9.	O	O
 Donna	PER	PER
-Wynd	PER	PER
+Wynd	PER	O
 (	O	O
 New	LOC	O
 Zealand	LOC	LOC
@@ -28582,7 +30095,7 @@ Finland	LOC	O
 )	O	O
 37.273	O	O
 11.	O	O
-Wendy	PER	PER
+Wendy	PER	O
 Everson	PER	PER
 (	O	O
 Britain	LOC	LOC
@@ -28628,7 +30141,7 @@ Trentino	PER	O
 beat	O	O
 France	LOC	LOC
 (	O	O
-Cyril	PER	O
+Cyril	PER	PER
 Bos	PER	O
 ,	O	O
 Philippe	PER	PER
@@ -28641,9 +30154,15 @@ Francis	PER	PER
 Moreau	PER	ORG
 )	O	O
 4:04.539	O	O
+<<<<<<< HEAD
 World	O	O
 sprint	O	MISC
 championship	O	MISC
+=======
+World	O	MISC
+sprint	O	O
+championship	O	O
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 quarter	O	O
 finals	O	O
 (	O	O
@@ -28652,7 +30171,7 @@ of	O	O
 three	O	O
 matches	O	O
 )	O	O
-Florian	PER	O
+Florian	PER	PER
 Rousseau	PER	PER
 (	O	O
 France	LOC	LOC
@@ -28741,7 +30260,7 @@ McGregor	PER	PER
 Britain	LOC	LOC
 )	O	O
 3:43.078	O	O
-Lucy	PER	PER
+Lucy	PER	O
 Tyler-Sharman	PER	PER
 (	O	O
 Australia	LOC	LOC
@@ -28944,7 +30463,11 @@ TWICE	O	O
 AS	O	O
 RANGERS	ORG	O
 BEAT	O	O
+<<<<<<< HEAD
 INDIANS	ORG	O
+=======
+INDIANS	ORG	MISC
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 .	O	O
 ARLINGTON	LOC	LOC
 ,	O	O
@@ -29003,7 +30526,7 @@ One	O	O
 out	O	O
 later	O	O
 ,	O	O
-Gonzalez	PER	O
+Gonzalez	PER	PER
 smacked	O	O
 his	O	O
 40th	O	O
@@ -29030,8 +30553,8 @@ this	O	O
 season	O	O
 ,	O	O
 joined	O	O
-Mickey	PER	LOC
-Rivers	PER	O
+Mickey	PER	PER
+Rivers	PER	LOC
 as	O	O
 the	O	O
 only	O	O
@@ -29065,7 +30588,7 @@ of	O	O
 the	O	O
 season	O	O
 .	O	O
-Gonzalez	PER	LOC
+Gonzalez	PER	PER
 has	O	O
 three	O	O
 40-homer	O	O
@@ -29075,8 +30598,8 @@ his	O	O
 121	O	O
 RBI	MISC	O
 broke	O	O
-Ruben	PER	O
-Sierra	PER	PER
+Ruben	PER	PER
+Sierra	PER	ORG
 's	O	O
 team	O	O
 record	O	O
@@ -29113,7 +30636,7 @@ said	O	O
 Texas	LOC	LOC
 manager	O	O
 Johnny	PER	PER
-Oates	PER	PER
+Oates	PER	O
 about	O	O
 his	O	O
 team	O	O
@@ -29256,9 +30779,15 @@ first	O	O
 winner	O	O
 as	O	O
 the	O	O
+<<<<<<< HEAD
 New	ORG	O
 York	ORG	LOC
 Yankees	ORG	O
+=======
+New	ORG	ORG
+York	ORG	LOC
+Yankees	ORG	ORG
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 beat	O	O
 the	O	O
 Angels	ORG	O
@@ -29286,7 +30815,7 @@ and	O	O
 Jim	PER	PER
 Leyritz	PER	PER
 .	O	O
-Pettite	PER	PER
+Pettite	PER	O
 (	O	O
 19-7	O	O
 )	O	O
@@ -29315,7 +30844,11 @@ Yankees	ORG	O
 '	O	O
 losses	O	O
 .	O	O
+<<<<<<< HEAD
 Mariano	PER	O
+=======
+Mariano	PER	ORG
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 Rivera	PER	O
 pitched	O	O
 a	O	O
@@ -29327,8 +30860,13 @@ out	O	O
 two	O	O
 .	O	O
 Ex-Yankee	O	O
+<<<<<<< HEAD
 Randy	PER	O
 Velarde	PER	O
+=======
+Randy	PER	PER
+Velarde	PER	PER
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 hit	O	O
 his	O	O
 11th	O	O
@@ -29372,7 +30910,11 @@ Mariners	ORG	O
 .	O	O
 It	O	O
 was	O	O
+<<<<<<< HEAD
 Incaviglia	PER	O
+=======
+Incaviglia	PER	PER
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 's	O	O
 sixth	O	O
 grand	O	O
@@ -29384,7 +30926,7 @@ of	O	O
 his	O	O
 career	O	O
 .	O	O
-Baltimore	ORG	LOC
+Baltimore	ORG	ORG
 's	O	O
 Eddie	PER	ORG
 Murray	PER	O
@@ -29427,7 +30969,7 @@ for	O	O
 the	O	O
 American	MISC	MISC
 League	MISC	MISC
-wild	O	O
+wild	O	MISC
 card	O	O
 with	O	O
 the	O	O
@@ -29478,8 +31020,13 @@ an	O	O
 victory	O	O
 over	O	O
 the	O	O
+<<<<<<< HEAD
 Blue	ORG	O
 Jays	ORG	O
+=======
+Blue	ORG	ORG
+Jays	ORG	ORG
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 .	O	O
 Thomas	PER	PER
 ,	O	O
@@ -29494,14 +31041,19 @@ three	O	O
 hits	O	O
 .	O	O
 Baines	PER	O
-homered	O	O
+homered	O	PER
 and	O	O
 scored	O	O
 three	O	O
 runs	O	O
 .	O	O
+<<<<<<< HEAD
 Danny	PER	LOC
 Tartabull	PER	O
+=======
+Danny	PER	PER
+Tartabull	PER	PER
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 added	O	O
 two	O	O
 hits	O	O
@@ -29572,7 +31124,7 @@ perfect	O	O
 ninth	O	O
 inning	O	O
 .	O	O
-McGwire	PER	PER
+McGwire	PER	LOC
 singled	O	O
 home	O	O
 a	O	O
@@ -29632,12 +31184,21 @@ first	O	O
 inning	O	O
 as	O	O
 the	O	O
+<<<<<<< HEAD
 Tigers	ORG	O
 blanked	O	O
 the	O	O
 Kansas	ORG	LOC
 City	ORG	O
 Royals	ORG	ORG
+=======
+Tigers	ORG	ORG
+blanked	O	ORG
+the	O	O
+Kansas	ORG	LOC
+City	ORG	LOC
+Royals	ORG	MISC
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 4-0	O	O
 .	O	O
 Van	PER	PER
@@ -29694,7 +31255,11 @@ Marc	PER	O
 Newfield	PER	O
 homered	O	O
 off	O	O
+<<<<<<< HEAD
 Jose	PER	O
+=======
+Jose	PER	PER
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 Parra	PER	O
 (	O	O
 5-4	O	O
@@ -29716,8 +31281,13 @@ a	O	O
 victory	O	O
 over	O	O
 the	O	O
+<<<<<<< HEAD
 Minnesota	ORG	LOC
 Twins	ORG	O
+=======
+Minnesota	ORG	ORG
+Twins	ORG	ORG
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 .	O	O
 Milwaukee	ORG	PER
 has	O	O
@@ -29793,9 +31363,15 @@ double	O	O
 -DOCSTART-	O	O
 CRICKET	O	O
 -	O	O
+<<<<<<< HEAD
 ESSEX	ORG	O
 AND	O	O
 KENT	ORG	PER
+=======
+ESSEX	ORG	ORG
+AND	O	O
+KENT	ORG	ORG
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 MADE	O	O
 TO	O	O
 SWEAT	O	O
@@ -29836,7 +31412,11 @@ Saturday	O	O
 in	O	O
 the	O	O
 English	MISC	MISC
+<<<<<<< HEAD
 county	O	ORG
+=======
+county	O	O
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 championship	O	O
 run-in	O	O
 .	O	O
@@ -29851,7 +31431,11 @@ in	O	O
 hand	O	O
 to	O	O
 beat	O	O
+<<<<<<< HEAD
 Yorkshire	ORG	PER
+=======
+Yorkshire	ORG	LOC
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 after	O	O
 a	O	O
 maiden	O	O
@@ -29882,7 +31466,11 @@ their	O	O
 nerve	O	O
 against	O	O
 struggling	O	O
+<<<<<<< HEAD
 Nottinghamshire	ORG	O
+=======
+Nottinghamshire	ORG	ORG
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 who	O	O
 will	O	O
 enter	O	O
@@ -29904,7 +31492,7 @@ at	O	O
 Tunbridge	LOC	LOC
 Wells	LOC	O
 .	O	O
-Derbyshire	ORG	LOC
+Derbyshire	ORG	ORG
 ,	O	O
 nine-wicket	O	O
 winners	O	O
@@ -29933,7 +31521,11 @@ off	O	O
 along	O	O
 with	O	O
 rivals	O	O
+<<<<<<< HEAD
 Leicestershire	ORG	O
+=======
+Leicestershire	ORG	PER
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 ,	O	O
 who	O	O
 beat	O	O
@@ -29966,7 +31558,11 @@ Dave	PER	PER
 Gilbert	PER	PER
 ,	O	O
 but	O	O
+<<<<<<< HEAD
 Derbyshire	ORG	PER
+=======
+Derbyshire	ORG	ORG
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 's	O	O
 Australian	MISC	MISC
 captain	O	O
@@ -30042,7 +31638,11 @@ Tour	MISC	O
 after	O	O
 the	O	O
 British	MISC	MISC
+<<<<<<< HEAD
 Masters	MISC	O
+=======
+Masters	MISC	MISC
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 won	O	O
 by	O	O
 Robert	PER	PER
@@ -30168,7 +31768,11 @@ Spain	LOC	LOC
 182,533	O	O
 19.	O	O
 Jonathan	PER	O
+<<<<<<< HEAD
 Lomas	PER	O
+=======
+Lomas	PER	PER
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 181,005	O	O
 20.	O	O
 Paul	PER	PER
@@ -30193,8 +31797,13 @@ English	MISC	MISC
 ,	O	O
 Scottish	MISC	LOC
 and	O	O
+<<<<<<< HEAD
 Welsh	MISC	MISC
 rugby	O	MISC
+=======
+Welsh	MISC	ORG
+rugby	O	O
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 union	O	O
 matches	O	O
 on	O	O
@@ -30213,7 +31822,11 @@ Irish	ORG	MISC
 27	O	O
 Bristol	ORG	O
 28	O	O
+<<<<<<< HEAD
 Northampton	ORG	O
+=======
+Northampton	ORG	MISC
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 46	O	O
 West	ORG	LOC
 Hartlepool	ORG	LOC
@@ -30228,7 +31841,11 @@ Wasps	ORG	O
 33	O	O
 Saracens	ORG	O
 25	O	O
+<<<<<<< HEAD
 Leicester	ORG	O
+=======
+Leicester	ORG	ORG
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 23	O	O
 Welsh	MISC	MISC
 division	O	O
@@ -30276,7 +31893,11 @@ Watsonians	ORG	O
 Melrose	ORG	O
 107	O	O
 Stirling	ORG	ORG
+<<<<<<< HEAD
 County	O	ORG
+=======
+County	O	O
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 10	O	O
 -DOCSTART-	O	O
 SOCCER	O	O
@@ -30308,7 +31929,11 @@ Cup	MISC	MISC
 soccer	O	O
 European	MISC	MISC
 group	O	O
+<<<<<<< HEAD
 7	O	O
+=======
+7	O	ORG
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 qualifier	O	O
 on	O	O
 Saturday	O	O
@@ -30317,7 +31942,7 @@ Scorers	O	O
 :	O	O
 Dean	PER	PER
 Saunders	PER	PER
-(	O	O
+(	O	PER
 2nd	O	O
 minute	O	O
 ,	O	O
@@ -30437,7 +32062,11 @@ league	O	O
 coaching	O	O
 debut	O	O
 with	O	O
+<<<<<<< HEAD
 Leicester	LOC	O
+=======
+Leicester	LOC	PER
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 .	O	O
 Lynagh	PER	O
 kicked	O	O
@@ -30492,7 +32121,11 @@ a	O	O
 good	O	O
 game	O	O
 alongside	O	O
+<<<<<<< HEAD
 Lynagh	PER	O
+=======
+Lynagh	PER	ORG
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 ,	O	O
 although	O	O
 the	O	O
@@ -30509,11 +32142,11 @@ Kyran	PER	O
 Bracken	PER	O
 .	O	O
 The	O	O
-new	O	O
+new	O	MISC
 French	MISC	MISC
 connection	O	O
 at	O	O
-Harlequins	LOC	O
+Harlequins	LOC	PER
 also	O	O
 made	O	O
 a	O	O
@@ -30523,7 +32156,11 @@ start	O	O
 Laurent	PER	PER
 Cabannes	PER	O
 and	O	O
+<<<<<<< HEAD
 Laurent	PER	O
+=======
+Laurent	PER	PER
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 Benezech	PER	O
 scoring	O	O
 a	O	O
@@ -30541,7 +32178,11 @@ Gloucester	ORG	O
 Former	O	O
 England	LOC	LOC
 captain	O	O
+<<<<<<< HEAD
 Will	PER	O
+=======
+Will	PER	PER
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 Carling	PER	O
 ,	O	O
 handed	O	O
@@ -30601,7 +32242,11 @@ successes	O	O
 for	O	O
 Wasps	ORG	O
 and	O	O
+<<<<<<< HEAD
 Bristol	ORG	O
+=======
+Bristol	ORG	ORG
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 .	O	O
 -DOCSTART-	O	O
 SOCCER	O	O
@@ -30641,8 +32286,13 @@ points	O	O
 :	O	O
 Division	O	O
 one	O	O
+<<<<<<< HEAD
 Greenock	ORG	O
 Morton	ORG	O
+=======
+Greenock	ORG	MISC
+Morton	ORG	ORG
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 3	O	O
 2	O	O
 0	O	O
@@ -30724,7 +32374,7 @@ Fife	ORG	LOC
 1	O	O
 0	O	O
 4	O	O
-1	O	O
+1	O	MISC
 Division	O	O
 two	O	O
 Livingston	ORG	O
@@ -30738,7 +32388,11 @@ Livingston	ORG	O
 Queen	ORG	O
 of	ORG	O
 South	ORG	LOC
+<<<<<<< HEAD
 3	O	O
+=======
+3	O	LOC
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 2	O	O
 0	O	O
 1	O	O
@@ -30851,10 +32505,17 @@ Alloa	ORG	O
 3	O	O
 3	O	O
 4	O	O
+<<<<<<< HEAD
 Queen	ORG	ORG
 's	ORG	O
 Park	ORG	O
 3	O	O
+=======
+Queen	ORG	O
+'s	ORG	ORG
+Park	ORG	LOC
+3	O	ORG
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 1	O	O
 1	O	O
 1	O	O
@@ -31133,7 +32794,7 @@ Charlton	ORG	O
 1	O	O
 1	O	O
 3	O	O
-1	O	O
+1	O	MISC
 Division	O	O
 two	O	O
 Plymouth	ORG	O
@@ -31274,8 +32935,13 @@ County	ORG	ORG
 2	O	O
 2	O	O
 4	O	O
+<<<<<<< HEAD
 Bristol	ORG	O
 City	ORG	O
+=======
+Bristol	ORG	ORG
+City	ORG	ORG
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 4	O	O
 1	O	O
 0	O	O
@@ -31546,7 +33212,11 @@ Saturday	O	O
 :	O	O
 Division	O	O
 one	O	O
+<<<<<<< HEAD
 Greenock	ORG	O
+=======
+Greenock	ORG	MISC
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 Morton	ORG	O
 1	O	O
 Falkirk	ORG	O
@@ -31562,8 +33232,13 @@ Dundee	ORG	O
 1	O	O
 Postponed	O	O
 :	O	O
+<<<<<<< HEAD
 East	ORG	LOC
 Fife	ORG	LOC
+=======
+East	ORG	O
+Fife	ORG	ORG
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 v	O	O
 Clydebank	ORG	O
 ,	O	O
@@ -31594,7 +33269,7 @@ Hamilton	ORG	PER
 0	O	O
 Stenhousemuir	ORG	O
 0	O	O
-Stranraer	ORG	O
+Stranraer	ORG	ORG
 1	O	O
 Division	O	O
 three	O	O
@@ -31602,7 +33277,7 @@ Albion	ORG	O
 2	O	O
 Cowdenbeath	ORG	O
 0	O	O
-Arbroath	ORG	O
+Arbroath	ORG	ORG
 0	O	O
 East	ORG	ORG
 Stirling	ORG	LOC
@@ -31614,12 +33289,21 @@ Alloa	ORG	O
 0	O	O
 Montrose	ORG	O
 2	O	O
+<<<<<<< HEAD
 Ross	ORG	PER
 County	ORG	ORG
 1	O	O
 Queen	ORG	LOC
 's	ORG	O
 Park	ORG	O
+=======
+Ross	ORG	ORG
+County	ORG	ORG
+1	O	O
+Queen	ORG	LOC
+'s	ORG	ORG
+Park	ORG	LOC
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 1	O	O
 Forfar	ORG	O
 4	O	O
@@ -31711,8 +33395,13 @@ Stockport	ORG	O
 1	O	O
 Bury	ORG	PER
 4	O	O
+<<<<<<< HEAD
 Bristol	ORG	O
 City	ORG	O
+=======
+Bristol	ORG	LOC
+City	ORG	ORG
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 0	O	O
 Crewe	ORG	O
 0	O	O
@@ -31733,9 +33422,9 @@ Burnley	ORG	O
 Notts	ORG	ORG
 County	ORG	ORG
 0	O	O
-York	ORG	LOC
+York	ORG	ORG
 1	O	O
-Shrewsbury	ORG	O
+Shrewsbury	ORG	ORG
 0	O	O
 Brentford3	ORG	O
 Postponed	O	O
@@ -31766,7 +33455,7 @@ Fulham	ORG	O
 1	O	O
 Carlisle	ORG	O
 0	O	O
-Hull	ORG	ORG
+Hull	ORG	LOC
 0	O	O
 Barnet	ORG	O
 0	O	O
@@ -31824,7 +33513,7 @@ by	O	O
 188	O	O
 runs	O	O
 .	O	O
-Middlesex	ORG	LOC
+Middlesex	ORG	ORG
 199	O	O
 and	O	O
 426	O	O
@@ -31874,8 +33563,13 @@ Glamorgan	ORG	LOC
 22	O	O
 points	O	O
 ,	O	O
+<<<<<<< HEAD
 Durham	ORG	O
 4	O	O
+=======
+Durham	ORG	ORG
+4	O	PER
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 .	O	O
 At	O	O
 Chesterfield	LOC	O
@@ -31916,8 +33610,13 @@ Derbyshire	ORG	LOC
 24	O	O
 points	O	O
 ,	O	O
+<<<<<<< HEAD
 Worcestershire	ORG	O
 5	O	O
+=======
+Worcestershire	ORG	ORG
+5	O	PER
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 .	O	O
 At	O	O
 The	LOC	O
@@ -31978,13 +33677,22 @@ Surrey	ORG	LOC
 24	O	O
 points	O	O
 ,	O	O
+<<<<<<< HEAD
 Warwickshire	ORG	O
 2	O	O
+=======
+Warwickshire	ORG	ORG
+2	O	PER
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 .	O	O
 At	O	O
 Headingley	LOC	LOC
 (	O	O
+<<<<<<< HEAD
 Leeds	LOC	O
+=======
+Leeds	LOC	MISC
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 )	O	O
 :	O	O
 Yorkshire	ORG	LOC
@@ -32001,7 +33709,7 @@ Hamilton	PER	PER
 61	O	O
 ;	O	O
 P.	PER	PER
-Such	PER	O
+Such	PER	PER
 8-118	O	O
 )	O	O
 ,	O	O
@@ -32067,7 +33775,11 @@ Russell	PER	PER
 75	O	PER
 )	O	O
 ,	O	O
+<<<<<<< HEAD
 Northamptonshire	ORG	O
+=======
+Northamptonshire	ORG	ORG
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 190	O	O
 and	O	O
 218-9	O	O
@@ -32079,7 +33791,11 @@ RACING	O	O
 LEADING	O	O
 QUALIFIERS	O	O
 FOR	O	O
+<<<<<<< HEAD
 VANCOUVER	LOC	O
+=======
+VANCOUVER	LOC	MISC
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 INDYCAR	MISC	O
 RACE	O	O
 .	O	O
@@ -32093,7 +33809,7 @@ grid	O	O
 for	O	O
 Sunday	O	O
 's	O	O
-Vancouver	LOC	O
+Vancouver	LOC	MISC
 IndyCar	MISC	O
 race	O	O
 after	O	O
@@ -32143,7 +33859,11 @@ Andretti	PER	PER
 U.S.	LOC	LOC
 )	O	O
 ,	O	O
+<<<<<<< HEAD
 Lola	ORG	O
+=======
+Lola	ORG	PER
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 Ford	ORG	PER
 Cosworth	ORG	O
 ,	O	O
@@ -32158,7 +33878,7 @@ U.S.	LOC	LOC
 Reynard	ORG	O
 Mercedes-Benz	ORG	O
 ,	O	O
-54.507	O	O
+54.507	O	PER
 4.	O	O
 Bryan	PER	PER
 Herta	PER	PER
@@ -32193,7 +33913,11 @@ Mercedes-Benz	ORG	O
 ,	O	O
 54.620	O	O
 7.	O	O
+<<<<<<< HEAD
 Al	PER	O
+=======
+Al	PER	MISC
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 Unser	PER	PER
 Jr	O	PER
 (	O	O
@@ -32222,7 +33946,11 @@ Gugelmin	PER	PER
 Brazil	LOC	LOC
 )	O	O
 ,	O	O
+<<<<<<< HEAD
 Reynard	ORG	O
+=======
+Reynard	ORG	PER
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 Ford	ORG	PER
 Cosworth	ORG	O
 ,	O	O
@@ -32270,9 +33998,15 @@ qualifying	O	O
 match	O	O
 for	O	O
 the	O	O
+<<<<<<< HEAD
 1998	O	O
 World	MISC	O
 Cup	MISC	O
+=======
+1998	O	MISC
+World	MISC	MISC
+Cup	MISC	MISC
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 on	O	O
 Friday	O	O
 .	O	O
@@ -32301,9 +34035,15 @@ Corrazin	PER	PER
 )	O	O
 Panama	LOC	O
 -	O	O
+<<<<<<< HEAD
 Jorge	PER	O
 Luis	PER	O
 Dely	PER	O
+=======
+Jorge	PER	PER
+Luis	PER	PER
+Dely	PER	PER
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 Valdes	PER	O
 (	O	O
 50th	O	O
@@ -32355,7 +34095,11 @@ of	O	O
 an	O	O
 ecstatic	O	O
 Ellis	LOC	O
+<<<<<<< HEAD
 Park	LOC	O
+=======
+Park	LOC	LOC
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 crowd	O	O
 on	O	O
 Saturday	O	O
@@ -32425,11 +34169,17 @@ Black	ORG	O
 series	O	O
 triumph	O	O
 on	O	O
+<<<<<<< HEAD
 South	MISC	LOC
 African	MISC	MISC
 soil	O	LOC
+=======
+South	MISC	MISC
+African	MISC	MISC
+soil	O	O
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 .	O	O
-Springbok	ORG	LOC
+Springbok	ORG	ORG
 scrum-half	O	O
 Joost	PER	O
 van	PER	PER
@@ -32498,7 +34248,11 @@ penalties	O	O
 .	O	O
 The	O	O
 All	ORG	O
+<<<<<<< HEAD
 Blacks	ORG	O
+=======
+Blacks	ORG	ORG
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 salvaged	O	O
 some	O	O
 pride	O	O
@@ -32573,7 +34327,11 @@ only	O	O
 to	O	O
 see	O	O
 Andrew	PER	PER
+<<<<<<< HEAD
 Mehrtens	PER	O
+=======
+Mehrtens	PER	LOC
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 launch	O	O
 a	O	O
 penalty	O	O
@@ -32626,7 +34384,7 @@ promise	O	O
 was	O	O
 realised	O	O
 when	O	O
-Joubert	PER	PER
+Joubert	PER	O
 made	O	O
 a	O	O
 40-metre	O	O
@@ -32640,7 +34398,11 @@ and	O	O
 although	O	O
 winger	O	O
 Pieter	PER	O
+<<<<<<< HEAD
 Hendriks	PER	O
+=======
+Hendriks	PER	PER
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 appeared	O	O
 to	O	O
 knock	O	O
@@ -32650,9 +34412,13 @@ Joubert	PER	LOC
 reverse	O	O
 pass	O	O
 ,	O	O
-Welsh	MISC	LOC
+Welsh	MISC	ORG
 referee	O	O
+<<<<<<< HEAD
 Derek	PER	O
+=======
+Derek	PER	PER
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 Bevan	PER	O
 allowed	O	O
 Van	PER	PER
@@ -32730,9 +34496,15 @@ A	O	O
 quick	O	O
 penalty	O	O
 from	O	O
+<<<<<<< HEAD
 Van	PER	ORG
 der	PER	O
 Westhuizen	PER	O
+=======
+Van	PER	PER
+der	PER	PER
+Westhuizen	PER	PER
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 five	O	O
 metres	O	O
 from	O	O
@@ -32758,7 +34530,7 @@ his	O	O
 third	O	O
 penalty	O	O
 the	O	O
-Springboks	ORG	ORG
+Springboks	ORG	PER
 held	O	O
 an	O	O
 unassailable	O	O
@@ -32908,8 +34680,13 @@ Wiese	PER	O
 ,	O	O
 3	O	O
 -	O	O
+<<<<<<< HEAD
 Marius	PER	PER
 Hurter	PER	O
+=======
+Marius	PER	O
+Hurter	PER	PER
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 ,	O	O
 2	O	O
 -	O	O
@@ -32919,7 +34696,11 @@ Dalton	PER	PER
 1	O	O
 -	O	O
 Dawie	PER	PER
+<<<<<<< HEAD
 Theron	PER	PER
+=======
+Theron	PER	O
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 (	O	O
 Garry	PER	PER
 Pagel	PER	O
@@ -32978,8 +34759,13 @@ Brooke	PER	O
 ,	O	O
 7	O	O
 -	O	O
+<<<<<<< HEAD
 Josh	PER	PER
 Kronfeld	PER	O
+=======
+Josh	PER	O
+Kronfeld	PER	PER
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 ,	O	O
 6	O	O
 -	O	O
@@ -33129,12 +34915,21 @@ series	O	O
 -DOCSTART-	O	O
 SOCCER	O	O
 -	O	O
+<<<<<<< HEAD
 MAURITANIA	LOC	O
 DISSOLVES	O	O
 NATIONAL	O	O
 TEAM	O	O
 AFTER	O	O
 CUP	MISC	O
+=======
+MAURITANIA	LOC	LOC
+DISSOLVES	O	MISC
+NATIONAL	O	O
+TEAM	O	O
+AFTER	O	MISC
+CUP	MISC	MISC
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 EXIT	O	O
 .	O	O
 NOUAKCHOTT	LOC	O
@@ -33145,8 +34940,13 @@ soccer	O	O
 federation	O	ORG
 dissolved	O	O
 the	O	O
+<<<<<<< HEAD
 national	O	O
 team	O	O
+=======
+national	O	ORG
+team	O	ORG
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 and	O	O
 suspended	O	O
 this	O	O
@@ -33211,7 +35011,11 @@ said	O	O
 .	O	O
 The	O	O
 North	MISC	LOC
+<<<<<<< HEAD
 Africans	MISC	O
+=======
+Africans	MISC	MISC
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 were	O	O
 held	O	O
 to	O	O
@@ -33236,7 +35040,11 @@ tie	O	O
 -DOCSTART-	O	O
 SOCCER	O	O
 -	O	O
+<<<<<<< HEAD
 MAURITANIA	LOC	O
+=======
+MAURITANIA	LOC	LOC
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 DRAW	O	O
 WITH	O	O
 BENIN	LOC	O
@@ -33276,7 +35084,11 @@ aggregate	O	O
 -DOCSTART-	O	O
 SOCCER	O	O
 -	O	O
+<<<<<<< HEAD
 YUGOSLAV	MISC	O
+=======
+YUGOSLAV	MISC	MISC
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 LEAGUE	O	O
 RESULTS	O	O
 /	O	O
@@ -33457,7 +35269,11 @@ Borac	ORG	O
 0	O	O
 Division	O	O
 B	O	O
+<<<<<<< HEAD
 Sloboda	ORG	ORG
+=======
+Sloboda	ORG	PER
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 4	O	O
 Mladost	ORG	O
 (	ORG	O
@@ -33616,7 +35432,7 @@ BJ	ORG	O
 -DOCSTART-	O	O
 SOCCER	O	O
 -	O	O
-INCE	PER	PER
+INCE	PER	O
 EXPOSED	O	O
 BY	O	O
 GASCOIGNE	PER	PER
@@ -33674,7 +35490,7 @@ stadium	O	O
 in	O	O
 Chisinau	LOC	O
 as	O	O
-Glenn	PER	O
+Glenn	PER	PER
 Hoddle	PER	PER
 's	O	O
 England	LOC	LOC
@@ -33694,7 +35510,7 @@ Gascoigne	PER	PER
 whose	O	O
 compulsive	O	O
 practical	O	O
-joking	O	PER
+joking	O	O
 has	O	O
 landed	O	O
 him	O	O
@@ -33704,11 +35520,16 @@ in	O	O
 the	O	O
 past	O	O
 ,	O	O
-tugged	O	O
+tugged	O	PER
 down	O	O
 the	O	O
+<<<<<<< HEAD
 Inter	ORG	O
 Milan	ORG	O
+=======
+Inter	ORG	ORG
+Milan	ORG	ORG
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 player	O	O
 's	O	O
 trousers	O	O
@@ -33778,7 +35599,11 @@ Saturday	O	O
 Fifth	O	O
 place	O	O
 :	O	O
+<<<<<<< HEAD
 Benetton	ORG	PER
+=======
+Benetton	ORG	LOC
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 (	O	O
 Italy	LOC	LOC
 )	O	O
@@ -33795,7 +35620,11 @@ halftime	O	O
 Third	O	O
 place	O	O
 :	O	O
+<<<<<<< HEAD
 Alba	ORG	PER
+=======
+Alba	ORG	LOC
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 (	O	O
 Germany	LOC	LOC
 )	O	O
@@ -33812,7 +35641,7 @@ Yugoslavia	LOC	O
 -DOCSTART-	O	O
 BASKETBALLSOCCER	O	O
 -	O	O
-TROFEJ	MISC	O
+TROFEJ	MISC	PER
 BEOGRAD	MISC	O
 TOURNAMENT	MISC	O
 RESULTS	O	O
@@ -33834,7 +35663,11 @@ Saturday	O	O
 Fifth	O	O
 place	O	O
 :	O	O
+<<<<<<< HEAD
 Benetton	ORG	PER
+=======
+Benetton	ORG	LOC
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 (	O	O
 Italy	LOC	LOC
 )	O	O
@@ -33851,7 +35684,11 @@ halftime	O	O
 Third	O	O
 place	O	O
 :	O	O
+<<<<<<< HEAD
 Alba	ORG	PER
+=======
+Alba	ORG	LOC
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 (	O	O
 Germany	LOC	LOC
 )	O	O
@@ -33893,7 +35730,11 @@ Cup	MISC	MISC
 soccer	O	O
 European	MISC	MISC
 group	O	O
+<<<<<<< HEAD
 8	O	O
+=======
+8	O	ORG
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 qualifier	O	O
 on	O	O
 Saturday	O	O
@@ -33903,7 +35744,7 @@ Scorers	O	O
 Romania	LOC	O
 -	O	O
 Viorel	PER	PER
-Moldovan	PER	PER
+Moldovan	PER	O
 (	O	O
 21st	O	O
 minute	O	O
@@ -33950,7 +35791,11 @@ Cup	MISC	MISC
 soccer	O	O
 European	MISC	MISC
 group	O	O
+<<<<<<< HEAD
 9	O	O
+=======
+9	O	ORG
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 qualifier	O	O
 on	O	O
 Saturday	O	O
@@ -33971,7 +35816,11 @@ QUALIFIER	O	O
 .	O	O
 BAKU	LOC	LOC
 1996-08-31	O	O
+<<<<<<< HEAD
 Azerbaijan	LOC	PER
+=======
+Azerbaijan	LOC	LOC
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 beat	O	O
 Switzerland	LOC	PER
 1-0	O	O
@@ -33994,7 +35843,11 @@ Saturday	O	O
 .	O	O
 Scorer	O	O
 :	O	O
+<<<<<<< HEAD
 Vidadi	PER	PER
+=======
+Vidadi	PER	O
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 Rzayev	PER	O
 (	O	O
 28th	O	O
@@ -34055,8 +35908,13 @@ RIGA	LOC	LOC
 1996-08-31	O	O
 Sweden	LOC	LOC
 beat	O	O
+<<<<<<< HEAD
 Latvia	LOC	PER
 2-0	O	PER
+=======
+Latvia	LOC	LOC
+2-0	O	O
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 (	O	O
 halftime	O	O
 0-0	O	O
@@ -34114,7 +35972,11 @@ Cup	MISC	MISC
 soccer	O	O
 European	MISC	MISC
 group	O	O
+<<<<<<< HEAD
 4	O	O
+=======
+4	O	ORG
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 qualifier	O	O
 on	O	O
 Saturday	O	O
@@ -34198,7 +36060,7 @@ Anthony	PER	PER
 Hill	PER	PER
 called	O	O
 Jansher	PER	PER
-Khan	PER	O
+Khan	PER	PER
 a	O	O
 cheat	O	O
 during	O	O
@@ -34212,9 +36074,15 @@ number	O	O
 one	O	O
 in	O	O
 the	O	O
+<<<<<<< HEAD
 Hong	MISC	LOC
 Kong	MISC	LOC
 Open	MISC	O
+=======
+Hong	MISC	MISC
+Kong	MISC	MISC
+Open	MISC	MISC
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 semifinals	O	O
 on	O	O
 Saturday	O	O
@@ -34490,9 +36358,15 @@ that	O	O
 I	O	O
 think	O	O
 the	O	O
+<<<<<<< HEAD
 Professional	ORG	O
 Squash	ORG	O
 Association	ORG	O
+=======
+Professional	ORG	ORG
+Squash	ORG	ORG
+Association	ORG	ORG
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 should	O	O
 look	O	O
 into	O	O
@@ -34528,16 +36402,27 @@ bidding	O	O
 for	O	O
 an	O	O
 eighth	O	O
+<<<<<<< HEAD
 Hong	MISC	LOC
 Kong	MISC	LOC
 Open	MISC	O
+=======
+Hong	MISC	MISC
+Kong	MISC	MISC
+Open	MISC	MISC
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 title	O	O
 ,	O	O
 plays	O	O
 second-seeded	O	O
 Australian	MISC	MISC
+<<<<<<< HEAD
 Rodney	PER	O
 Eyles	PER	O
+=======
+Rodney	PER	MISC
+Eyles	PER	PER
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 in	O	O
 the	O	O
 final	O	O
@@ -34566,7 +36451,7 @@ Eyles	PER	PER
 ,	O	O
 who	O	O
 defeated	O	O
-Jansher	PER	O
+Jansher	PER	PER
 in	O	O
 the	O	O
 semifinals	O	O
@@ -34617,7 +36502,11 @@ My	O	O
 biggest	O	O
 problem	O	O
 against	O	O
+<<<<<<< HEAD
 Jansher	PER	O
+=======
+Jansher	PER	MISC
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 is	O	O
 concentration	O	O
 .	O	O
@@ -34653,9 +36542,15 @@ Semifinal	O	O
 results	O	O
 in	O	O
 the	O	O
+<<<<<<< HEAD
 Hong	MISC	LOC
 Kong	MISC	LOC
 Open	MISC	O
+=======
+Hong	MISC	MISC
+Kong	MISC	MISC
+Open	MISC	MISC
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 on	O	O
 Saturday	O	O
 (	O	O
@@ -34713,7 +36608,7 @@ GREATER	MISC	O
 MILWAUKEE	MISC	O
 OPEN	MISC	O
 .	O	O
-MILWAUKEE	LOC	LOC
+MILWAUKEE	LOC	ORG
 ,	O	O
 Wisconsin	LOC	O
 1996-08-31	O	O
@@ -34743,8 +36638,13 @@ $	O	O
 1.2	O	O
 million	O	O
 Greater	MISC	O
+<<<<<<< HEAD
 Milwaukee	MISC	O
 Open	MISC	O
+=======
+Milwaukee	MISC	MISC
+Open	MISC	MISC
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 .	O	O
 Parnevik	PER	PER
 ,	O	O
@@ -34772,23 +36672,38 @@ the	O	O
 record	O	O
 set	O	O
 by	O	O
+<<<<<<< HEAD
 Loren	PER	O
+=======
+Loren	PER	PER
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 Roberts	PER	O
 in	O	O
 1994	O	O
 at	O	O
 the	O	O
+<<<<<<< HEAD
 Brown	LOC	O
 Deer	LOC	LOC
 Park	LOC	ORG
 Golf	LOC	O
+=======
+Brown	LOC	PER
+Deer	LOC	PER
+Park	LOC	LOC
+Golf	LOC	LOC
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 Course	LOC	O
 and	O	O
 also	O	O
 equalled	O	O
 Saturday	O	O
 by	O	O
+<<<<<<< HEAD
 Greg	PER	O
+=======
+Greg	PER	PER
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 Kraft	PER	O
 .	O	O
 Nolan	PER	PER
@@ -34824,7 +36739,11 @@ for	O	O
 his	O	O
 fourth	O	O
 career	O	O
+<<<<<<< HEAD
 PGA	MISC	O
+=======
+PGA	MISC	MISC
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 Tour	MISC	O
 victory	O	O
 and	O	O
@@ -34832,7 +36751,11 @@ first	O	O
 since	O	O
 the	O	O
 1993	MISC	O
+<<<<<<< HEAD
 BellSouth	MISC	O
+=======
+BellSouth	MISC	MISC
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 Classic	MISC	O
 .	O	O
 Tiger	PER	PER
@@ -34924,7 +36847,7 @@ and	O	O
 18	O	O
 .	O	O
 After	O	O
-Parnevik	PER	O
+Parnevik	PER	PER
 started	O	O
 off	O	O
 his	O	O
@@ -34949,7 +36872,11 @@ next	O	O
 seven	O	O
 holes	O	O
 .	O	O
+<<<<<<< HEAD
 Parnevik	PER	O
+=======
+Parnevik	PER	ORG
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 continued	O	O
 to	O	O
 storm	O	O
@@ -34975,7 +36902,11 @@ on	O	O
 the	O	O
 15th	O	LOC
 and	O	O
+<<<<<<< HEAD
 17th	O	LOC
+=======
+17th	O	MISC
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 holes	O	O
 .	O	O
 "	O	O
@@ -35173,10 +37104,17 @@ at	O	O
 last	O	O
 week	O	O
 's	O	O
+<<<<<<< HEAD
 World	MISC	O
 Series	MISC	O
 of	MISC	O
 Golf	MISC	O
+=======
+World	MISC	MISC
+Series	MISC	MISC
+of	MISC	MISC
+Golf	MISC	MISC
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 ,	O	O
 and	O	O
 Stuart	PER	PER
@@ -35244,14 +37182,23 @@ TENNIS	O	O
 SPAIN	LOC	LOC
 ,	O	O
 U.S.	LOC	LOC
+<<<<<<< HEAD
 TEAMS	O	O
 OPEN	O	O
+=======
+TEAMS	O	MISC
+OPEN	O	MISC
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 ON	O	O
 ROAD	O	O
 FOR	O	O
 1997	MISC	O
 FED	MISC	O
+<<<<<<< HEAD
 CUP	MISC	O
+=======
+CUP	MISC	MISC
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 .	O	O
 Richard	PER	PER
 Finn	PER	PER
@@ -35280,7 +37227,7 @@ road	O	O
 to	O	O
 open	O	O
 the	O	O
-1997	O	O
+1997	O	MISC
 women	O	O
 's	O	O
 international	O	O
@@ -35291,7 +37238,7 @@ based	O	O
 on	O	O
 the	O	O
 draw	O	O
-conducted	O	O
+conducted	O	MISC
 Saturday	O	O
 at	O	O
 the	O	O
@@ -35415,7 +37362,7 @@ the	O	O
 Cup	MISC	O
 ,	O	O
 "	O	O
-U.S.	LOC	MISC
+U.S.	LOC	LOC
 captain	O	O
 Billie	PER	PER
 Jean	PER	PER
@@ -35439,7 +37386,7 @@ States	LOC	LOC
 edged	O	O
 Austria	LOC	LOC
 in	O	O
-Salzburg	LOC	O
+Salzburg	LOC	LOC
 3-2	O	O
 in	O	O
 the	O	O
@@ -35626,12 +37573,18 @@ against	O	O
 the	O	O
 Spain	LOC	LOC
 's	O	O
-formidable	O	O
+formidable	O	PER
 duo	O	O
 of	O	O
+<<<<<<< HEAD
 Arantxa	PER	O
 Sanchez	PER	O
 Vicario	PER	O
+=======
+Arantxa	PER	PER
+Sanchez	PER	PER
+Vicario	PER	PER
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 and	O	O
 Conchita	PER	O
 Martinez	PER	O
@@ -35794,8 +37747,13 @@ women	O	O
 Fed	MISC	O
 Cup	MISC	MISC
 team	O	O
+<<<<<<< HEAD
 tennis	O	MISC
 championships	O	O
+=======
+tennis	O	O
+championships	O	MISC
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 ,	O	O
 as	O	O
 conducted	O	O
@@ -35816,15 +37774,24 @@ round	O	O
 March	O	O
 1-2	O	O
 )	O	O
+<<<<<<< HEAD
 United	LOC	ORG
 States	LOC	O
 at	O	O
 Netherlands	LOC	LOC
 Czech	LOC	O
 Republic	LOC	O
+=======
+United	LOC	LOC
+States	LOC	O
+at	O	O
+Netherlands	LOC	LOC
+Czech	LOC	MISC
+Republic	LOC	LOC
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 at	O	O
 Germany	LOC	LOC
-France	LOC	LOC
+France	LOC	ORG
 at	O	O
 Japan	LOC	LOC
 Spain	LOC	LOC
@@ -35855,8 +37822,13 @@ at	O	O
 Croatia	LOC	LOC
 Switzerland	LOC	LOC
 at	O	O
+<<<<<<< HEAD
 Slovak	LOC	LOC
 Republic	LOC	O
+=======
+Slovak	LOC	MISC
+Republic	LOC	LOC
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 Argentina	LOC	O
 at	O	O
 South	LOC	LOC
@@ -35870,8 +37842,13 @@ SOCCER	O	O
 -	O	O
 U.S.	LOC	LOC
 BEAT	O	O
+<<<<<<< HEAD
 EL	LOC	PER
 SALVADOR	LOC	O
+=======
+EL	LOC	LOC
+SALVADOR	LOC	LOC
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 3-1	O	O
 .	O	O
 LOS	LOC	LOC
@@ -35881,9 +37858,15 @@ The	O	O
 United	LOC	LOC
 States	LOC	LOC
 beat	O	O
+<<<<<<< HEAD
 El	LOC	PER
 Salvador	LOC	PER
 3-1	O	PER
+=======
+El	LOC	LOC
+Salvador	LOC	LOC
+3-1	O	O
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 (	O	O
 halftime	O	O
 1-0	O	O
@@ -35973,9 +37956,15 @@ W	O	O
 L	O	O
 PCT	O	O
 GB	O	O
+<<<<<<< HEAD
 NEW	ORG	O
 YORK	ORG	LOC
 75	O	O
+=======
+NEW	ORG	ORG
+YORK	ORG	ORG
+75	O	ORG
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 59	O	O
 .560	O	O
 -	O	O
@@ -36025,7 +38014,11 @@ MILWAUKEE	ORG	O
 71	O	O
 .478	O	O
 16	O	O
+<<<<<<< HEAD
 KANSAS	ORG	LOC
+=======
+KANSAS	ORG	ORG
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 CITY	ORG	ORG
 61	O	O
 75	O	O
@@ -36072,15 +38065,26 @@ AT	O	O
 TORONTO	LOC	LOC
 MINNESOTA	ORG	LOC
 AT	O	O
+<<<<<<< HEAD
 MILWAUKEE	LOC	O
 CLEVELAND	ORG	O
+=======
+MILWAUKEE	LOC	LOC
+CLEVELAND	ORG	ORG
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 AT	O	O
 TEXAS	LOC	LOC
 BOSTON	ORG	LOC
 AT	O	O
+<<<<<<< HEAD
 OAKLAND	LOC	O
 NEW	ORG	O
 YORK	ORG	LOC
+=======
+OAKLAND	LOC	LOC
+NEW	ORG	ORG
+YORK	ORG	ORG
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 AT	O	O
 CALIFORNIA	LOC	LOC
 NATIONAL	MISC	MISC
@@ -36108,9 +38112,15 @@ FLORIDA	ORG	LOC
 .481	O	O
 19	O	O
 1/2	O	O
+<<<<<<< HEAD
 NEW	ORG	O
 YORK	ORG	LOC
 59	O	O
+=======
+NEW	ORG	ORG
+YORK	ORG	ORG
+59	O	ORG
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 76	O	O
 .437	O	O
 25	O	O
@@ -36187,8 +38197,13 @@ CHICAGO	LOC	LOC
 HOUSTON	ORG	O
 AT	O	O
 PITTSBURGH	LOC	LOC
+<<<<<<< HEAD
 SAN	ORG	LOC
 FRANCISCO	ORG	LOC
+=======
+SAN	ORG	ORG
+FRANCISCO	ORG	ORG
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 AT	O	O
 NEW	LOC	LOC
 YORK	LOC	LOC
@@ -36205,7 +38220,7 @@ AT	O	O
 MONTREAL	LOC	LOC
 COLORADO	ORG	LOC
 AT	O	O
-ST	LOC	LOC
+ST	LOC	O
 LOUIS	LOC	LOC
 -DOCSTART-	O	O
 BASEBALL	O	O
@@ -36241,7 +38256,7 @@ DETROIT	ORG	ORG
 Kansas	ORG	LOC
 City	ORG	ORG
 0	O	O
-Chicago	ORG	LOC
+Chicago	ORG	ORG
 11	O	O
 TORONTO	ORG	ORG
 2	O	O
@@ -36257,7 +38272,11 @@ TEXAS	ORG	LOC
 5	O	O
 Cleveland	ORG	O
 3	O	O
+<<<<<<< HEAD
 New	ORG	O
+=======
+New	ORG	ORG
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 York	ORG	LOC
 6	O	O
 CALIFORNIA	ORG	LOC
@@ -36271,11 +38290,19 @@ Baltimore	ORG	LOC
 SEATTLE	ORG	ORG
 2	O	O
 National	MISC	MISC
+<<<<<<< HEAD
 League	MISC	O
 CHICAGO	ORG	ORG
 3	O	O
 Atlanta	ORG	PER
 2	O	PER
+=======
+League	MISC	MISC
+CHICAGO	ORG	ORG
+3	O	O
+Atlanta	ORG	ORG
+2	O	O
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 (	O	O
 1st	O	MISC
 game	O	O
@@ -36313,6 +38340,7 @@ PITTSBURGH	ORG	O
 San	ORG	LOC
 Francisco	ORG	LOC
 6	O	O
+<<<<<<< HEAD
 NEW	ORG	O
 YORK	ORG	LOC
 4	O	O
@@ -36320,13 +38348,26 @@ ST	ORG	ORG
 LOUIS	ORG	LOC
 7	O	PER
 Colorado	ORG	LOC
+=======
+NEW	ORG	LOC
+YORK	ORG	ORG
+4	O	O
+ST	ORG	ORG
+LOUIS	ORG	ORG
+7	O	O
+Colorado	ORG	ORG
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 4	O	O
 -DOCSTART-	O	O
 BASEBALL	O	O
 -	O	O
 KEVIN	PER	PER
 BROWN	PER	PER
+<<<<<<< HEAD
 LOWERS	O	PER
+=======
+LOWERS	O	O
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 ERA	MISC	O
 AS	O	O
 MARLINS	ORG	O
@@ -36615,11 +38656,16 @@ the	O	O
 12th	O	O
 off	O	O
 Jeff	PER	O
+<<<<<<< HEAD
 Parrett	PER	O
+=======
+Parrett	PER	PER
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 (	O	O
 2-3	O	O
 )	O	O
 scored	O	O
+<<<<<<< HEAD
 Chad	PER	O
 Curtis	PER	O
 and	O	O
@@ -36628,6 +38674,16 @@ the	O	O
 Los	ORG	LOC
 Angeles	ORG	LOC
 Dodgers	ORG	O
+=======
+Chad	PER	LOC
+Curtis	PER	PER
+and	O	O
+lifted	O	O
+the	O	O
+Los	ORG	ORG
+Angeles	ORG	ORG
+Dodgers	ORG	ORG
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 to	O	O
 a	O	O
 7-6	O	O
@@ -36670,7 +38726,7 @@ scoreless	O	O
 innings	O	O
 .	O	O
 Todd	PER	PER
-Worrell	PER	O
+Worrell	PER	PER
 worked	O	O
 the	O	O
 12th	O	O
@@ -36713,7 +38769,11 @@ In	O	O
 Chicago	LOC	LOC
 ,	O	O
 the	O	O
+<<<<<<< HEAD
 Braves	ORG	O
+=======
+Braves	ORG	ORG
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 and	O	O
 Cubs	ORG	O
 split	O	O
@@ -36820,7 +38880,11 @@ victory	O	O
 .	O	O
 Cubs	ORG	PER
 shortstop	O	O
+<<<<<<< HEAD
 Jose	PER	O
+=======
+Jose	PER	PER
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 Hernandez	PER	O
 committed	O	O
 three	O	O
@@ -36955,7 +39019,11 @@ Mike	PER	PER
 Oquist	PER	PER
 allowed	O	O
 one	O	O
+<<<<<<< HEAD
 Montreal	LOC	O
+=======
+Montreal	LOC	LOC
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 hit	O	O
 in	O	O
 the	O	O
@@ -37008,7 +39076,7 @@ Mets	ORG	O
 Benard	PER	O
 ,	O	O
 hitting	O	PER
-.467	O	PER
+.467	O	O
 (	O	O
 14-for-30	O	O
 )	O	O
@@ -37042,7 +39110,7 @@ Giants	ORG	O
 up	O	O
 4-2	O	O
 .	O	O
-Estes	PER	PER
+Estes	PER	O
 (	O	O
 3-4	O	O
 )	O	O
@@ -37076,8 +39144,13 @@ who	O	O
 collected	O	O
 a	O	O
 career-high	O	O
+<<<<<<< HEAD
 four	O	O
 RBI	MISC	O
+=======
+four	O	MISC
+RBI	MISC	MISC
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 ,	O	O
 but	O	O
 struck	O	O
@@ -37146,7 +39219,7 @@ Colorado	ORG	LOC
 Rockies	ORG	O
 7-4	O	O
 .	O	O
-Benes	PER	PER
+Benes	PER	O
 (	O	O
 12-8	O	O
 )	O	O
@@ -37165,8 +39238,13 @@ the	O	O
 win	O	O
 .	O	O
 St	ORG	PER
+<<<<<<< HEAD
 Louis	ORG	PER
 defeated	O	PER
+=======
+Louis	ORG	ORG
+defeated	O	O
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 Colorado	ORG	LOC
 for	O	O
 just	O	O
@@ -37231,8 +39309,13 @@ with	O	O
 six	O	O
 RBI	MISC	O
 and	O	O
+<<<<<<< HEAD
 Donne	PER	O
 Wall	PER	O
+=======
+Donne	PER	PER
+Wall	PER	LOC
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 fired	O	O
 a	O	O
 seven-hitter	O	O
@@ -37429,7 +39512,11 @@ two	O	O
 years	O	O
 ago	O	O
 ended	O	O
+<<<<<<< HEAD
 Ivan	PER	O
+=======
+Ivan	PER	PER
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 Lendl	PER	PER
 's	O	O
 Grand	MISC	O
@@ -37560,7 +39647,11 @@ Edberg	PER	PER
 ,	O	O
 who	O	O
 upset	O	O
+<<<<<<< HEAD
 Wimbledon	MISC	PER
+=======
+Wimbledon	MISC	O
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 champion	O	O
 and	O	O
 fifth-seeded	O	O
@@ -37836,7 +39927,11 @@ round	O	O
 SOCCER	O	O
 -	O	O
 AUSTRIA	LOC	LOC
+<<<<<<< HEAD
 DOMINATE	O	O
+=======
+DOMINATE	O	MISC
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 SCOTLAND	LOC	LOC
 IN	O	O
 WORLD	MISC	LOC
@@ -37872,7 +39967,11 @@ to	O	O
 penetrate	O	O
 the	O	O
 visitors	O	O
+<<<<<<< HEAD
 '	O	O
+=======
+'	O	MISC
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 defence	O	O
 and	O	O
 had	O	O
@@ -37935,7 +40034,7 @@ narrowly	O	O
 passing	O	O
 the	O	O
 left-hand	O	O
-post	O	O
+post	O	ORG
 .	O	O
 They	O	O
 also	O	O
@@ -37979,7 +40078,7 @@ minute	O	O
 when	O	O
 he	O	O
 forced	O	O
-Austrian	MISC	MISC
+Austrian	MISC	O
 goalkeeper	O	O
 Michael	PER	PER
 Konsel	PER	O
@@ -38168,8 +40267,13 @@ Ogris	PER	O
 77th	O	O
 )	O	O
 ,	O	O
+<<<<<<< HEAD
 Dietmar	PER	O
 Kuehbauer	PER	O
+=======
+Dietmar	PER	PER
+Kuehbauer	PER	PER
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 ,	O	O
 Anton	PER	PER
 Polster	PER	PER
@@ -38216,7 +40320,7 @@ Alistair	PER	PER
 McCoist	PER	PER
 (	O	O
 Gordon	PER	PER
-Durie	PER	PER
+Durie	PER	O
 75th	O	O
 )	O	O
 ,	O	O
@@ -38257,7 +40361,7 @@ over	O	O
 Venezuela	LOC	PER
 's	O	O
 Ramon	PER	O
-Guzman	PER	O
+Guzman	PER	PER
 on	O	O
 Saturday	O	O
 .	O	O
@@ -38319,7 +40423,11 @@ Aime	PER	PER
 Jacquet	PER	PER
 ,	O	O
 their	O	O
+<<<<<<< HEAD
 Euro	MISC	O
+=======
+Euro	MISC	MISC
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 96	MISC	O
 semifinal	O	O
 elimination	O	O
@@ -38337,7 +40445,11 @@ by	O	O
 the	O	O
 sending-off	O	O
 of	O	O
+<<<<<<< HEAD
 Chelsea	ORG	O
+=======
+Chelsea	ORG	MISC
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 central	O	O
 defender	O	O
 Franck	PER	O
@@ -38463,7 +40575,11 @@ by	O	O
 midfielder	O	O
 Joaquin	PER	PER
 del	PER	PER
+<<<<<<< HEAD
 Olmo	PER	O
+=======
+Olmo	PER	ORG
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 .	O	O
 Within	O	O
 four	O	O
@@ -38481,8 +40597,13 @@ a	O	O
 one-two	O	O
 with	O	O
 the	O	O
+<<<<<<< HEAD
 Internazionale	ORG	O
 Milan	ORG	O
+=======
+Internazionale	ORG	ORG
+Milan	ORG	LOC
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 forward	O	O
 down	O	O
 the	O	O
@@ -38550,7 +40671,7 @@ Lama	PER	O
 2	O	O
 -	O	O
 Lilian	PER	PER
-Thuram	PER	PER
+Thuram	PER	O
 (	O	O
 14	O	O
 -	O	O
@@ -38567,7 +40688,7 @@ Blanc	PER	O
 8	O	O
 -	O	O
 Marcel	PER	PER
-Desailly	PER	PER
+Desailly	PER	O
 (	O	O
 12	O	O
 -	O	O
@@ -38583,8 +40704,13 @@ Lizarazu	PER	O
 ;	O	O
 4	O	O
 -	O	O
+<<<<<<< HEAD
 Christian	PER	O
 Karembeu	PER	O
+=======
+Christian	PER	MISC
+Karembeu	PER	PER
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 ,	O	O
 7	O	O
 -	O	O
@@ -38611,7 +40737,7 @@ Pires	PER	PER
 9	O	O
 -	O	O
 Nicolas	PER	PER
-Ouedec	PER	PER
+Ouedec	PER	O
 (	O	O
 17	O	O
 -	O	O
@@ -38647,13 +40773,21 @@ Rios	PER	O
 ;	O	O
 13	O	O
 -	O	O
+<<<<<<< HEAD
 Pavel	PER	O
+=======
+Pavel	PER	PER
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 Pardo	PER	O
 ,	O	O
 2	O	O
 -	O	O
 Claudio	PER	O
+<<<<<<< HEAD
 Suarez	PER	O
+=======
+Suarez	PER	PER
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 ,	O	O
 5	O	O
 -	O	O
@@ -38703,7 +40837,7 @@ Aspe	PER	O
 7	O	O
 -	O	O
 Ramon	PER	PER
-Ramirez	PER	PER
+Ramirez	PER	O
 (	O	O
 15	O	O
 -	O	O
@@ -38714,8 +40848,8 @@ Arellano	PER	PER
 ;	O	O
 18	O	O
 -	O	O
-Enrique	PER	PER
-Alfaro	PER	PER
+Enrique	PER	O
+Alfaro	PER	O
 (	O	O
 17	O	O
 -	O	O
@@ -38887,8 +41021,13 @@ which	O	O
 stunned	O	O
 Belgian	MISC	MISC
 goalkeeper	O	O
+<<<<<<< HEAD
 Filip	PER	ORG
 De	PER	O
+=======
+Filip	PER	PER
+De	PER	PER
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 Wilde	PER	O
 .	O	O
 But	O	O
@@ -39033,7 +41172,11 @@ a	O	O
 single	O	O
 goal	O	O
 in	O	O
+<<<<<<< HEAD
 Euro	MISC	LOC
+=======
+Euro	MISC	MISC
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 96	MISC	O
 in	O	O
 June	O	O
@@ -39101,7 +41244,7 @@ minutes	O	O
 from	O	O
 time	O	O
 when	O	O
-De	PER	O
+De	PER	PER
 Wilde	PER	PER
 fumbled	O	O
 a	O	O
@@ -39147,16 +41290,21 @@ Teams	O	O
 :	O	O
 Belgium	LOC	LOC
 -	O	O
-1	O	O
+1	O	ORG
 -	O	O
-Filip	PER	O
+Filip	PER	PER
 De	PER	PER
 Wilde	PER	PER
 ,	O	O
 2	O	O
 -	O	O
+<<<<<<< HEAD
 Bertrand	PER	PER
 Crasson	PER	O
+=======
+Bertrand	PER	O
+Crasson	PER	PER
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 ,	O	O
 3	O	O
 -	O	O
@@ -39165,6 +41313,7 @@ Medved	PER	O
 ,	O	O
 4	O	O
 -	O	O
+<<<<<<< HEAD
 Pascal	PER	PER
 Renier	PER	O
 ,	O	O
@@ -39172,11 +41321,20 @@ Renier	PER	O
 -	O	O
 Geoffrey	PER	PER
 Claeys	PER	O
+=======
+Pascal	PER	O
+Renier	PER	PER
+,	O	O
+16	O	O
+-	O	O
+Geoffrey	PER	O
+Claeys	PER	PER
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 ,	O	O
 6	O	O
 -	O	O
 Gunther	PER	PER
-Schepens	PER	PER
+Schepens	PER	O
 (	O	O
 15	O	O
 -	O	O
@@ -39189,18 +41347,28 @@ Kerckhoven	PER	O
 ,	O	O
 10	O	O
 -	O	O
+<<<<<<< HEAD
 Enzo	PER	PER
 Scifo	PER	O
+=======
+Enzo	PER	O
+Scifo	PER	PER
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 ,	O	O
 7	O	O
 -	O	O
 Gert	PER	PER
-Verheyen	PER	PER
+Verheyen	PER	O
 (	O	O
 14	O	O
 -	O	O
+<<<<<<< HEAD
 Frederic	PER	PER
 Peiremans	PER	O
+=======
+Frederic	PER	O
+Peiremans	PER	PER
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 ,	O	O
 62nd	O	O
 )	O	O
@@ -39255,8 +41423,13 @@ Cetin	PER	O
 ,	O	O
 3	O	O
 -	O	O
+<<<<<<< HEAD
 Ogun	PER	PER
 Temizkanoglu	PER	O
+=======
+Ogun	PER	O
+Temizkanoglu	PER	PER
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 ,	O	O
 5	O	O
 -	O	O
@@ -39264,7 +41437,7 @@ Alpay	PER	O
 Ozalan	PER	O
 ,	O	O
 7-	O	O
-Abdullah	PER	PER
+Abdullah	PER	O
 Ercan	PER	O
 ,	O	O
 6	O	O
@@ -39279,8 +41452,13 @@ Cetin	PER	O
 (	O	O
 13	O	O
 -	O	O
+<<<<<<< HEAD
 Arif	PER	PER
 Erdem	PER	O
+=======
+Arif	PER	O
+Erdem	PER	PER
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 ,	O	O
 57th	O	O
 )	O	O
@@ -39348,7 +41526,7 @@ who	O	O
 succeeded	O	O
 Paul	PER	PER
 Van	PER	PER
-Himst	PER	O
+Himst	PER	PER
 as	O	O
 coach	O	O
 in	O	O
@@ -39362,7 +41540,11 @@ first	O	O
 victory	O	O
 under	O	O
 Van	PER	PER
+<<<<<<< HEAD
 Moer	PER	O
+=======
+Moer	PER	PER
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 after	O	O
 two	O	O
 draws	O	O
@@ -39401,7 +41583,7 @@ Deportivo	ORG	O
 Coruna	ORG	PER
 1	O	O
 (	O	O
-Corentine	PER	O
+Corentine	PER	PER
 Martins	PER	O
 ,	O	O
 22nd	O	O
@@ -39536,7 +41718,7 @@ Cup	MISC	MISC
 soccer	O	O
 European	MISC	MISC
 group	O	O
-four	O	O
+four	O	ORG
 qualifier	O	O
 on	O	O
 Saturday	O	O
@@ -39577,7 +41759,11 @@ win	O	O
 over	O	O
 fellow	O	O
 American	MISC	MISC
+<<<<<<< HEAD
 James	PER	LOC
+=======
+James	PER	PER
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 Heath	PER	PER
 in	O	O
 their	O	O
@@ -39599,7 +41785,7 @@ with	O	O
 a	O	O
 record	O	O
 of	O	O
-24	O	O
+24	O	MISC
 knock-out	O	O
 wins	O	O
 in	O	O
@@ -39611,7 +41797,11 @@ charge	O	O
 from	O	O
 the	O	O
 opening	O	O
+<<<<<<< HEAD
 bell	O	ORG
+=======
+bell	O	O
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 and	O	O
 had	O	O
 his	O	O
@@ -39816,7 +42006,7 @@ Stakes	MISC	O
 a	O	O
 race	O	O
 for	O	O
-two-year-olds	O	O
+two-year-olds	O	PER
 run	O	O
 over	O	O
 six	O	O
@@ -39827,14 +42017,20 @@ metres	O	O
 )	O	O
 at	O	O
 The	LOC	O
-Curragh	LOC	O
+Curragh	LOC	LOC
 on	O	O
 Saturday	O	O
 :	O	O
 1.	O	O
+<<<<<<< HEAD
 Miss	PER	O
 Stamper	PER	O
 3-1	O	PER
+=======
+Miss	PER	MISC
+Stamper	PER	PER
+3-1	O	O
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 joint-favourite	O	O
 (	O	O
 ridden	O	O
@@ -39869,9 +42065,15 @@ Winner	O	O
 owned	O	PER
 by	O	O
 John	PER	PER
+<<<<<<< HEAD
 and	O	O
 Beryll	PER	O
 Remblance	PER	O
+=======
+and	O	ORG
+Beryll	PER	PER
+Remblance	PER	PER
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 and	O	O
 trained	O	O
 in	O	O
@@ -39895,9 +42097,15 @@ KLINSMANN	PER	O
 TO	O	O
 RETIRE	O	O
 AFTER	O	O
+<<<<<<< HEAD
 1998	MISC	O
 WORLD	MISC	O
 CUP	MISC	O
+=======
+1998	MISC	MISC
+WORLD	MISC	MISC
+CUP	MISC	MISC
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 .	O	O
 BONN	LOC	LOC
 1996-08-31	O	O
@@ -39941,7 +42149,11 @@ me	O	O
 ,	O	O
 "	O	O
 the	O	O
+<<<<<<< HEAD
 32-year-old	O	O
+=======
+32-year-old	O	MISC
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 national	O	O
 team	O	O
 captain	O	O
@@ -39952,7 +42164,11 @@ saying	O	O
 by	O	O
 the	O	O
 daily	O	O
+<<<<<<< HEAD
 Sueddeutsche	ORG	O
+=======
+Sueddeutsche	ORG	ORG
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 Zeitung	ORG	O
 on	O	O
 Saturday	O	O
@@ -40102,7 +42318,11 @@ SOCCER	O	O
 -	O	O
 ROMANIA	LOC	PER
 BEAT	O	O
+<<<<<<< HEAD
 LITHUANIA	LOC	O
+=======
+LITHUANIA	LOC	LOC
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 IN	O	O
 U-21	O	O
 QUALIFIER	O	O
@@ -40131,7 +42351,7 @@ Scorers	O	O
 Romania	LOC	O
 -	O	O
 Cosmin	PER	PER
-Contra	PER	PER
+Contra	PER	O
 (	O	O
 31st	O	O
 )	O	O
@@ -40166,7 +42386,7 @@ A	O	O
 British	MISC	MISC
 newspaper	O	O
 said	O	O
-Margaret	PER	PER
+Margaret	PER	O
 Thatcher	PER	O
 was	O	O
 so	O	O
@@ -40184,7 +42404,7 @@ was	O	O
 prime	O	O
 minister	O	O
 in	O	O
-1984	O	O
+1984	O	PER
 that	O	O
 an	O	O
 astrologer	O	O
@@ -40231,8 +42451,13 @@ a	O	O
 hotel	O	O
 during	O	O
 the	O	O
+<<<<<<< HEAD
 Conservative	ORG	O
 Party	ORG	O
+=======
+Conservative	ORG	ORG
+Party	ORG	ORG
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 conference	O	O
 more	O	O
 than	O	O
@@ -40264,7 +42489,7 @@ future	O	O
 .	O	O
 "	O	O
 Bernard	PER	PER
-Ingham	PER	PER
+Ingham	PER	O
 told	O	O
 me	O	O
 that	O	O
@@ -40314,7 +42539,7 @@ about	O	O
 political	O	O
 moves	O	O
 .	O	O
-Ingram	PER	PER
+Ingram	PER	O
 was	O	O
 quoted	O	O
 as	O	O
@@ -40323,7 +42548,11 @@ the	O	O
 newspaper	O	O
 he	O	O
 thought	O	O
+<<<<<<< HEAD
 astrology	O	PER
+=======
+astrology	O	O
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 was	O	O
 "	O	O
 a	O	O
@@ -40344,7 +42573,11 @@ keep	O	O
 a	O	O
 watch	O	O
 on	O	O
+<<<<<<< HEAD
 Thatcher	PER	O
+=======
+Thatcher	PER	PER
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 's	O	O
 stars	O	O
 .	O	O
@@ -40372,7 +42605,11 @@ an	O	O
 interest	O	O
 in	O	O
 the	O	O
+<<<<<<< HEAD
 occult	O	LOC
+=======
+occult	O	MISC
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 and	O	O
 in	O	O
 fact	O	O
@@ -40429,7 +42666,7 @@ are	O	O
 some	O	O
 of	O	O
 the	O	O
-major	O	O
+major	O	MISC
 events	O	O
 to	O	O
 have	O	O
@@ -40442,7 +42679,11 @@ history	O	O
 .	O	O
 1533	O	LOC
 -	O	O
+<<<<<<< HEAD
 Queen	O	PER
+=======
+Queen	O	O
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 Elizabeth	PER	PER
 I	PER	O
 born	O	O
@@ -40485,8 +42726,13 @@ politics	O	O
 and	O	O
 the	O	O
 arts	O	ORG
+<<<<<<< HEAD
 .	O	O
 1706	O	LOC
+=======
+.	O	ORG
+1706	O	O
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 -	O	O
 French	MISC	MISC
 troops	O	O
@@ -40547,7 +42793,7 @@ Charles	PER	PER
 ceded	O	PER
 Alsace	LOC	O
 and	O	O
-Strasbourg	LOC	O
+Strasbourg	LOC	ORG
 to	O	O
 France	LOC	LOC
 and	O	O
@@ -40636,8 +42882,13 @@ also	O	O
 got	O	O
 the	O	O
 House	ORG	O
+<<<<<<< HEAD
 of	ORG	O
 Lords	ORG	O
+=======
+of	ORG	ORG
+Lords	ORG	LOC
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 to	O	O
 pass	O	O
 his	O	O
@@ -40718,7 +42969,11 @@ crimes	O	O
 1909	O	O
 -	O	O
 Elia	PER	O
+<<<<<<< HEAD
 Kazan	PER	O
+=======
+Kazan	PER	PER
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 born	O	O
 as	O	O
 Elia	PER	O
@@ -40780,12 +43035,16 @@ Alex	MISC	LOC
 "	O	O
 Lawrence	MISC	PER
 of	MISC	O
+<<<<<<< HEAD
 Arabia	MISC	O
+=======
+Arabia	MISC	LOC
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 "	O	O
 and	O	O
 ,	O	O
 as	O	O
-Cardinal	O	PER
+Cardinal	O	O
 Wolsey	PER	O
 ,	O	O
 in	O	O
@@ -40803,7 +43062,7 @@ James	PER	PER
 Alfred	PER	PER
 Van	PER	PER
 Allen	PER	PER
-born	O	O
+born	O	PER
 .	O	O
 U.S.	LOC	LOC
 physicist	O	ORG
@@ -40851,9 +43110,15 @@ III	PER	O
 1940	O	O
 -	O	O
 In	O	O
+<<<<<<< HEAD
 World	MISC	LOC
 War	MISC	O
 Two	MISC	O
+=======
+World	MISC	MISC
+War	MISC	MISC
+Two	MISC	MISC
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 the	O	O
 German	MISC	MISC
 airforce	O	O
@@ -41042,7 +43307,7 @@ Uzbekistan	LOC	O
 ,	O	O
 Armenia	LOC	O
 and	O	O
-Tajikistan	LOC	O
+Tajikistan	LOC	PER
 ,	O	O
 signed	O	O
 framework	O	O
@@ -41051,7 +43316,7 @@ to	O	O
 keep	O	O
 the	O	O
 Russian	MISC	MISC
-rouble	O	O
+rouble	O	ORG
 as	O	O
 their	O	O
 common	O	O
@@ -41072,7 +43337,7 @@ last	O	O
 time	O	O
 over	O	O
 U.S.	LOC	LOC
-army	O	O
+army	O	ORG
 headquarters	O	O
 in	O	O
 Berlin	LOC	LOC
@@ -41084,7 +43349,11 @@ American	MISC	MISC
 presence	O	O
 in	O	O
 the	O	O
+<<<<<<< HEAD
 once-divided	O	O
+=======
+once-divided	O	LOC
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 city	O	O
 after	O	O
 nearly	O	O
@@ -41102,7 +43371,7 @@ LONDON	LOC	LOC
 1996-08-31	O	O
 A	O	O
 convicted	O	O
-British	MISC	O
+British	MISC	MISC
 paedophile	O	O
 was	O	O
 arrested	O	O
@@ -41128,7 +43397,7 @@ police	O	O
 said	O	O
 .	O	O
 Trevor	PER	PER
-Holland	PER	O
+Holland	PER	PER
 ,	O	O
 a	O	O
 52	O	O
@@ -41211,10 +43480,17 @@ a	O	O
 popular	O	O
 zoo	O	O
 and	O	O
+<<<<<<< HEAD
 theme	O	LOC
 park	O	ORG
 south	O	LOC
 of	O	O
+=======
+theme	O	ORG
+park	O	LOC
+south	O	ORG
+of	O	LOC
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 London	LOC	LOC
 .	O	O
 Holland	PER	PER
@@ -41274,7 +43550,11 @@ problem	O	O
 .	O	O
 -DOCSTART-	O	O
 Scottish	ORG	MISC
+<<<<<<< HEAD
 Labour	ORG	O
+=======
+Labour	ORG	ORG
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 Party	ORG	O
 narrowly	O	O
 backs	O	O
@@ -41285,7 +43565,11 @@ STIRLING	LOC	LOC
 Scotland	LOC	LOC
 1996-08-31	O	O
 British	ORG	MISC
+<<<<<<< HEAD
 Labour	ORG	O
+=======
+Labour	ORG	ORG
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 Party	ORG	O
 leader	O	O
 Tony	PER	PER
@@ -41303,7 +43587,7 @@ party	O	O
 Scottish	MISC	ORG
 executive	O	O
 voted	O	O
-21-18	O	O
+21-18	O	PER
 in	O	O
 favour	O	O
 of	O	O
@@ -41415,8 +43699,13 @@ John	PER	PER
 Major	PER	PER
 says	O	O
 the	O	O
+<<<<<<< HEAD
 300-year-old	O	O
 union	O	O
+=======
+300-year-old	O	ORG
+union	O	ORG
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 of	O	O
 the	O	O
 Scottish	MISC	MISC
@@ -41479,8 +43768,13 @@ LONDON	LOC	LOC
 Britain	LOC	LOC
 on	O	O
 Saturday	O	O
+<<<<<<< HEAD
 condemned	O	O
 Iraqi	MISC	O
+=======
+condemned	O	MISC
+Iraqi	MISC	MISC
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 involvement	O	O
 in	O	O
 an	O	O
@@ -41613,7 +43907,7 @@ close	O	O
 touch	O	O
 with	O	O
 all	O	O
-our	O	O
+our	O	MISC
 allies	O	O
 ,	O	O
 "	O	O
@@ -41906,7 +44200,11 @@ administrative	O	O
 centre	O	O
 of	O	O
 the	O	O
+<<<<<<< HEAD
 Kurdish	MISC	O
+=======
+Kurdish	MISC	MISC
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 rebel-controlled	O	O
 region	O	O
 of	O	O
@@ -41923,8 +44221,13 @@ time	O	O
 0050	O	O
 GMT	MISC	O
 )	O	O
+<<<<<<< HEAD
 Iraqi	MISC	ORG
 forces	O	O
+=======
+Iraqi	MISC	MISC
+forces	O	ORG
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 began	O	O
 an	O	O
 artillery	O	O
@@ -41968,7 +44271,7 @@ said	O	O
 came	O	O
 from	O	O
 the	O	O
-organisation	O	O
+organisation	O	ORG
 's	O	O
 members	O	O
 in	O	O
@@ -42099,8 +44402,13 @@ late	O	O
 on	O	O
 Friday	O	O
 ,	O	O
+<<<<<<< HEAD
 Algerian	MISC	O
 radio	O	O
+=======
+Algerian	MISC	MISC
+radio	O	ORG
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 reported	O	O
 on	O	O
 Saturday	O	O
@@ -42327,15 +44635,24 @@ leader	O	O
 of	O	O
 the	O	O
 Freedom	ORG	O
+<<<<<<< HEAD
 Front	ORG	O
 party	O	O
+=======
+Front	ORG	ORG
+party	O	ORG
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 ,	O	O
 told	O	O
 a	O	O
 news	O	O
 conference	O	O
 in	O	O
+<<<<<<< HEAD
 Pretoria	LOC	O
+=======
+Pretoria	LOC	MISC
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 self-determination	O	O
 for	O	O
 Afrikaners	MISC	O
@@ -42377,7 +44694,11 @@ this	O	O
 new	O	O
 ,	O	O
 multi-	O	O
+<<<<<<< HEAD
 ethnic	O	MISC
+=======
+ethnic	O	O
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 society	O	O
 of	O	O
 South	LOC	LOC
@@ -42436,10 +44757,15 @@ Mandela	PER	PER
 's	O	O
 majority	O	O
 African	ORG	MISC
+<<<<<<< HEAD
 National	ORG	MISC
 Congress	ORG	O
+=======
+National	ORG	ORG
+Congress	ORG	ORG
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 .	O	O
-Some	O	O
+Some	O	PER
 right-wingers	O	O
 demanded	O	O
 sovereignty	O	O
@@ -42519,7 +44845,7 @@ in	O	O
 parts	O	O
 of	O	O
 the	O	O
-Northern	LOC	O
+Northern	LOC	LOC
 Cape	LOC	LOC
 provinces	O	LOC
 where	O	O
@@ -42581,9 +44907,15 @@ Rally	ORG	O
 for	ORG	O
 the	ORG	O
 Return	ORG	O
+<<<<<<< HEAD
 of	ORG	O
 Refugees	ORG	O
 and	ORG	O
+=======
+of	ORG	ORG
+Refugees	ORG	O
+and	ORG	ORG
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 Democracy	ORG	O
 in	ORG	O
 Rwanda	ORG	LOC
@@ -42704,7 +45036,7 @@ Tuesday	O	O
 of	O	O
 the	O	O
 estimated	O	O
-727,000	O	O
+727,000	O	MISC
 refugees	O	O
 in	O	O
 camps	O	O
@@ -42863,7 +45195,11 @@ a	O	O
 million	O	O
 people	O	O
 by	O	O
+<<<<<<< HEAD
 Hutus	MISC	O
+=======
+Hutus	MISC	PER
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 .	O	O
 -DOCSTART-	O	O
 NATO	ORG	ORG
@@ -42876,9 +45212,15 @@ village	O	O
 .	O	O
 MAHALA	LOC	LOC
 ,	O	O
+<<<<<<< HEAD
 Bosnia	LOC	O
 1996-08-31	O	PER
 NATO	ORG	O
+=======
+Bosnia	LOC	LOC
+1996-08-31	O	PER
+NATO	ORG	ORG
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 said	O	O
 it	O	O
 was	O	O
@@ -42990,7 +45332,7 @@ village	O	O
 on	O	O
 Bosnian	MISC	O
 Serb	MISC	MISC
-republic	O	MISC
+republic	O	O
 territory	O	O
 .	O	O
 Moslems	MISC	PER
@@ -43077,7 +45419,11 @@ flew	O	O
 overhead	O	O
 .	O	O
 -DOCSTART-	O	O
+<<<<<<< HEAD
 Chechens	MISC	O
+=======
+Chechens	MISC	MISC
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 exuberant	O	PER
 but	O	O
 cautious	O	O
@@ -43350,7 +45696,11 @@ a	O	O
 30-year-old	O	O
 woman	O	O
 ,	O	O
+<<<<<<< HEAD
 Mubatik	PER	O
+=======
+Mubatik	PER	PER
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 Dagayeva	PER	O
 .	O	O
 Aiza	PER	PER
@@ -43384,7 +45734,11 @@ believe	O	O
 that	O	O
 our	O	O
 sons	O	O
+<<<<<<< HEAD
 and	O	O
+=======
+and	O	ORG
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 brothers	O	PER
 will	O	O
 win	O	O
@@ -43435,7 +45789,11 @@ could	O	O
 become	O	O
 centres	O	O
 of	O	O
+<<<<<<< HEAD
 civil	O	MISC
+=======
+civil	O	O
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 war	O	O
 if	O	O
 Russian	MISC	MISC
@@ -43561,11 +45919,19 @@ gun	O	O
 and	O	O
 shouting	O	O
 the	O	O
+<<<<<<< HEAD
 Chechen	MISC	O
 war	O	O
 cry	O	O
 "	O	O
 Allahu	PER	O
+=======
+Chechen	MISC	MISC
+war	O	MISC
+cry	O	O
+"	O	O
+Allahu	PER	PER
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 Akhbar	PER	O
 "	O	O
 (	O	O
@@ -43577,7 +45943,11 @@ and	O	O
 "	O	O
 Freedom	O	O
 for	O	O
+<<<<<<< HEAD
 Chechnya	LOC	O
+=======
+Chechnya	LOC	LOC
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 !	O	O
 "	O	O
 .	O	O
@@ -43640,7 +46010,11 @@ Only	O	O
 Sheriat	MISC	O
 (	O	O
 Islamic	MISC	MISC
+<<<<<<< HEAD
 law	O	ORG
+=======
+law	O	O
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 )	O	O
 can	O	O
 end	O	O
@@ -43650,7 +46024,7 @@ war	O	O
 "	O	O
 -DOCSTART-	O	O
 Polish	MISC	MISC
-group	O	O
+group	O	ORG
 to	O	O
 bid	O	O
 for	O	O
@@ -43667,8 +46041,13 @@ Polish	MISC	MISC
 consortium	O	O
 including	O	O
 the	O	O
+<<<<<<< HEAD
 Bank	ORG	O
 Rozwoju	ORG	O
+=======
+Bank	ORG	ORG
+Rozwoju	ORG	ORG
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 Exportu	ORG	PER
 SA	ORG	O
 (	O	O
@@ -43705,17 +46084,26 @@ its	O	O
 own	O	O
 publisher	O	O
 ,	O	O
+<<<<<<< HEAD
 mineral	O	ORG
 water	O	O
+=======
+mineral	O	O
+water	O	MISC
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 firm	O	O
-Multico	ORG	O
+Multico	ORG	LOC
 ,	O	O
 and	O	O
 a	O	O
 group	O	O
 headed	O	O
 by	O	O
+<<<<<<< HEAD
 Polish	MISC	LOC
+=======
+Polish	MISC	MISC
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 businessman	O	O
 Zygmunt	PER	PER
 Solorz	PER	O
@@ -43819,7 +46207,11 @@ and	O	O
 Polish	MISC	MISC
 publishers	O	O
 group	O	O
+<<<<<<< HEAD
 UWP	ORG	O
+=======
+UWP	ORG	ORG
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 are	O	O
 seeking	O	O
 more	O	O
@@ -43909,9 +46301,15 @@ Warszawy	ORG	PER
 said	O	O
 the	O	O
 new	O	O
+<<<<<<< HEAD
 ,	O	O
 open	O	O
 consortium	O	ORG
+=======
+,	O	MISC
+open	O	MISC
+consortium	O	O
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 ,	O	O
 which	O	O
 also	O	O
@@ -43919,7 +46317,7 @@ included	O	O
 several	O	O
 listed	O	O
 Polish	MISC	MISC
-firms	O	O
+firms	O	ORG
 ,	O	O
 would	O	O
 on	O	O
@@ -43950,7 +46348,11 @@ more	O	O
 than	O	O
 the	O	O
 sum	O	O
+<<<<<<< HEAD
 Ruch	ORG	O
+=======
+Ruch	ORG	PER
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 says	O	O
 it	O	O
 needs	O	O
@@ -44218,7 +46620,7 @@ reported	O	O
 on	O	O
 Saturday	O	O
 .	O	O
-Puig	PER	LOC
+Puig	PER	ORG
 's	O	O
 first	O	O
 novel	O	O
@@ -44265,14 +46667,25 @@ in	O	O
 the	O	O
 life	O	O
 of	O	O
+<<<<<<< HEAD
 Santiago	LOC	O
 de	LOC	O
 Cuba	LOC	PER
+=======
+Santiago	LOC	LOC
+de	LOC	LOC
+Cuba	LOC	LOC
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 ,	O	O
-Puig	PER	PER
+Puig	PER	LOC
 's	O	O
+<<<<<<< HEAD
 native	O	ORG
 city	O	LOC
+=======
+native	O	O
+city	O	O
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 ,	O	O
 under	O	O
 the	O	O
@@ -44319,8 +46732,13 @@ Bread	MISC	PER
 ,	O	O
 "	O	O
 The	MISC	O
+<<<<<<< HEAD
 Decaying	MISC	O
 Mansion	MISC	ORG
+=======
+Decaying	MISC	PER
+Mansion	MISC	O
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 "	O	O
 (	O	O
 1977	O	O
@@ -44367,7 +46785,7 @@ Puig	PER	PER
 's	O	O
 "	O	O
 greatest	O	O
-gift	O	O
+gift	O	ORG
 to	O	O
 the	O	O
 modern	O	MISC
@@ -44468,7 +46886,7 @@ said	O	O
 -DOCSTART-	O	O
 U.N.	ORG	ORG
 Ambassador	O	O
-Albright	PER	PER
+Albright	PER	O
 arrives	O	O
 in	O	O
 Chile	LOC	O
@@ -44665,8 +47083,13 @@ radio	O	O
 reports	O	O
 said	O	O
 .	O	O
+<<<<<<< HEAD
 Radio	ORG	O
 Red	ORG	O
+=======
+Radio	ORG	ORG
+Red	ORG	ORG
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 quoted	O	O
 local	O	O
 police	O	O
@@ -44709,12 +47132,18 @@ a	O	O
 police	O	O
 commander	O	O
 in	O	O
-Tacambaro	LOC	PER
+Tacambaro	LOC	O
 ,	O	O
 told	O	O
+<<<<<<< HEAD
 Radio	ORG	O
 Red	ORG	O
 the	O	O
+=======
+Radio	ORG	ORG
+Red	ORG	ORG
+the	O	ORG
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 group	O	O
 was	O	O
 armed	O	O
@@ -44855,8 +47284,13 @@ director	O	O
 of	O	O
 the	O	O
 New	MISC	O
+<<<<<<< HEAD
 York-based	MISC	O
 group	O	O
+=======
+York-based	MISC	ORG
+group	O	ORG
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 Human	ORG	O
 Rights	ORG	O
 in	ORG	O
@@ -44915,8 +47349,13 @@ meant	O	O
 to	O	O
 strengthen	O	O
 the	O	O
+<<<<<<< HEAD
 Communist	ORG	O
 Party	ORG	O
+=======
+Communist	ORG	ORG
+Party	ORG	ORG
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 's	O	O
 grip	O	O
 on	O	O
@@ -44924,7 +47363,7 @@ power	O	O
 as	O	O
 senior	O	O
 leader	O	O
-Deng	PER	PER
+Deng	PER	O
 Xiaoping	PER	PER
 nears	O	O
 death	O	O
@@ -44960,7 +47399,7 @@ discontent	O	O
 ,	O	O
 "	O	O
 said	O	O
-Xiao	PER	PER
+Xiao	PER	O
 ,	O	O
 in	O	O
 Manila	LOC	O
@@ -44970,7 +47409,11 @@ an	O	O
 Amnesty	ORG	O
 International	ORG	O
 conference	O	O
+<<<<<<< HEAD
 on	O	O
+=======
+on	O	MISC
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 human	O	O
 rights	O	O
 in	O	O
@@ -45028,8 +47471,13 @@ problem	O	O
 worse	O	O
 and	O	O
 one	O	O
+<<<<<<< HEAD
 day	O	O
 China	LOC	O
+=======
+day	O	MISC
+China	LOC	LOC
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 would	O	O
 pay	O	O
 a	O	O
@@ -45292,7 +47740,7 @@ Ramos	PER	PER
 said	O	O
 the	O	O
 peace	O	O
-agreement	O	O
+agreement	O	MISC
 "	O	O
 shall	O	O
 bring	O	O
@@ -45332,7 +47780,7 @@ a	O	O
 century	O	O
 .	O	O
 -DOCSTART-	O	O
-Burma	LOC	LOC
+Burma	LOC	ORG
 's	O	O
 Suu	PER	O
 Kyi	PER	O
@@ -45352,8 +47800,13 @@ democracy	O	O
 leader	O	O
 Aung	PER	PER
 San	PER	LOC
+<<<<<<< HEAD
 Suu	PER	LOC
 Kyi	PER	O
+=======
+Suu	PER	MISC
+Kyi	PER	PER
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 hit	O	O
 out	O	O
 at	O	O
@@ -45405,7 +47858,7 @@ authorities	O	O
 are	O	O
 misusing	O	O
 the	O	O
-law	O	O
+law	O	MISC
 all	O	O
 the	O	O
 time	O	O
@@ -45480,8 +47933,13 @@ Suu	PER	O
 Kyi	PER	O
 's	O	O
 National	ORG	MISC
+<<<<<<< HEAD
 League	ORG	O
 for	ORG	O
+=======
+League	ORG	ORG
+for	ORG	ORG
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 Democracy	ORG	O
 (	O	O
 NLD	ORG	O
@@ -45489,8 +47947,13 @@ NLD	ORG	O
 ahead	O	O
 of	O	O
 a	O	O
+<<<<<<< HEAD
 party	O	O
 congress	O	O
+=======
+party	O	ORG
+congress	O	ORG
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 .	O	O
 Most	O	O
 were	O	O
@@ -45524,12 +47987,17 @@ May	O	O
 crackdown	O	O
 ,	O	O
 including	O	O
+<<<<<<< HEAD
 Suu	PER	PER
 Kyi	PER	ORG
+=======
+Suu	PER	O
+Kyi	PER	O
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 's	O	O
 assistant	O	O
 Win	PER	O
-Htein	PER	PER
+Htein	PER	O
 .	O	O
 The	O	O
 military	O	O
@@ -45595,7 +48063,7 @@ the	O	O
 opportunity	O	O
 to	O	O
 defend	O	O
-themselves	O	O
+themselves	O	MISC
 in	O	O
 trials	O	O
 .	O	O
@@ -45685,7 +48153,11 @@ State	ORG	O
 Law	ORG	O
 and	ORG	O
 Order	ORG	O
+<<<<<<< HEAD
 Restoration	ORG	ORG
+=======
+Restoration	ORG	O
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 Council	ORG	O
 (	O	O
 SLORC	ORG	O
@@ -45712,7 +48184,7 @@ lack	O	O
 of	O	O
 rule	O	O
 of	O	O
-law	O	O
+law	O	MISC
 is	O	O
 an	O	O
 indication	O	O
@@ -45928,12 +48400,12 @@ a	O	O
 close	O	O
 friend	O	O
 of	O	O
-Suu	PER	PER
+Suu	PER	O
 Kyi	PER	O
 and	O	O
 Danish	MISC	MISC
 honorary	O	O
-consul	O	O
+consul	O	PER
 ,	O	O
 died	O	O
 while	O	O
@@ -45984,7 +48456,11 @@ to	O	O
 bring	O	O
 democracy	O	O
 to	O	O
+<<<<<<< HEAD
 Burma	LOC	O
+=======
+Burma	LOC	PER
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 even	O	O
 if	O	O
 it	O	O
@@ -46017,9 +48493,15 @@ Burma	LOC	O
 Dow	ORG	ORG
 Chemical	ORG	O
 in	O	O
+<<<<<<< HEAD
 China	LOC	LOC
 ethylene	O	O
 venture	O	ORG
+=======
+China	LOC	ORG
+ethylene	O	O
+venture	O	O
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 .	O	O
 BEIJING	LOC	LOC
 1996-08-31	O	O
@@ -46078,7 +48560,11 @@ of	O	O
 the	O	O
 venture	O	O
 .	O	O
+<<<<<<< HEAD
 Tianjin	LOC	LOC
+=======
+Tianjin	LOC	ORG
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 boasts	O	O
 a	O	O
 range	O	O
@@ -46121,10 +48607,15 @@ Multinational	O	O
 firms	O	O
 including	O	O
 Mobil	ORG	O
+<<<<<<< HEAD
 ,	O	O
 Shell	ORG	O
+=======
+,	O	ORG
+Shell	ORG	ORG
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 and	O	O
-Caltex	ORG	O
+Caltex	ORG	ORG
 ,	O	O
 were	O	O
 also	O	O
@@ -46154,9 +48645,13 @@ further	O	O
 details	O	O
 .	O	O
 -DOCSTART-	O	O
+<<<<<<< HEAD
 N.	LOC	MISC
+=======
+N.	LOC	ORG
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 Korea	LOC	LOC
-urges	O	O
+urges	O	LOC
 S.	LOC	LOC
 Korea	LOC	LOC
 to	O	O
@@ -46192,8 +48687,13 @@ war	O	O
 ,	O	O
 Seoul	LOC	PER
 's	O	O
+<<<<<<< HEAD
 unification	O	O
 ministry	O	ORG
+=======
+unification	O	ORG
+ministry	O	O
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 said	O	O
 .	O	O
 "	O	O
@@ -46256,9 +48756,15 @@ the	O	O
 press	O	O
 by	O	O
 the	O	O
+<<<<<<< HEAD
 South	MISC	LOC
 Korean	MISC	LOC
 unification	O	LOC
+=======
+South	MISC	MISC
+Korean	MISC	MISC
+unification	O	ORG
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 ministry	O	O
 .	O	O
 Kim	PER	PER
@@ -46304,6 +48810,7 @@ repatriation	O	O
 .	O	O
 The	O	O
 domestic	O	O
+<<<<<<< HEAD
 Yonhap	ORG	O
 news	O	O
 agency	O	ORG
@@ -46311,6 +48818,15 @@ said	O	O
 the	O	O
 South	MISC	LOC
 Korean	MISC	LOC
+=======
+Yonhap	ORG	ORG
+news	O	ORG
+agency	O	O
+said	O	O
+the	O	O
+South	MISC	MISC
+Korean	MISC	MISC
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 government	O	O
 would	O	O
 consider	O	O
@@ -46389,13 +48905,21 @@ detained	O	O
 veteran	O	O
 dissident	O	O
 Wang	PER	O
+<<<<<<< HEAD
 Donghai	PER	O
 ,	O	O
 the	O	O
 New	MISC	O
 York-based	MISC	O
+=======
+Donghai	PER	PER
+,	O	O
+the	O	O
+New	MISC	O
+York-based	MISC	MISC
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 pressure	O	O
-group	O	O
+group	O	ORG
 Human	ORG	O
 Rights	ORG	O
 in	ORG	O
@@ -46406,7 +48930,7 @@ Saturday	O	O
 .	O	O
 Police	O	O
 in	O	O
-Hangzhou	LOC	LOC
+Hangzhou	LOC	O
 ,	O	O
 capital	O	O
 of	O	O
@@ -46490,9 +49014,15 @@ holdover	O	O
 from	O	O
 the	O	O
 chaotic	O	O
+<<<<<<< HEAD
 1966-76	MISC	O
 Cultural	MISC	O
 Revolution	MISC	O
+=======
+1966-76	MISC	MISC
+Cultural	MISC	MISC
+Revolution	MISC	MISC
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 --	O	O
 or	O	O
 say	O	O
@@ -46555,9 +49085,15 @@ veteran	O	O
 dissident	O	O
 of	O	O
 the	O	O
+<<<<<<< HEAD
 1979	O	O
 Democracy	ORG	O
 Wall	ORG	O
+=======
+1979	O	MISC
+Democracy	ORG	ORG
+Wall	ORG	ORG
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 movement	O	O
 ,	O	O
 was	O	O
@@ -46607,7 +49143,11 @@ or	O	O
 the	O	O
 courts	O	O
 .	O	O
+<<<<<<< HEAD
 Wang	PER	LOC
+=======
+Wang	PER	PER
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 was	O	O
 jailed	O	O
 for	O	O
@@ -46694,13 +49234,21 @@ have	O	O
 detained	O	O
 dissident	O	O
 Wang	PER	O
+<<<<<<< HEAD
 Donghai	PER	O
 ,	O	O
 the	O	O
 New	MISC	O
 York-based	MISC	O
+=======
+Donghai	PER	PER
+,	O	O
+the	O	O
+New	MISC	O
+York-based	MISC	MISC
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 pressure	O	O
-group	O	O
+group	O	ORG
 Human	ORG	O
 Rights	ORG	O
 in	ORG	O
@@ -46738,7 +49286,7 @@ The	O	O
 pressure	O	O
 group	O	O
 said	O	O
-Wang	PER	PER
+Wang	PER	O
 would	O	O
 be	O	O
 sent	O	O
@@ -46753,7 +49301,7 @@ euphemism	O	O
 in	O	O
 China	LOC	LOC
 for	O	O
-ideological	O	O
+ideological	O	MISC
 reform	O	O
 .	O	O
 Wang	PER	PER
@@ -46779,9 +49327,15 @@ veteran	O	O
 dissident	O	O
 of	O	O
 the	O	O
+<<<<<<< HEAD
 1979	O	O
 Democracy	ORG	O
 Wall	ORG	O
+=======
+1979	O	MISC
+Democracy	ORG	ORG
+Wall	ORG	ORG
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 movement	O	O
 ,	O	O
 was	O	O
@@ -46831,7 +49385,11 @@ or	O	O
 the	O	O
 courts	O	O
 .	O	O
+<<<<<<< HEAD
 Wang	PER	LOC
+=======
+Wang	PER	PER
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 was	O	O
 jailed	O	O
 for	O	O
@@ -46938,7 +49496,7 @@ Friday	O	O
 the	O	O
 Hong	ORG	LOC
 Kong	ORG	LOC
-Standard	ORG	O
+Standard	ORG	ORG
 said	O	O
 .	O	O
 "	O	O
@@ -46963,7 +49521,11 @@ die	O	O
 behind	O	O
 bars	O	O
 .	O	O
+<<<<<<< HEAD
 Chen	PER	LOC
+=======
+Chen	PER	PER
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 ,	O	O
 a	O	O
 former	O	O
@@ -47014,7 +49576,11 @@ heroin	O	O
 The	O	O
 ex-officer	O	O
 admitted	O	O
+<<<<<<< HEAD
 stashing	O	O
+=======
+stashing	O	PER
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 heroin	O	O
 under	O	O
 his	O	O
@@ -47060,7 +49626,7 @@ Saturday	O	O
 .	O	O
 Authorities	O	O
 in	O	O
-Wuhan	LOC	LOC
+Wuhan	LOC	O
 ,	O	O
 capital	O	O
 of	O	O
@@ -47249,11 +49815,16 @@ established	O	O
 a	O	O
 headquarters	O	O
 in	O	O
-Chuman	LOC	LOC
+Chuman	LOC	O
 ,	O	O
 "	O	O
+<<<<<<< HEAD
 Faik	PER	O
 Nerweyi	PER	O
+=======
+Faik	PER	PER
+Nerweyi	PER	PER
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 of	O	O
 the	O	O
 Kurdistan	ORG	O
@@ -47289,7 +49860,11 @@ Iraq	LOC	LOC
 ,	O	O
 but	O	O
 said	O	O
+<<<<<<< HEAD
 KDP	ORG	O
+=======
+KDP	ORG	PER
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 fighters	O	O
 had	O	O
 been	O	O
@@ -47361,7 +49936,7 @@ northern	O	O
 Iraqi	MISC	O
 city	O	O
 of	O	O
-Arbil	LOC	O
+Arbil	LOC	LOC
 after	O	O
 fighting	O	O
 on	O	O
@@ -47420,7 +49995,11 @@ The	O	O
 PUK	ORG	O
 accuses	O	O
 the	O	O
+<<<<<<< HEAD
 KDP	ORG	O
+=======
+KDP	ORG	ORG
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 of	O	O
 collaborating	O	O
 with	O	O
@@ -47476,12 +50055,12 @@ agreement	O	O
 between	O	O
 Israel	LOC	LOC
 and	O	O
-Hizbollah	ORG	O
+Hizbollah	ORG	PER
 guerrillas	O	O
 will	O	O
 meet	O	O
 in	O	O
-south	O	LOC
+south	O	O
 Lebanon	LOC	LOC
 on	O	O
 Sunday	O	O
@@ -47493,7 +50072,11 @@ complaint	O	O
 against	O	O
 the	O	O
 Islamic	MISC	MISC
+<<<<<<< HEAD
 group	O	O
+=======
+group	O	ORG
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 ,	O	O
 the	O	O
 Israeli	MISC	MISC
@@ -47503,8 +50086,13 @@ said	O	O
 Representatives	O	O
 of	O	O
 the	O	O
+<<<<<<< HEAD
 five	O	O
 nations	O	O
+=======
+five	O	MISC
+nations	O	MISC
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 making	O	O
 up	O	O
 the	O	O
@@ -47535,7 +50123,11 @@ in	O	O
 Naqoura	LOC	O
 ,	O	O
 the	O	O
+<<<<<<< HEAD
 coastal	O	MISC
+=======
+coastal	O	O
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 headquarters	O	O
 of	O	O
 the	O	O
@@ -47564,7 +50156,7 @@ incident	O	O
 in	O	O
 which	O	O
 two	O	O
-Lebanese	MISC	O
+Lebanese	MISC	MISC
 residents	O	O
 were	O	O
 injured	O	O
@@ -47643,7 +50235,11 @@ militia	O	O
 allies	O	O
 in	O	O
 south	O	LOC
+<<<<<<< HEAD
 Lebanon	LOC	O
+=======
+Lebanon	LOC	LOC
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 .	O	O
 Around	O	O
 1,000	O	O
@@ -47656,8 +50252,13 @@ km	O	O
 (	O	O
 nine-mile	O	O
 )	O	O
+<<<<<<< HEAD
 south	O	LOC
 Lebanon	LOC	O
+=======
+south	O	MISC
+Lebanon	LOC	MISC
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 occupation	O	O
 zone	O	O
 which	O	O
@@ -47680,7 +50281,11 @@ Hizbollah	ORG	PER
 (	O	O
 Party	ORG	O
 of	ORG	O
+<<<<<<< HEAD
 God	ORG	O
+=======
+God	ORG	ORG
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 )	O	O
 gunmen	O	O
 have	O	O
@@ -47775,7 +50380,7 @@ in	O	O
 KDP	ORG	LOC
 headquarters	O	O
 in	O	O
-Saladdin	LOC	LOC
+Saladdin	LOC	O
 ,	O	O
 "	O	O
 the	O	O
@@ -47792,8 +50397,8 @@ told	O	O
 Reuters	ORG	PER
 .	O	O
 -DOCSTART-	O	O
-Fire	O	O
-destroys	O	O
+Fire	O	ORG
+destroys	O	ORG
 restaurant	O	O
 in	O	O
 Bahraini	LOC	LOC
@@ -47946,8 +50551,13 @@ of	ORG	O
 Kurdistan	ORG	ORG
 chief	O	O
 )	O	O
+<<<<<<< HEAD
 Jalal	PER	O
 Talabani	PER	O
+=======
+Jalal	PER	PER
+Talabani	PER	PER
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 ,	O	O
 "	O	O
 Aziz	PER	PER
@@ -47959,7 +50569,7 @@ carried	O	O
 by	O	O
 the	O	O
 official	O	O
-Iraqi	ORG	ORG
+Iraqi	ORG	MISC
 News	ORG	ORG
 Agency	ORG	ORG
 (	O	O
@@ -48016,7 +50626,7 @@ attacks	O	O
 by	O	O
 Iran	LOC	LOC
 and	O	O
-Talabani	PER	O
+Talabani	PER	LOC
 .	O	O
 He	O	O
 said	O	O
@@ -48025,7 +50635,11 @@ sent	O	O
 a	O	O
 message	O	O
 to	O	O
+<<<<<<< HEAD
 Saddam	PER	O
+=======
+Saddam	PER	LOC
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 on	O	O
 August	O	O
 22	O	O
@@ -48186,7 +50800,7 @@ Iraqi	MISC	O
 troops	O	O
 in	O	O
 the	O	O
-city	O	O
+city	O	LOC
 or	O	O
 in	O	O
 its	O	O
@@ -48237,7 +50851,11 @@ for	O	O
 their	O	O
 accuracy	O	O
 .	O	O
+<<<<<<< HEAD
 LA	ORG	LOC
+=======
+LA	ORG	ORG
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 PRESSE	ORG	O
 -	O	O
 After	O	O
@@ -48247,8 +50865,13 @@ on	O	O
 France	LOC	LOC
 to	O	O
 respect	O	O
+<<<<<<< HEAD
 Tunisian	MISC	O
 immigrants	O	ORG
+=======
+Tunisian	MISC	MISC
+immigrants	O	MISC
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 '	O	O
 dignity	O	LOC
 ,	O	O
@@ -48285,8 +50908,13 @@ Tunisia	LOC	LOC
 and	O	O
 the	O	O
 Palestinian	ORG	MISC
+<<<<<<< HEAD
 Authority	ORG	O
 .	O	O
+=======
+Authority	ORG	ORG
+.	O	ORG
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 -	O	O
 Speaker	O	O
 of	O	O
@@ -48300,13 +50928,18 @@ to	O	O
 represent	O	O
 President	O	O
 Zine	PER	PER
-al-Abidine	PER	PER
+al-Abidine	PER	O
 Ben	PER	PER
 Ali	PER	O
 at	O	O
 the	O	O
+<<<<<<< HEAD
 Libyan	MISC	O
 revolution	O	O
+=======
+Libyan	MISC	MISC
+revolution	O	MISC
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 anniversary	O	O
 celebrations	O	O
 .	O	O
@@ -48318,7 +50951,11 @@ $	O	O
 dinar	O	O
 )	O	O
 -DOCSTART-	O	O
+<<<<<<< HEAD
 Automakers	O	ORG
+=======
+Automakers	O	O
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 ,	O	O
 U.S.	LOC	LOC
 agency	O	O
@@ -48375,7 +51012,11 @@ they	O	O
 will	O	O
 work	O	O
 with	O	O
+<<<<<<< HEAD
 law	O	O
+=======
+law	O	MISC
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 enforcement	O	O
 agencies	O	O
 ,	O	O
@@ -48454,8 +51095,13 @@ interstate	O	O
 highways	O	O
 during	O	O
 the	O	O
+<<<<<<< HEAD
 Labor	MISC	O
 Day	MISC	O
+=======
+Labor	MISC	MISC
+Day	MISC	MISC
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 weekend	O	O
 ,	O	O
 including	O	O
@@ -48466,7 +51112,11 @@ the	O	O
 East	LOC	LOC
 Coast	LOC	LOC
 ,	O	O
+<<<<<<< HEAD
 Interstates	LOC	LOC
+=======
+Interstates	LOC	ORG
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 80	LOC	O
 and	O	O
 90	LOC	O
@@ -48503,9 +51153,15 @@ executive	O	O
 director	O	O
 of	O	O
 the	O	O
+<<<<<<< HEAD
 industry-funded	O	O
 National	ORG	O
 Automobile	ORG	O
+=======
+industry-funded	O	MISC
+National	ORG	O
+Automobile	ORG	ORG
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 Occupant	ORG	O
 Protection	ORG	O
 Campaign	ORG	O
@@ -48692,13 +51348,21 @@ Two	O	O
 die	O	O
 as	O	O
 New	LOC	O
+<<<<<<< HEAD
 Hampshire	LOC	O
+=======
+Hampshire	LOC	ORG
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 motel	O	O
 explodes	O	O
 and	O	O
 burns	O	O
 .	O	O
+<<<<<<< HEAD
 ROCHESTER	LOC	LOC
+=======
+ROCHESTER	LOC	PER
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 ,	O	O
 N.H.	LOC	O
 1996-08-30	O	O
@@ -48767,7 +51431,11 @@ Penney	PER	PER
 of	O	O
 the	O	O
 Rochester	ORG	O
+<<<<<<< HEAD
 Fire	ORG	O
+=======
+Fire	ORG	ORG
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 Department	ORG	ORG
 said	O	O
 .	O	O
@@ -48785,7 +51453,11 @@ parked	O	O
 behind	O	O
 the	O	O
 Lilac	LOC	O
+<<<<<<< HEAD
 Falls	LOC	O
+=======
+Falls	LOC	PER
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 Motel	LOC	O
 and	O	O
 smelled	O	O
@@ -48796,7 +51468,7 @@ the	O	O
 explosion	O	O
 .	O	O
 Fire	O	O
-department	O	ORG
+department	O	O
 officials	O	O
 said	O	O
 they	O	O
@@ -48989,18 +51661,18 @@ youths	O	O
 .	O	O
 -DOCSTART-	O	O
 U.S.	LOC	LOC
-warplanes	O	O
+warplanes	O	MISC
 ,	O	O
 ships	O	O
 in	O	O
 Gulf	LOC	LOC
-await	O	LOC
-Clinton	PER	PER
+await	O	O
+Clinton	PER	ORG
 order	O	O
 .	O	O
 Jim	PER	PER
 Adams	PER	PER
-WASHINGTON	LOC	PER
+WASHINGTON	LOC	LOC
 1996-08-31	O	O
 More	O	O
 than	O	O
@@ -49034,7 +51706,11 @@ northern	O	O
 Iraq	LOC	LOC
 ,	O	O
 U.S.	LOC	LOC
+<<<<<<< HEAD
 defense	O	ORG
+=======
+defense	O	O
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 officials	O	O
 said	O	O
 .	O	O
@@ -49061,13 +51737,22 @@ Gulf	LOC	LOC
 ;	O	O
 the	O	O
 aircraft	O	O
+<<<<<<< HEAD
 carrier	O	O
+=======
+carrier	O	ORG
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 Enterprise	MISC	ORG
 was	O	O
 in	O	O
 the	O	O
+<<<<<<< HEAD
 eastern	O	MISC
 Mediterranean	MISC	LOC
+=======
+eastern	O	O
+Mediterranean	MISC	MISC
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 with	O	O
 79	O	O
 more	O	O
@@ -49340,10 +52025,17 @@ planes	O	O
 on	O	O
 the	O	O
 aircraft	O	O
+<<<<<<< HEAD
 carriers	O	O
 Vinson	MISC	O
 and	O	O
 Enterprise	MISC	ORG
+=======
+carriers	O	ORG
+Vinson	MISC	ORG
+and	O	ORG
+Enterprise	MISC	O
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 ,	O	O
 the	O	O
 Air	ORG	O
@@ -49406,13 +52098,21 @@ people	O	O
 already	O	O
 in	O	O
 the	O	O
+<<<<<<< HEAD
 Gulf	LOC	MISC
+=======
+Gulf	LOC	LOC
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 consist	O	O
 of	O	O
 15,000	O	O
 sailors	O	O
 and	O	O
+<<<<<<< HEAD
 Marines	MISC	O
+=======
+Marines	MISC	ORG
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 ,	O	O
 6,000	O	O
 U.S.	LOC	ORG
@@ -49449,7 +52149,11 @@ Readiness	ORG	O
 Group	ORG	O
 .	O	O
 The	O	O
+<<<<<<< HEAD
 Carl	MISC	O
+=======
+Carl	MISC	PER
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 Vinson	MISC	O
 leads	O	O
 a	O	O
@@ -49603,8 +52307,13 @@ a	O	O
 link	O	O
 with	O	O
 the	O	O
+<<<<<<< HEAD
 Marc	PER	O
 Dutroux	PER	O
+=======
+Marc	PER	MISC
+Dutroux	PER	PER
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 case	O	O
 ,	O	O
 the	O	O
@@ -49692,7 +52401,11 @@ Staoueli	LOC	O
 .	O	O
 But	O	O
 Le	ORG	PER
+<<<<<<< HEAD
 Matin	ORG	PER
+=======
+Matin	ORG	ORG
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 newspaper	O	O
 ,	O	O
 quoting	O	PER
@@ -49912,7 +52625,7 @@ report	O	O
 in	O	O
 the	O	O
 news	O	O
-weekly	O	O
+weekly	O	ORG
 Der	ORG	O
 Spiegel	ORG	O
 ,	O	O
@@ -49998,7 +52711,7 @@ summoned	O	O
 to	O	O
 the	O	O
 ministry	O	O
-in	O	O
+in	O	ORG
 Bonn	LOC	LOC
 to	O	O
 hear	O	O
@@ -50016,7 +52729,11 @@ of	O	O
 the	O	O
 principles	O	O
 of	O	O
+<<<<<<< HEAD
 international	O	MISC
+=======
+international	O	ORG
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 law	O	O
 "	O	O
 ,	O	O
@@ -50245,7 +52962,11 @@ ROME	LOC	LOC
 Italian	MISC	MISC
 Foreign	O	O
 Minister	O	O
+<<<<<<< HEAD
 Lamberto	PER	PER
+=======
+Lamberto	PER	O
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 Dini	PER	PER
 on	O	O
 Saturday	O	O
@@ -50257,7 +52978,11 @@ Julius	PER	PER
 Nyerere	PER	PER
 ,	O	O
 the	O	O
+<<<<<<< HEAD
 international	O	O
+=======
+international	O	ORG
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 negotiator	O	O
 for	O	O
 Burundi	LOC	O
@@ -50306,8 +53031,8 @@ which	O	O
 has	O	O
 been	O	O
 monitoring	O	O
-Burundi	LOC	O
-closely	O	O
+Burundi	LOC	LOC
+closely	O	LOC
 .	O	O
 "	O	O
 (	O	O
@@ -50323,16 +53048,22 @@ developments	O	O
 in	O	O
 the	O	O
 (	O	O
+<<<<<<< HEAD
 Great	LOC	O
 Lakes	LOC	LOC
 )	O	O
+=======
+Great	LOC	LOC
+Lakes	LOC	LOC
+)	O	LOC
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 region	O	O
 ,	O	O
 with	O	O
 particular	O	O
 respect	O	O
 to	O	O
-Burundi	LOC	O
+Burundi	LOC	LOC
 following	O	O
 the	O	O
 military	O	O
@@ -50358,7 +53089,11 @@ of	O	O
 their	O	O
 talks	O	O
 .	O	O
+<<<<<<< HEAD
 Nyerere	PER	PER
+=======
+Nyerere	PER	LOC
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 was	O	O
 due	O	O
 to	O	O
@@ -50370,8 +53105,13 @@ an	O	O
 Artisans	MISC	O
 for	MISC	O
 Peace	MISC	O
+<<<<<<< HEAD
 "	O	O
 prize	O	O
+=======
+"	O	MISC
+prize	O	MISC
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 by	O	O
 the	O	O
 Lay	ORG	O
@@ -50471,7 +53211,7 @@ country	O	O
 first	O	O
 democratically	O	O
 elected	O	O
-Hutu	MISC	O
+Hutu	MISC	MISC
 president	O	O
 was	O	O
 killed	O	O
@@ -50493,8 +53233,13 @@ Iraq	LOC	LOC
 BRUSSELS	LOC	LOC
 1996-08-31	O	O
 The	O	O
+<<<<<<< HEAD
 North	ORG	LOC
 Atlantic	ORG	LOC
+=======
+North	ORG	ORG
+Atlantic	ORG	ORG
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 Treaty	ORG	ORG
 Organisation	ORG	ORG
 's	O	O
@@ -50651,7 +53396,11 @@ Belgium	LOC	LOC
 including	O	O
 Kalashnikov	MISC	O
 ,	O	O
+<<<<<<< HEAD
 Uzi	MISC	O
+=======
+Uzi	MISC	LOC
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 and	O	O
 Fal	MISC	O
 automatic	O	O
@@ -50708,7 +53457,7 @@ continuing	O	O
 ,	O	O
 "	O	O
 a	O	O
-Liege	LOC	O
+Liege	LOC	MISC
 police	O	O
 official	O	O
 told	O	O
@@ -50718,7 +53467,7 @@ Late	O	O
 on	O	O
 Friday	O	O
 ,	O	O
-Liege	LOC	ORG
+Liege	LOC	LOC
 police	O	O
 said	O	O
 in	O	O
@@ -50806,8 +53555,13 @@ a	O	O
 link	O	O
 with	O	O
 the	O	O
+<<<<<<< HEAD
 Marc	PER	O
 Dutroux	PER	O
+=======
+Marc	PER	MISC
+Dutroux	PER	PER
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 case	O	O
 ,	O	O
 the	O	O
@@ -50838,8 +53592,13 @@ at	O	O
 Venice	LOC	O
 festival	O	O
 .	O	O
+<<<<<<< HEAD
 Vera	PER	LOC
 Haller	PER	PER
+=======
+Vera	PER	O
+Haller	PER	O
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 VENICE	O	PER
 ,	O	O
 Italy	LOC	LOC
@@ -50890,7 +53649,11 @@ Liam	PER	O
 Neeson	PER	O
 and	O	O
 Julia	PER	O
+<<<<<<< HEAD
 Roberts	PER	O
+=======
+Roberts	PER	PER
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 ,	O	O
 recounts	O	O
 the	O	O
@@ -51026,7 +53789,7 @@ rarely	O	O
 Jordan	PER	PER
 ,	O	O
 whose	O	O
-1992	O	O
+1992	O	MISC
 film	O	O
 "	O	O
 The	MISC	O
@@ -51141,7 +53904,7 @@ his	O	O
 performance	O	O
 in	O	O
 "	O	O
-Schindler	MISC	O
+Schindler	MISC	PER
 's	MISC	O
 List	MISC	O
 "	O	O
@@ -51155,8 +53918,13 @@ Jordan	PER	LOC
 's	O	O
 film	O	O
 .	O	O
+<<<<<<< HEAD
 Aidan	PER	LOC
 Quinn	PER	O
+=======
+Aidan	PER	O
+Quinn	PER	PER
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 portrays	O	O
 Harry	PER	PER
 Boland	PER	PER
@@ -51386,7 +54154,11 @@ formed	O	O
 the	O	O
 north	O	O
 and	O	O
+<<<<<<< HEAD
 south	O	LOC
+=======
+south	O	O
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 of	O	O
 Ireland	LOC	LOC
 as	O	O
@@ -51399,7 +54171,7 @@ today	O	O
 Dhaka	LOC	O
 stocks	O	O
 seen	O	O
-steady	O	O
+steady	O	PER
 in	O	O
 absence	O	O
 of	O	O
@@ -51472,11 +54244,19 @@ pressure	O	O
 ,	O	O
 "	O	O
 said	O	O
+<<<<<<< HEAD
 broker	O	PER
 Shakil	PER	O
 Rizvi	PER	O
 .	O	O
 Broker	O	LOC
+=======
+broker	O	O
+Shakil	PER	PER
+Rizvi	PER	O
+.	O	O
+Broker	O	O
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 Khurshid	PER	PER
 Alam	PER	PER
 said	O	O
@@ -51515,7 +54295,11 @@ IDLC	ORG	O
 Bangladesh	ORG	PER
 Lamps	ORG	PER
 ,	O	O
+<<<<<<< HEAD
 Chittagong	ORG	O
+=======
+Chittagong	ORG	PER
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 Cement	ORG	O
 and	O	O
 Atlas	ORG	O
@@ -51549,7 +54333,11 @@ sessions	O	O
 .	O	O
 The	O	O
 DSE	ORG	O
+<<<<<<< HEAD
 all	O	O
+=======
+all	O	MISC
+>>>>>>> 9da7e661342232765367fd50175c2ec6e44878a8
 share	O	O
 price	O	O
 index	O	O
